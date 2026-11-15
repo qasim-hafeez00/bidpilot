@@ -1,3 +1,76 @@
-# TODO: Define web, API, worker, MCP servers, GigSim, Postgres, Redis,
-# vector store and local model service as appropriate.
-services: {}
+# docker compose -f infra/docker-compose.yml up --build
+# web (built into the api image) + api + worker + 3 MCP servers + GigSim + Postgres + Redis + Qdrant + Ollama + Phoenix
+x-app-env: &app-env
+  DATABASE_URL: postgresql://bidpilot:bidpilot@postgres:5432/bidpilot
+  REDIS_URL: redis://redis:6379/0
+  GIGSIM_BASE_URL: http://gigsim:8081
+  OLLAMA_BASE_URL: http://ollama:11434
+  QDRANT_URL: http://qdrant:6333
+  VECTOR_BACKEND: qdrant
+  MCP_TRANSPORT: http
+  PORTFOLIO_MCP_URL: http://mcp-portfolio:8101/mcp
+  MARKETPLACE_MCP_URL: http://mcp-marketplace:8102/mcp
+  WORKSPACE_MCP_URL: http://mcp-workspace:8103/mcp
+  PHOENIX_COLLECTOR_ENDPOINT: http://phoenix:6006/v1/traces
+  APP_SECRET_KEY: ${APP_SECRET_KEY:-change-me}
+  MCP_JWT_SECRET: ${MCP_JWT_SECRET:-change-me-too}
+  TOKEN_ENC_KEY: ${TOKEN_ENC_KEY:-change-me-three}
+  MODEL_PROFILE: ${MODEL_PROFILE:-open}
+  GROQ_API_KEY: ${GROQ_API_KEY:-}
+  LANGSMITH_API_KEY: ${LANGSMITH_API_KEY:-}
+  AUDIT_TO_DB: "1"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment: { POSTGRES_USER: bidpilot, POSTGRES_PASSWORD: bidpilot, POSTGRES_DB: bidpilot }
+    ports: ["15432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck: { test: ["CMD", "pg_isready", "-U", "bidpilot"], interval: 5s, retries: 10 }
+  redis:
+    image: redis:7-alpine
+    ports: ["16379:6379"]
+  qdrant:
+    image: qdrant/qdrant:v1.12.4
+    ports: ["16333:6333"]
+  ollama:
+    image: ollama/ollama:0.5.4
+    ports: ["11434:11434"]
+    volumes: [ollama:/root/.ollama]
+  phoenix:
+    image: arizephoenix/phoenix:version-7.9.2
+    ports: ["16006:6006"]
+  gigsim:
+    build: { context: .., dockerfile: infra/docker/gigsim.Dockerfile }
+    environment: { GIGSIM_DB: /data/gigsim.db, GIGSIM_INITIAL_RELEASE: "60" }
+    ports: ["18081:8081"]
+    volumes: [gigsim:/data]
+  mcp-portfolio:
+    build: { context: .., dockerfile: infra/docker/app.Dockerfile }
+    command: ["python", "-m", "mcp_servers.portfolio.server", "--transport", "http", "--port", "8101"]
+    environment: *app-env
+    depends_on: [qdrant]
+  mcp-marketplace:
+    build: { context: .., dockerfile: infra/docker/app.Dockerfile }
+    command: ["python", "-m", "mcp_servers.marketplace.server", "--transport", "http", "--port", "8102"]
+    environment: *app-env
+    depends_on: [gigsim, postgres]
+  mcp-workspace:
+    build: { context: .., dockerfile: infra/docker/app.Dockerfile }
+    command: ["python", "-m", "mcp_servers.workspace.server", "--transport", "http", "--port", "8103"]
+    environment: *app-env
+  api:
+    build: { context: .., dockerfile: infra/docker/app.Dockerfile }
+    command: ["uvicorn", "apps.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    environment: *app-env
+    ports: ["18000:8000"]
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_started }
+  worker:
+    build: { context: .., dockerfile: infra/docker/app.Dockerfile }
+    command: ["arq", "worker.tasks.WorkerSettings"]
+    environment: *app-env
+    depends_on: [api, mcp-portfolio, mcp-marketplace, mcp-workspace, ollama]
+
+volumes: { pgdata: {}, ollama: {}, gigsim: {} }

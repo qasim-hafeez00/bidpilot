@@ -1,13 +1,30 @@
 name: CI
 on: [push, pull_request]
 jobs:
-  checks:
+  python:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env: { POSTGRES_USER: bidpilot, POSTGRES_PASSWORD: bidpilot, POSTGRES_DB: bidpilot }
+        ports: ["15432:5432"]
+    env: { LLM_DISABLED: "1", PYTHONWARNINGS: ignore }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-      - run: python -m pip install -e ".[dev]"
+        with: { python-version: "3.12" }
+      - run: pip install -e ".[dev]"
+      - name: Repo rules (no secrets, gigsim/ unchanged, prompts only in agent/prompts, numbers trace to results)
+        run: python -m scripts.check_repo_rules
       - run: ruff check .
-      - run: pytest -q
+      - name: Unit + contract tests (MCP schema snapshots, in-memory MCP client)
+        run: pytest -q tests/unit tests/contract
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - run: cd apps/web && npm ci && npx tsc -p tsconfig.json && npx vite build
+      - name: Generated API client is up to date
+        run: cd apps/web && npx openapi-typescript ../../apps/api/openapi.json -o /tmp/schema.d.ts && diff -q /tmp/schema.d.ts src/lib/api/schema.d.ts
