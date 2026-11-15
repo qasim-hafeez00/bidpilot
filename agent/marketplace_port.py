@@ -1,10 +1,39 @@
-from typing import Protocol, Any
+"""R1 - the single marketplace interface. Two adapters implement it (switched by agent/config.yaml marketplace.mode):
 
+    mcp_servers/marketplace/adapters/gigsim.py       GigSim REST simulator
+    mcp_servers/marketplace/adapters/upwork_live.py  official Upwork MCP server (OAuth 2.1, drafts only)
+
+The Marketplace MCP server owns the adapter; agents only ever see the MCP tools, so the graph cannot tell
+which marketplace it is talking to.
+"""
+from __future__ import annotations
+
+from typing import Any, Protocol, runtime_checkable
+
+
+class MarketplaceError(RuntimeError):
+    """Non-retryable marketplace error (4xx other than 429)."""
+
+
+class MarketplaceUnavailable(RuntimeError):
+    """Retryable: rate limited, 5xx, network down. Callers queue the work and show degraded mode."""
+
+
+@runtime_checkable
 class MarketplacePort(Protocol):
-    async def search_jobs(self, query: str) -> list[dict[str, Any]]: ...
+    name: str
+    supports_submit: bool  # False in live mode: proposals stay drafts until the user confirms on Upwork
+
+    async def search_jobs(self, query: str, skills: list[str] | None = None, posted_after: float = 0.0,
+                          limit: int = 20) -> dict[str, Any]: ...
     async def get_job(self, job_id: str) -> dict[str, Any]: ...
     async def get_client_history(self, client_id: str) -> dict[str, Any]: ...
     async def get_connects_balance(self) -> dict[str, Any]: ...
+    async def get_market_stats(self, domain: str, kind: str) -> dict[str, Any]: ...
+    async def list_messages(self, thread_id: str | None = None) -> dict[str, Any]: ...
+    async def list_events(self, after_id: int = 0) -> dict[str, Any]: ...
+    async def list_proposals(self) -> dict[str, Any]: ...
     async def create_proposal_draft(self, payload: dict[str, Any], idempotency_key: str) -> dict[str, Any]: ...
-
-# TODO: Implement GigSim and live Upwork adapters behind this single interface.
+    async def submit_proposal(self, proposal_id: str, idempotency_key: str) -> dict[str, Any]: ...
+    async def send_message(self, thread_id: str, text: str, idempotency_key: str) -> dict[str, Any]: ...
+    async def health(self) -> dict[str, Any]: ...
