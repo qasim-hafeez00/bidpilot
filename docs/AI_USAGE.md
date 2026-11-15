@@ -4,6 +4,8 @@
 |---|---|
 | Claude Code (Anthropic) | Most of the code across `agent/`, `rag/`, `mcp_servers/`, `apps/`, `gigsim/`, `scripts/` and `evals/`, the docs, and the LaTeX report skeleton, written under my direction and reviewed by me. |
 
+| Claude (Anthropic), same session | The 28 reference labels in `evals/datasets/judge_labels.csv` used to calibrate the LLM judge (1-5 overall score, blind to configuration). This was done at my request; the kappa in the report is therefore agreement between two models, not judge-vs-human. |
+
 ## Things it got wrong that were caught
 
 1. **Slow data builder.** The first skill extractor ran about 500 separate regexes per job across 110k jobs and was killed after 10+ minutes.
@@ -13,6 +15,8 @@
 3. **MCP session lifecycle.** Sessions were entered in one asyncio task and closed in another, which crashed anyio on shutdown. Fixed
    with one owner task per session.
 4. **Port assumption.** It assumed GigSim's default port 8081 was free; another local service answered with HTML. Ports were moved to the 18xxx range.
-5. **Missing output schemas.** The pinned MCP SDK (1.8.0) did not support declared output schemas, which A2 requires. Upgraded to 1.12.4.
+5. **Citation format.** Its Critic only accepted `[E:id]` markers; gpt-oss emits full-width brackets, so nearly every draft was
+   rejected and markers leaked into final text. Found in the proposal evaluation and fixed with a normaliser and a regression test.
+6. **Missing output schemas.** The pinned MCP SDK (1.8.0) did not support declared output schemas, which A2 requires. Upgraded to 1.12.4.
 
 I am accountable for every line. Numbers in the report come only from `evals/results/`.

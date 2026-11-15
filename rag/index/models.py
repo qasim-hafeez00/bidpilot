@@ -39,7 +39,7 @@ def _reranker():
 def _db() -> sqlite3.Connection:
     p = Path(os.environ.get("EMB_CACHE_PATH", cfg.ROOT / "data" / "processed" / "emb_cache.sqlite"))
     p.parent.mkdir(parents=True, exist_ok=True)
-    db = sqlite3.connect(str(p), check_same_thread=False)
+    db = sqlite3.connect(str(p), check_same_thread=False, timeout=120)  # shared by parallel eval processes
     db.execute("CREATE TABLE IF NOT EXISTS e (k TEXT PRIMARY KEY, v BLOB)")
     return db
 

@@ -1,0 +1,41 @@
+v0    R@5=0.528 MRR=0.704 nDCG@10=0.595 p95=0.001s  (1s)
+wrote evals\results\rag_variants.json
+v1    R@5=0.547 MRR=0.670 nDCG@10=0.576 p95=0.011s  (1s)
+wrote evals\results\rag_variants.json
+v2    R@5=0.523 MRR=0.669 nDCG@10=0.571 p95=0.004s  (0s)
+wrote evals\results\rag_variants.json
+v3    R@5=0.533 MRR=0.642 nDCG@10=0.552 p95=16.704s  (1436s)
+wrote evals\results\rag_variants.json
+v4    R@5=0.521 MRR=0.626 nDCG@10=0.554 p95=0.005s  (1s)
+wrote evals\results\rag_variants.json
+v5    R@5=0.559 MRR=0.661 nDCG@10=0.580 p95=0.003s  (0s)
+wrote evals\results\rag_variants.json
+v6    R@5=0.539 MRR=0.653 nDCG@10=0.564 p95=0.003s  (1s)
+wrote evals\results\rag_variants.json
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Downloads\GigBid_Student_Starter_Kit_v0.1\gigbid-starter-kit\evals\runners\rag_eval.py", line 100, in <module>
+    main()
+  File "D:\Downloads\GigBid_Student_Starter_Kit_v0.1\gigbid-starter-kit\evals\runners\rag_eval.py", line 85, in main
+    s, rows = run_variant(v, a.split, a.limit)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Downloads\GigBid_Student_Starter_Kit_v0.1\gigbid-starter-kit\evals\runners\rag_eval.py", line 39, in run_variant
+    hits = retriever.retrieve(j, persona, k=10, variant=variant)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Downloads\GigBid_Student_Starter_Kit_v0.1\gigbid-starter-kit\rag\retriever.py", line 22, in retrieve
+    return get(variant).retrieve_variant(job, persona, k=k or cfg.get("rag.k", 8), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Downloads\GigBid_Student_Starter_Kit_v0.1\gigbid-starter-kit\rag\variants\best.py", line 9, in retrieve_variant
+    return retrieve(job, persona, Flags.of(PRESET), k=k, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Downloads\GigBid_Student_Starter_Kit_v0.1\gigbid-starter-kit\rag\pipeline.py", line 109, in retrieve
+    per_query.append((req, chunk_scores(persona, q, flags, types)))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Downloads\GigBid_Student_Starter_Kit_v0.1\gigbid-starter-kit\rag\pipeline.py", line 89, in chunk_scores
+    qv = embed([query], is_query=True)[0]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Downloads\GigBid_Student_Starter_Kit_v0.1\gigbid-starter-kit\rag\index\models.py", line 52, in embed
+    with _lock:
+                
+sqlite3.OperationalError: database is locked

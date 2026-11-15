@@ -136,3 +136,11 @@ def test_both_graphs_compile_with_required_shape():
     nodes = set(bid.nodes)
     assert {"analyst", "risk_assessor", "fit_matcher", "decide", "writer", "verifier", "critic", "compliance", "approval", "submit"} <= nodes
     assert {"read_messages", "classify", "find_slots", "draft_reply", "approve", "send"} <= set(build_conversation_graph().get_graph().nodes)
+
+
+def test_fullwidth_citation_markers_are_normalised():
+    from agent.nodes.writer import normalize_markers
+
+    x = "I built it\u3010E:fullstack:proposal:104\u3011. Also [E: a:b ]."
+    assert normalize_markers(x) == "I built it[E:fullstack:proposal:104]. Also [E:a:b]."
+    assert "\u3010" not in strip_markers(x)

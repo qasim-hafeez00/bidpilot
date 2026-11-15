@@ -1,0 +1,25 @@
+{
+  "env": {
+    "commit": "555c587",
+    "machine": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+    "python": "3.12.6",
+    "timestamp": "2026-11-15T23:16:37"
+  },
+  "arms": {
+    "A_problem_first": {
+      "n": 16,
+      "replies": 4,
+      "rate": 0.25
+    },
+    "B_question_first": {
+      "n": 15,
+      "replies": 1,
+      "rate": 0.067
+    }
+  },
+  "z": 1.387,
+  "p_two_prop_z": 0.1655,
+  "p_fisher": 0.3326,
+  "significant_at_0.05": false,
+  "note": "GigSim clients use the rule model unless GIGSIM_CLIENT_MODE=llm; reply rate measures fit to that model."
+}

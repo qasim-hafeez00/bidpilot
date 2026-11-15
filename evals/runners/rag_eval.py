@@ -78,8 +78,17 @@ def main() -> None:
     ap.add_argument("--split", default="dev")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--out", default="rag_variants.json")
+    ap.add_argument("--merge", action="store_true", help="keep other variants already in --out")
     a = ap.parse_args()
     summaries, all_rows = [], []
+    if a.merge and (RESULTS / a.out).exists():  # keep variants measured by an earlier run (same split and limit)
+        import json
+
+        prev = json.loads((RESULTS / a.out).read_text(encoding="utf-8"))
+        todo = set(a.variants.split(","))
+        summaries = [v for v in prev["variants"] if v["variant"] not in todo]
+        with open(RESULTS / a.out.replace(".json", "_rows.csv"), encoding="utf-8") as fh:
+            all_rows = [r for r in csv.DictReader(fh) if r["variant"] not in todo]
     for v in a.variants.split(","):
         t0 = time.time()
         s, rows = run_variant(v, a.split, a.limit)

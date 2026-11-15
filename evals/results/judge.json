@@ -1,0 +1,306 @@
+{
+  "env": {
+    "commit": "555c587",
+    "machine": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+    "python": "3.12.6",
+    "timestamp": "2026-11-15T22:17:54"
+  },
+  "mean_overall_by_config": {
+    "best": 3.214,
+    "v0": 3.143
+  },
+  "calibration": {
+    "status": "calibrated",
+    "kappa_quadratic": 0.526,
+    "n": 28,
+    "disagreements": [
+      {
+        "key": "best:dfu-0162-b381ab",
+        "judge": 2,
+        "human": 4
+      }
+    ]
+  },
+  "scores": [
+    {
+      "key": "best:dai-0146-711e9d",
+      "config": "best",
+      "overall": 4,
+      "relevance": 4,
+      "specificity": 3,
+      "personalisation": 4,
+      "professionalism": 5,
+      "reason": "The proposal is highly relevant and professional, directly addressing the need for a strategy and prototype, though it lacks specific metrics or deep technical details regarding the client's existing data infrastructure."
+    },
+    {
+      "key": "best:dai-0017-cd7b8e",
+      "config": "best",
+      "overall": 3,
+      "relevance": 3,
+      "specificity": 2,
+      "personalisation": 3,
+      "professionalism": 4,
+      "reason": "The proposal is professional and relevant but lacks the specific technical depth required, failing to address the client's explicit need for SDK/TLL file experience and only partially covering the hardware components."
+    },
+    {
+      "key": "best:dai-0161-16d457",
+      "config": "best",
+      "overall": 2,
+      "relevance": 3,
+      "specificity": 2,
+      "personalisation": 2,
+      "professionalism": 4,
+      "reason": "The proposal is too generic and fails to address the specific technical challenges of chemical structure classification (e.g., graph neural networks or molecular fingerprints), relying instead on irrelevant churn prediction experience."
+    },
+    {
+      "key": "best:dai-0081-05777b",
+      "config": "best",
+      "overall": 4,
+      "relevance": 4,
+      "specificity": 4,
+      "personalisation": 3,
+      "professionalism": 4,
+      "reason": "The proposal is concise and relevant with specific metrics, but it lacks a direct mention of the required web development stack (JavaScript/Java) and feels slightly generic in its opening."
+    },
+    {
+      "key": "best:dfu-0079-a0a11a",
+      "config": "best",
+      "overall": 4,
+      "relevance": 4,
+      "specificity": 3,
+      "personalisation": 4,
+      "professionalism": 4,
+      "reason": "The proposal correctly identifies the core requirements (Figma to Elementor, editable assets) and asks a relevant clarifying question, but it fails to provide the specific time estimate explicitly requested in the job post."
+    },
+    {
+      "key": "best:dfu-0145-c6b822",
+      "config": "best",
+      "overall": 5,
+      "relevance": 5,
+      "specificity": 4,
+      "personalisation": 4,
+      "professionalism": 5,
+      "reason": "The proposal directly addresses the need for a working WooCommerce/Stripe subscription demo and immediate availability, backed by specific relevant experience and a clear first step."
+    },
+    {
+      "key": "best:dfu-0035-8b8c8c",
+      "config": "best",
+      "overall": 4,
+      "relevance": 4,
+      "specificity": 4,
+      "personalisation": 3,
+      "professionalism": 5,
+      "reason": "The proposal is concise, professional, and directly addresses the core technical requirements (full-stack, testing, CI/CD) with a clear first milestone, though it lacks specific references to the job's collaborative or Agile aspects."
+    },
+    {
+      "key": "best:dfu-0162-b381ab",
+      "config": "best",
+      "overall": 2,
+      "relevance": 2,
+      "specificity": 4,
+      "personalisation": 2,
+      "professionalism": 4,
+      "reason": "The proposal ignores the client's explicit mandatory requirements (3+ years experience, long-term cooperation, full-stack scope) and focuses narrowly on performance optimization, failing to address the COD business model or the 'reliable person' aspect."
+    },
+    {
+      "key": "best:dfu-0166-aa31f3",
+      "config": "best",
+      "overall": 2,
+      "relevance": 2,
+      "specificity": 3,
+      "personalisation": 2,
+      "professionalism": 4,
+      "reason": "The proposal fails to address the core requirement of W3 Total Cache expertise and server-side optimization, instead focusing on general full-stack and frontend performance metrics."
+    },
+    {
+      "key": "best:dda-0044-02548d",
+      "config": "best",
+      "overall": 4,
+      "relevance": 4,
+      "specificity": 4,
+      "personalisation": 4,
+      "professionalism": 5,
+      "reason": "The proposal is strong and specific, directly addressing the data-to-dashboard pipeline with a concrete first milestone, though it slightly misses the explicit request for frequent meetings and the 'quick revert' urgency."
+    },
+    {
+      "key": "best:dda-0142-68a1d0",
+      "config": "best",
+      "overall": 1,
+      "relevance": 1,
+      "specificity": 1,
+      "personalisation": 1,
+      "professionalism": 2,
+      "reason": "The proposal cites irrelevant finance/VBA experience and fails to address the core CAD/Revit low-voltage design requirements."
+    },
+    {
+      "key": "best:dda-0030-7fffab",
+      "config": "best",
+      "overall": 4,
+      "relevance": 4,
+      "specificity": 3,
+      "personalisation": 3,
+      "professionalism": 5,
+      "reason": "The proposal is professional and relevant, but it lacks specific details on how to handle the distinct A/B testing phases and bounce rate reduction strategies mentioned in the job description."
+    },
+    {
+      "key": "best:dda-0115-721201",
+      "config": "best",
+      "overall": 2,
+      "relevance": 2,
+      "specificity": 3,
+      "personalisation": 2,
+      "professionalism": 4,
+      "reason": "The proposal is too narrow, focusing only on tracking and reporting while ignoring the core requirement of campaign management (PMax, Shopping, keyword research) and failing to address the specific 'assistant' role structure."
+    },
+    {
+      "key": "best:dda-0182-148234",
+      "config": "best",
+      "overall": 4,
+      "relevance": 4,
+      "specificity": 3,
+      "personalisation": 4,
+      "professionalism": 4,
+      "reason": "The proposal directly addresses the technical stack and specific dashboard requirements with a clear first milestone, though it relies on vague references to past work rather than concrete metrics."
+    },
+    {
+      "key": "v0:dai-0146-711e9d",
+      "config": "v0",
+      "overall": 3,
+      "relevance": 4,
+      "specificity": 3,
+      "personalisation": 3,
+      "professionalism": 4,
+      "reason": "The proposal is professional and relevant but lacks the specific, forward-looking strategic depth and concrete examples of value creation requested by the client, relying instead on generic claims of experience."
+    },
+    {
+      "key": "v0:dai-0017-cd7b8e",
+      "config": "v0",
+      "overall": 3,
+      "relevance": 3,
+      "specificity": 2,
+      "personalisation": 3,
+      "professionalism": 4,
+      "reason": "The proposal addresses the core Python/GUI requirement but fails to mention the critical SDK/TLL hardware communication skills and specific components like the turret or illumination, making it feel generic and lacking in technical depth."
+    },
+    {
+      "key": "v0:dai-0161-16d457",
+      "config": "v0",
+      "overall": 2,
+      "relevance": 3,
+      "specificity": 2,
+      "personalisation": 3,
+      "professionalism": 4,
+      "reason": "The proposal is too brief and lacks concrete technical details on model architecture or specific metrics, relying on generic claims rather than demonstrating deep expertise in cheminformatics."
+    },
+    {
+      "key": "v0:dai-0081-05777b",
+      "config": "v0",
+      "overall": 4,
+      "relevance": 4,
+      "specificity": 5,
+      "personalisation": 4,
+      "professionalism": 5,
+      "reason": "The proposal is concise, professional, and backed by strong specific metrics, though it could better address the 'integration into existing applications' aspect mentioned in the job description."
+    },
+    {
+      "key": "v0:dfu-0079-a0a11a",
+      "config": "v0",
+      "overall": 2,
+      "relevance": 2,
+      "specificity": 1,
+      "personalisation": 2,
+      "professionalism": 3,
+      "reason": "The proposal fails to provide the requested time estimate, cites irrelevant PHP migration experience instead of WordPress/Elementor skills, and ignores the specific requirement for a healing seminar context."
+    },
+    {
+      "key": "v0:dfu-0145-c6b822",
+      "config": "v0",
+      "overall": 4,
+      "relevance": 4,
+      "specificity": 3,
+      "personalisation": 4,
+      "professionalism": 5,
+      "reason": "The proposal directly addresses the technical requirements and offers a concrete first step, but it lacks the specific portfolio evidence (links to live sites) that the client explicitly requested to verify expertise."
+    },
+    {
+      "key": "v0:dfu-0035-8b8c8c",
+      "config": "v0",
+      "overall": 4,
+      "relevance": 4,
+      "specificity": 3,
+      "personalisation": 3,
+      "professionalism": 5,
+      "reason": "The proposal is professional and directly addresses the core technical requirements with a concrete first milestone, though it lacks specific details on the programming languages and frameworks requested in the job description."
+    },
+    {
+      "key": "v0:dfu-0162-b381ab",
+      "config": "v0",
+      "overall": 2,
+      "relevance": 3,
+      "specificity": 2,
+      "personalisation": 2,
+      "professionalism": 4,
+      "reason": "The proposal fails to address the client's critical COD business model and long-term partnership requirement, relying instead on generic performance claims and a single irrelevant case study."
+    },
+    {
+      "key": "v0:dfu-0166-aa31f3",
+      "config": "v0",
+      "overall": 2,
+      "relevance": 2,
+      "specificity": 3,
+      "personalisation": 2,
+      "professionalism": 4,
+      "reason": "The proposal fails to address the core requirement of W3 Total Cache expertise and server-side optimization, focusing instead on unrelated front-end metrics and plugin development."
+    },
+    {
+      "key": "v0:dda-0044-02548d",
+      "config": "v0",
+      "overall": 4,
+      "relevance": 4,
+      "specificity": 4,
+      "personalisation": 3,
+      "professionalism": 4,
+      "reason": "The proposal is strong and specific with relevant metrics, but it fails to explicitly acknowledge the client's request for close collaboration (2-3 meetings a week) and the 'quick revert' timeline, which are key constraints."
+    },
+    {
+      "key": "v0:dda-0142-68a1d0",
+      "config": "v0",
+      "overall": 2,
+      "relevance": 2,
+      "specificity": 2,
+      "personalisation": 3,
+      "professionalism": 4,
+      "reason": "The proposal is too brief and fails to address the majority of the job requirements such as creating one-line drawings, RCPs, or the desire for a resource who can take on design responsibility, offering only a narrow first milestone."
+    },
+    {
+      "key": "v0:dda-0030-7fffab",
+      "config": "v0",
+      "overall": 4,
+      "relevance": 4,
+      "specificity": 3,
+      "personalisation": 3,
+      "professionalism": 5,
+      "reason": "The proposal is professional and relevant, but it lacks specific details on how to handle the distinct A/B testing phases and bounce rate reduction strategies mentioned in the job description."
+    },
+    {
+      "key": "v0:dda-0115-721201",
+      "config": "v0",
+      "overall": 4,
+      "relevance": 3,
+      "specificity": 4,
+      "personalisation": 4,
+      "professionalism": 5,
+      "reason": "The proposal is professional, specific, and includes the required keyword, but it focuses heavily on analytics and reporting rather than the core requirement of hands-on campaign implementation and management support."
+    },
+    {
+      "key": "v0:dda-0182-148234",
+      "config": "v0",
+      "overall": 4,
+      "relevance": 4,
+      "specificity": 3,
+      "personalisation": 4,
+      "professionalism": 5,
+      "reason": "The proposal directly addresses the technical stack and specific dashboard requirements with a clear first milestone and a relevant clarifying question, though it lacks specific metrics for the competitor pricing component."
+    }
+  ]
+}

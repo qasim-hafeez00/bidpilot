@@ -1,0 +1,13 @@
+\begin{table}[t]\centering\small\caption{Recall@5 by persona and job type. Source: \texttt{rag\_variants.json}.}\label{tab:ragbreak}
+\begin{tabular}{lrr}\toprule Slice & V0 naive dense & V2 hybrid BM25+dense\\\midrule
+ai\_ml & 0.574 & 0.577 \\
+fullstack & 0.556 & 0.549 \\
+data\_analyst & 0.504 & 0.493 \\
+\midrule
+adjacent & 0.418 & 0.359 \\
+few\_req (<4 skills) & 0.533 & 0.545 \\
+in\_domain & 0.557 & 0.561 \\
+injection & 0.591 & 0.577 \\
+multi\_req (>=4 skills) & 0.560 & 0.532 \\
+off\_domain & 0.317 & 0.237 \\
+\bottomrule\end{tabular}\end{table}

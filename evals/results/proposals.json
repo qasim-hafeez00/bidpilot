@@ -1,0 +1,42 @@
+{
+  "env": {
+    "commit": "555c587",
+    "machine": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+    "python": "3.12.6",
+    "timestamp": "2026-11-15T22:12:37"
+  },
+  "per_persona": 5,
+  "split": "dev",
+  "model_profile": "open_hosted",
+  "client_mode": "rule",
+  "summary": {
+    "best": {
+      "n": 15,
+      "submitted": 14,
+      "unsupported_per_proposal_before": 0.2,
+      "unsupported_per_proposal_after": 0.4,
+      "verifier_removed_per_proposal": 1.267,
+      "critic_loops_mean": 2.8,
+      "reply_rate": 0.143,
+      "p50_latency_s": 73.5,
+      "p95_latency_s": 286.0,
+      "tokens_per_proposal": 4888.5,
+      "usd_per_proposal": 0.00116,
+      "template_fallback_rate": 0.0
+    },
+    "v0": {
+      "n": 15,
+      "submitted": 14,
+      "unsupported_per_proposal_before": 0.267,
+      "unsupported_per_proposal_after": 0.2,
+      "verifier_removed_per_proposal": 1.0,
+      "critic_loops_mean": 2.8,
+      "reply_rate": 0.143,
+      "p50_latency_s": 29.8,
+      "p95_latency_s": 168.3,
+      "tokens_per_proposal": 4782.6,
+      "usd_per_proposal": 0.00099,
+      "template_fallback_rate": 0.0
+    }
+  }
+}

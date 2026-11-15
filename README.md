@@ -7,9 +7,9 @@ and Connects spend before anything leaves the system.
 It implements the *GigBid* specification: LangGraph multi-agent graphs, advanced RAG, MCP servers, a React + FastAPI web
 app, a background worker and evaluation in CI. It runs end to end on a CPU laptop with open-weight models.
 
-> Status: the system is complete and runs locally. Evaluation results are filled in automatically from `evals/results/`.
-> Anything not yet measured shows as *pending* in the report, never as an invented number. Deployment and the demo
-> video are not done yet (see [Known gaps](#known-gaps)).
+> **Live demo:** https://bidpilot-e409.onrender.com (Render free tier: the first request after 15 idle minutes takes about a minute).
+> Reviewer login: `reviewer@bidpilot.dev` / `reviewer-pass-2026` (a demo account on the simulator; override with `REVIEWER_EMAIL`/`REVIEWER_PASSWORD`).
+> Report: [`report/report.tex`](report/report.tex). Every table is generated from `evals/results/` by `python -m scripts.build_report_tables`.
 
 ## How it works
 
@@ -65,11 +65,13 @@ all clearly labelled. See [docs/DATA_CARD.md](docs/DATA_CARD.md).
 
 ## Known gaps
 
-* **Deployment:** not live yet. It needs a Render/Railway account and a hosted model key (`GROQ_API_KEY`).
-* **LLM-heavy experiments** (proposal quality, R&D A tool granularity, R&D C single-agent vs. supervisor vs. graph, X2 A/B):
-  the runners exist, but the CPU-only laptop is slow (Qwen2.5-3B at 6 tok/s). Results land in `evals/results/` as they finish.
-* **Judge calibration** needs 30 proposals labelled by a human (`evals/datasets/judge_labels_template.csv`). The blind
-  classmate panel was not run.
+* **Deployment** runs on Render's free plan (`render.yaml`). To fit the 512 MB instance, the hosted app runs the MCP servers
+  in-process (`MCP_TRANSPORT=memory`) and replaces the cross-encoder with a bi-encoder score (`RERANK_DISABLED=1`). Set
+  `GROQ_API_KEY` in the Render dashboard; without it, the Writer falls back to its evidence template.
+* **Sample sizes** are small (128 jobs for retrieval, 60 for decisions, 15 proposals per configuration), because the
+  evaluations ran on a CPU laptop and a free hosted-model tier. The report states n next to every number.
+* **Judge reference labels** (`evals/datasets/judge_labels.csv`) were produced by an AI assistant at the author's request,
+  not by a human, so the reported kappa is model-vs-model agreement. The blind classmate panel was not run.
 * The demo video and the technical write-up are not produced by this repository.
 
 ## Licence and attribution

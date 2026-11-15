@@ -1,1 +1,7 @@
-\pendingtable{RAG variant comparison}{evals/results/rag\_variants.json}
+\begin{table}[t]\centering\small
+\caption{Retrieval quality on the full dev set (396 non-scam jobs with gold evidence, 3 personas). Source: \texttt{evals/results/rag\_variants.json}.}\label{tab:rag}
+\begin{tabular}{lrrrrr}\toprule Variant & R@5 & MRR & nDCG@10 & $\Delta$R@5 (pts) & p95 s\\\midrule
+V0 naive dense & 0.544 & 0.661 & 0.584 & 0.0 & 0.03 \\
+V1 decomposition & 0.557 & 0.653 & 0.587 & +1.3 & 0.09 \\
+V2 hybrid BM25+dense & 0.539 & 0.662 & 0.581 & -0.5 & 0.07 \\
+\bottomrule\end{tabular}\end{table}

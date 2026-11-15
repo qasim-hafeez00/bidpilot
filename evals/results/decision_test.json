@@ -1,0 +1,248 @@
+{
+  "env": {
+    "commit": "555c587",
+    "machine": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+    "python": "3.12.6",
+    "timestamp": "2026-11-15T22:37:32"
+  },
+  "split": "test",
+  "limit": 15,
+  "overall": {
+    "n": 45,
+    "bid_skip": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 10
+    },
+    "accuracy": 0.7778,
+    "scam": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4
+    },
+    "injection_detection_recall": 0.0,
+    "injection_false_positive_rate": 0.0,
+    "price_in_fair_band": 1.0,
+    "watch_rate": 0.0,
+    "latency_p50_s": 22.922,
+    "latency_p95_s": 148.625
+  },
+  "by_persona": {
+    "ai_ml": {
+      "n": 15,
+      "bid_skip": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 3
+      },
+      "accuracy": 0.8,
+      "scam": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "injection_detection_recall": 0.0,
+      "injection_false_positive_rate": 0.0,
+      "price_in_fair_band": 1.0,
+      "watch_rate": 0.0,
+      "latency_p50_s": 45.573,
+      "latency_p95_s": 148.625
+    },
+    "fullstack": {
+      "n": 15,
+      "bid_skip": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 4
+      },
+      "accuracy": 0.7333,
+      "scam": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "injection_detection_recall": 0.0,
+      "injection_false_positive_rate": 0.0,
+      "price_in_fair_band": 1.0,
+      "watch_rate": 0.0,
+      "latency_p50_s": 16.946,
+      "latency_p95_s": 172.167
+    },
+    "data_analyst": {
+      "n": 15,
+      "bid_skip": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 3
+      },
+      "accuracy": 0.8,
+      "scam": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "injection_detection_recall": 0.0,
+      "injection_false_positive_rate": 0.0,
+      "price_in_fair_band": 1.0,
+      "watch_rate": 0.0,
+      "latency_p50_s": 21.054,
+      "latency_p95_s": 44.749
+    }
+  },
+  "by_job_type": {
+    "in_domain": {
+      "n": 26,
+      "bid_skip": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 7
+      },
+      "accuracy": 0.7308,
+      "scam": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "injection_detection_recall": null,
+      "injection_false_positive_rate": 0.0,
+      "price_in_fair_band": 1.0,
+      "watch_rate": 0.0,
+      "latency_p50_s": 21.059,
+      "latency_p95_s": 152.136
+    },
+    "adjacent": {
+      "n": 5,
+      "bid_skip": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1
+      },
+      "accuracy": 0.8,
+      "scam": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "injection_detection_recall": null,
+      "injection_false_positive_rate": 0.0,
+      "price_in_fair_band": 1.0,
+      "watch_rate": 0.0,
+      "latency_p50_s": 37.683,
+      "latency_p95_s": 66.136
+    },
+    "scam": {
+      "n": 4,
+      "bid_skip": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "accuracy": 1.0,
+      "scam": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 4
+      },
+      "injection_detection_recall": null,
+      "injection_false_positive_rate": 0.0,
+      "price_in_fair_band": null,
+      "watch_rate": 0.0,
+      "latency_p50_s": 15.051,
+      "latency_p95_s": 53.098
+    },
+    "injection": {
+      "n": 5,
+      "bid_skip": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "accuracy": 0.6,
+      "scam": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "injection_detection_recall": 0.0,
+      "injection_false_positive_rate": NaN,
+      "price_in_fair_band": 1.0,
+      "watch_rate": 0.0,
+      "latency_p50_s": 12.525,
+      "latency_p95_s": 44.738
+    },
+    "off_domain": {
+      "n": 5,
+      "bid_skip": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "accuracy": 1.0,
+      "scam": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "injection_detection_recall": null,
+      "injection_false_positive_rate": 0.0,
+      "price_in_fair_band": null,
+      "watch_rate": 0.0,
+      "latency_p50_s": 22.927,
+      "latency_p95_s": 41.332
+    }
+  }
+}

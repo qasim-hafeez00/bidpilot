@@ -24,7 +24,14 @@ def evidence_block(evidence: list[dict[str, Any]], limit: int = 7) -> str:
     return "\n".join(lines) or "(no evidence found)"
 
 
+def normalize_markers(text: str) -> str:
+    """Some models (gpt-oss) emit 【E:id】 or [E: id]; the Critic, verifier and UI expect [E:id]."""
+    text = re.sub(r"【\s*E\s*:\s*([^】]+?)\s*】", r"[E:\1]", text)
+    return re.sub(r"\[\s*E\s*:\s*([^\]]+?)\s*\]", r"[E:\1]", text)
+
+
 def parse(text: str, n_questions: int) -> tuple[str, list[str]]:
+    text = normalize_markers(text)
     m = re.search(r"COVER LETTER:\s*(.*?)(?:\n\s*ANSWERS:|$)", text, re.S | re.I)
     cover = (m.group(1) if m else text).strip()
     answers: list[str] = []

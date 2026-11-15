@@ -1,0 +1,32 @@
+{
+  "env": {
+    "commit": "555c587",
+    "machine": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+    "python": "3.12.6",
+    "timestamp": "2026-11-15T22:21:30"
+  },
+  "model": "openai/gpt-oss-20b",
+  "results": {
+    "fine": {
+      "tool_selection_accuracy": 1.0,
+      "argument_accuracy": 1.0,
+      "tokens_per_task": 508.3,
+      "mean_latency_s": 2.11,
+      "n": 40
+    },
+    "coarse": {
+      "tool_selection_accuracy": 0.85,
+      "argument_accuracy": 0.3,
+      "tokens_per_task": 295.6,
+      "mean_latency_s": 2.24,
+      "n": 40
+    },
+    "best": {
+      "tool_selection_accuracy": 0.975,
+      "argument_accuracy": 0.975,
+      "tokens_per_task": 758.9,
+      "mean_latency_s": 5.02,
+      "n": 40
+    }
+  }
+}

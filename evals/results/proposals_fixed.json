@@ -1,0 +1,28 @@
+{
+  "env": {
+    "commit": "555c587",
+    "machine": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+    "python": "3.12.6",
+    "timestamp": "2026-11-15T23:24:32"
+  },
+  "per_persona": 5,
+  "split": "dev",
+  "model_profile": "open_hosted",
+  "client_mode": "rule",
+  "summary": {
+    "best": {
+      "n": 15,
+      "submitted": 14,
+      "unsupported_per_proposal_before": 0.133,
+      "unsupported_per_proposal_after": 0.133,
+      "verifier_removed_per_proposal": 1.2,
+      "critic_loops_mean": 2.8,
+      "reply_rate": 0.357,
+      "p50_latency_s": 27.1,
+      "p95_latency_s": 52.6,
+      "tokens_per_proposal": 4635.1,
+      "usd_per_proposal": 0.0,
+      "template_fallback_rate": 0.0
+    }
+  }
+}

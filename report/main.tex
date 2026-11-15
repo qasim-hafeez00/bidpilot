@@ -1,0 +1,382 @@
+% BidPilot (GigBid) - R&D report. Compile: latexmk -pdf report.tex  (or upload the whole report/ folder to Overleaf).
+% STANDALONE copy, built by scripts/build_report_tables.py. Tables are generated from evals/results/*.json by `python -m scripts.build_report_tables` into report/generated/.
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1.9cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,booktabs,xcolor,enumitem,graphicx,caption,float}
+\usepackage[hidelinks]{hyperref}
+\setlist{nosep,leftmargin=*}
+\captionsetup{font=small,labelfont=bf}
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\newcommand{\pending}{\textcolor{orange!80!black}{\textit{not measured}}}
+\newcommand{\file}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\pendingtable}[2]{\begin{center}\fbox{\parbox{0.9\linewidth}{\small\textbf{#1:} \pending{} at this commit; source file \file{#2}.}}\end{center}}
+\emergencystretch=3em
+\newcommand{\ragvzeroRfive}{0.544}
+\newcommand{\ragvzeroNdcg}{0.584}
+\newcommand{\ragvoneRfive}{0.557}
+\newcommand{\ragvoneNdcg}{0.587}
+\newcommand{\ragvtwoRfive}{0.539}
+\newcommand{\ragvtwoNdcg}{0.581}
+\newcommand{\decF}{0.645}
+\newcommand{\decScamP}{0.667}
+\newcommand{\decScamR}{1.000}
+\newcommand{\decInj}{1.000}
+\newcommand{\decPrice}{1.000}
+\newcommand{\decPninetyfive}{44.42}
+
+\providecommand{\decF}{\pending}\providecommand{\decScamP}{\pending}\providecommand{\decScamR}{\pending}
+\providecommand{\decInj}{\pending}\providecommand{\decPrice}{\pending}\providecommand{\decPninetyfive}{\pending}
+
+\title{\textbf{BidPilot: a multi-agent freelancer copilot}\\[2pt]\large R\&D report (AI-4016, GigBid) -- engineering design review}
+\author{Qasim Hafeez (22F-3812)\\\small Code: \url{https://github.com/qasim-hafeez00/bidpilot} \quad Deployment: \url{https://bidpilot-e409.onrender.com}}
+\date{November 2026}
+
+\begin{document}
+\maketitle
+\begin{abstract}\noindent
+BidPilot implements GigBid: LangGraph agents find freelance jobs, decide whether a job is worth a bid, write proposals
+grounded in portfolio evidence and handle client conversations, while a human approves every proposal, message and
+Connects spend. All marketplace access goes through one port with a GigSim adapter and a live Upwork MCP adapter, and every
+agent reaches its tools only through MCP. The system runs on a CPU laptop with open-weight models (Ollama, Qwen2.5 3B/7B)
+and on hosted open-weight models (gpt-oss-20b/120b via Groq). The main findings: (1) the pre-registered
+retrieval hypothesis was \emph{refuted}: requirement decomposition and hybrid BM25 did not beat naive dense retrieval on
+multi-requirement jobs, and only multi-vector project aggregation helped; (2) claim verification plus an independent fact checker
+keeps unsupported claims to a fraction of one per proposal, but the checker found cases the in-loop verifier missed;
+(3) an LLM judge agreed moderately with reference labels (quadratic $\kappa = 0.53$, $n=28$); (4) the hand-built graph used about half
+the tokens of a ReAct agent or a supervisor on the same jobs; (5) the X2 A/B test favoured problem-first openings (25\% vs.\ 6.7\% replies),
+but the difference was not significant ($p=0.33$). All numbers come from files in
+\file{evals/results/}. Sample sizes are small and are stated next to every result.
+\end{abstract}
+
+\section{Problem, constraints and budgets}
+\textbf{Workflow.} A freelancer scans feeds, spends paid Connects, writes proposals and handles replies. BidPilot automates
+discovery (Scout), assessment (Analyst, Risk, Fit, Pricing) and drafting (Writer, Critic, Compliance, Liaison). The
+freelancer keeps every decision that leaves the system.
+
+\textbf{Never automated (enforced in code, not in prompts).} Submitting a proposal, sending a message and spending Connects
+all pass through a LangGraph \texttt{interrupt()} (\file{agent/nodes/approval.py}, \file{agent/nodes/client_liaison.py}).
+Per-agent MCP allowlists mean that only the post-approval \texttt{submitter} can see \texttt{submit\_proposal}
+(\file{agent/mcp_client.py}). The optional autonomy setting can only auto-\emph{skip} low-fit jobs. Live mode only creates
+Upwork drafts, which the user confirms on Upwork.
+
+\textbf{Declared budgets} (\file{agent/config.yaml}): p95 latency $\le$ 20\,s per job analysed and $\le$ 300\,s per proposal;
+cost $\le$ \$0.002 per job analysed and $\le$ \$0.02 per proposal on the hosted profile (\$0 on the local profile); graph budgets of 30
+steps, 16k tokens and at most 2 Critic revisions per thread.
+
+\textbf{Compute reality.} Development ran on an Intel i7-8550U (4 cores, 16\,GB, no GPU). Measured Ollama throughput: Qwen2.5-3B
+6.1 tok/s and Qwen2.5-7B 2.9 tok/s. This shaped the design: rules-first nodes, LLM calls only where they add value, an LLM
+cache, and hosted open-weight models (\texttt{open\_hosted} profile) for the LLM-heavy experiments, which would otherwise have taken days on this CPU.
+
+\section{Data}
+The instructor's GigSim, persona corpora and dev set were not in the starter kit I received, so I rebuilt them
+(\file{scripts/build_data/}), keeping real and synthetic data distinct. Every record carries a \texttt{provenance} field; full
+details, licences and limitations are in \file{docs/DATA_CARD.md}.
+\begin{itemize}
+\item \textbf{Real:} 27{,}713 usable Upwork postings with skill tags, client statistics and Connects cost (Kaggle
+  \emph{upwork-freelance-jobs-60k}); pricing percentiles per domain and rate type from the 53k-posting
+  \emph{upwork-job-postings-dataset-2024}; scam phrasing from the labelled fraudulent postings in \emph{trial-1}.
+\item \textbf{Synthetic:} three personas (AI/ML, full-stack, data analyst), each with a PDF CV, 17--18 case studies, repositories
+  (README plus code), reviews and 150 past proposals labelled won/replied/ignored. The corpus is built to defeat naive RAG:
+  \emph{implied} skills appear only in code imports (\texttt{from celery import shared\_task}) or paraphrased prose (``a background
+  worker queue''), and each project is described three ways. Client hidden preferences, scam payloads, injected instructions and
+  screening questions are also synthetic.
+\item \textbf{Rejected:} \emph{freelancer-success} (hourly rates capped; median \$280 for every skill) and the 1.3M-row contracts
+  dataset (redundant with the postings for pricing).
+\item \textbf{Splits:} a dev set of 200 jobs per persona with gold bid/skip, scam and injection labels, graded gold evidence and a fair
+  price band; a git-ignored held-out split of 80 jobs per persona with unseen clients stands in for the hidden test set.
+\end{itemize}
+\textbf{Threat to validity.} I wrote both the persona generator and the system, so they share vocabulary. Treat the results as
+an upper bound on what a stranger's portfolio would give.
+
+\section{Architecture}
+\begin{figure}[H]\centering\scriptsize
+\begin{verbatim}
+ Scout (worker, cron) --job_id--> intake --Send--> Job Analyst ----\
+                                         --Send--> Risk Assessor ---> decide --skip/watch--> END
+                                         --Send--> Fit Matcher -----/     \--bid--> Pricing -> Writer -> verify claims
+   Critic --fail (<=2x)--> Writer;  Critic --pass--> Compliance --block--> END (reason shown in UI)
+   Compliance --> dry-run preview --> [interrupt: approve | edit | reject] --> submit (idempotent) --> END
+ Conversation graph: read messages -> classify intent -> (find slots) -> draft reply -> [interrupt] -> send (+ tentative hold)
+\end{verbatim}
+\caption{Both graphs are hand-written \texttt{StateGraph}s (\file{agent/graphs/}); Mermaid renderings are in \file{docs/images/}.}
+\end{figure}
+\textbf{Why each agent exists.} The Analyst produces a typed \texttt{JobSpec} (rules first, small LLM for hidden needs). The Risk
+Assessor needs the client-history tool and a lexicon calibrated on scam text. The Fit Matcher is the only reader of the
+portfolio and maps each decomposed requirement to evidence. Pricing combines market percentiles, the client's range and the
+user's floor with a Connects expected-value check. The Writer is the only node that needs the strongest model. The Critic and
+the Compliance Guard are separate because they fail for different reasons (quality vs.\ policy), and only Compliance may block.
+The Liaison owns conversations.
+
+\textbf{State, trace and memory are kept apart} (\file{agent/state.py}). \emph{State} holds typed fields with reducers wherever
+parallel branches write, including a severity-ordered \texttt{status} reducer. The \emph{trace} is append-only records plus
+LangSmith/Phoenix spans plus the MCP audit log, linked by one trace id from the UI request to the audit row. \emph{Long-term memory}
+is a LangGraph store with two namespaces, written only through \file{agent/memory/promotion_rules.py}: a style rule is promoted
+when an edit pattern appears in $\ge$3 of the user's last 5 edits (demoted when it appears in none), and an outcome insight
+only when both arms have $n\ge5$ and their reply rates differ by $\ge$15 points. Hand-offs are Pydantic models
+(\file{agent/handoffs.py}).
+
+\textbf{MCP surface} (\file{docs/TOOLS.md}). Three servers built on the official Python SDK, each with Pydantic input schemas,
+declared output schemas and \texttt{readOnly}/\texttt{destructive}/\texttt{idempotent} annotations: \emph{Portfolio} (read-only
+search, case studies, skills; resources and prompts), \emph{Marketplace} (8 read and 3 write tools, required idempotency keys,
+\texttt{dry\_run}, per-user JWT bearer on Streamable HTTP, a per-user rate limiter and an append-only audit log) and \emph{Workspace}
+(free slots, tentative holds, email drafts on a documented SQLite mock). The third-party servers are the official Upwork MCP
+server (OAuth~2.1 + PKCE, tokens Fernet-encrypted per user) and the GitHub MCP server for repository ingestion.
+
+\textbf{Marketplace port (R1).} \file{agent/marketplace_port.py} defines the interface; \texttt{GigSimAdapter} (REST, bounded
+retries honouring \texttt{Retry-After}) and \texttt{UpworkLiveAdapter} (\texttt{MultiServerMCPClient}, with its tool mapping in config
+and validated against \texttt{list\_tools}) implement it. Switching \texttt{marketplace.mode} changes only which adapter the
+Marketplace server instantiates.
+
+\textbf{Durability and failure handling.} Postgres holds the checkpointer and the store. Approvals resume the interrupted thread
+from the UI, and the pending payload is read from the checkpoint, so a refresh never loses it. Submit idempotency keys are a pure
+function of (user, job, draft version). Every node runs under a guard (\file{agent/graphs/_guard.py}) that enforces step and token
+budgets, bounded retries with timeouts, a \emph{degraded mode} (\texttt{MarketplaceUnavailable} sets \texttt{queued\_degraded},
+the UI shows a banner and the worker retries) and a dead-letter status. Background work runs on Arq/Redis with deterministic
+job ids, and a reconciler re-enqueues runs that were in flight when a worker died (an integration test kills a run mid-graph and
+checks exactly-once submission on resume).
+
+\section{R\&D question B -- retrieval, claim verification and what ships}\label{sec:rag}
+\textbf{Hypothesis (stated before running).} Requirement decomposition plus hybrid retrieval raises evidence Recall@5 by
+$\ge$10 points over V0 on jobs with four or more required skills, because implied skills live in code chunks that whole-post
+dense retrieval misses.
+
+\textbf{Setup.} Every variant is a preset of one composable pipeline (\file{rag/pipeline.py}), so the ablation removes one flag at
+a time. Embeddings: bge-small-en-v1.5; cross-encoder: ms-marco-MiniLM-L6 (both ONNX on CPU). Gold relevance of a project is its
+overlap with the job's skills (explicit and implied), with ubiquitous skills (Python, SQL, \ldots) weighted 0.25. Two runs exist: all
+seven variants on a 128-job sample (first 60 dev jobs per persona, minus scams; Table~\ref{tab:rag60}, from the run log
+\file{data/processed/logs/rag.log}), and V0--V2 on the full dev set (396 jobs, Table~\ref{tab:rag}). The composite and V8 runs did not
+finish before submission (a shared SQLite cache lock crashed the run), so they are not reported.
+
+\begin{table}[t]\centering\small
+\caption{All variants on the 128-job sample (62 with $\ge$4 skills). Source: \texttt{rag.log} of the \texttt{--limit 60} run; its JSON was later
+overwritten by the full-dev run, so this table is transcribed from the log.}\label{tab:rag60}
+\begin{tabular}{lrrrrr}\toprule Variant & R@5 & MRR & nDCG@10 & R@5 ($\ge$4 skills) & p95 s\\\midrule
+V0 naive dense & 0.528 & 0.704 & 0.595 & 0.554 & 0.00\
+V1 decomposition & 0.547 & 0.670 & 0.576 & 0.537 & 0.01\
+V2 hybrid BM25+dense & 0.523 & 0.669 & 0.571 & 0.515 & 0.00\
+V3 + cross-encoder & 0.533 & 0.642 & 0.552 & 0.530 & 16.70\
+V4 outcome-aware & 0.521 & 0.626 & 0.554 & 0.497 & 0.01\
+V5 multi-vector & 0.559 & 0.661 & 0.580 & 0.564 & 0.00\
+V6 contextual & 0.539 & 0.653 & 0.564 & 0.533 & 0.00\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[t]\centering\small
+\caption{Retrieval quality on the full dev set (396 non-scam jobs with gold evidence, 3 personas). Source: \texttt{evals/results/rag\_variants.json}.}\label{tab:rag}
+\begin{tabular}{lrrrrr}\toprule Variant & R@5 & MRR & nDCG@10 & $\Delta$R@5 (pts) & p95 s\\\midrule
+V0 naive dense & 0.544 & 0.661 & 0.584 & 0.0 & 0.03 \\
+V1 decomposition & 0.557 & 0.653 & 0.587 & +1.3 & 0.09 \\
+V2 hybrid BM25+dense & 0.539 & 0.662 & 0.581 & -0.5 & 0.07 \\
+\bottomrule\end{tabular}\end{table}
+
+\textbf{Result: the hypothesis is refuted.} On the 62 multi-requirement jobs, V0 reached Recall@5 0.554. Decomposition (V1) reached
+0.537 ($-1.7$ points) and hybrid BM25+dense (V2) 0.515 ($-4.0$); the cross-encoder (V3) did not recover the gap (0.530). The
+only consistent gain came from \emph{multi-vector project aggregation} (V5: 0.564 on multi-requirement jobs, 0.559 overall,
+$+3.1$ points), which scores a project by its best chunks across case study, README, code and proposal. The 95\% intervals
+at $n=128$ are roughly $\pm$5 points, so none of these differences is large. The mechanism matches the earlier smoke run: BM25
+over code rewards files whose identifiers are common words, and decomposed single-skill queries match generic chunks
+(``Python'') as strongly as the specific ones. MRR is highest for V0 (0.704), so the naive retriever usually gets the top hit
+right and loses on coverage. The full dev set (396 jobs, 163 with $\ge$4 skills) confirms the direction: on multi-requirement jobs
+V0 0.560, V1 0.550, V2 0.532.
+
+\begin{table}[t]\centering\small\caption{Recall@5 by persona and job type. Source: \texttt{rag\_variants.json}.}\label{tab:ragbreak}
+\begin{tabular}{lrr}\toprule Slice & V0 naive dense & V2 hybrid BM25+dense\\\midrule
+ai\_ml & 0.574 & 0.577 \\
+fullstack & 0.556 & 0.549 \\
+data\_analyst & 0.504 & 0.493 \\
+\midrule
+adjacent & 0.418 & 0.359 \\
+few\_req (<4 skills) & 0.533 & 0.545 \\
+in\_domain & 0.557 & 0.561 \\
+injection & 0.591 & 0.577 \\
+multi\_req (>=4 skills) & 0.560 & 0.532 \\
+off\_domain & 0.317 & 0.237 \\
+\bottomrule\end{tabular}\end{table}
+\pendingtable{Ablation of the composite pipeline}{evals/results/ablation.json}
+
+\textbf{Claim verification (B3)} (\file{rag/verify.py}). Each first-person experience or result sentence in a draft is a claim,
+labelled supported, partly supported or unsupported by the cross-encoder score against the cited (else retrieved) evidence, plus
+entity checks: every skill and number in the claim must appear in the evidence. Unsupported claims are removed before the Critic
+sees the draft. The unsupported-claim \emph{rate} is measured separately, by a stricter checker built on the persona's
+ground-truth facts (\file{evals/checkers/fact_check.py}), so the system is not graded by its own verifier.
+
+\begin{table}[t]\centering\small\caption{Proposal-level results (open\_hosted profile; 5 gold-bid jobs per persona). Unsupported claims are counted by the independent fact checker; reply rate is from GigSim's rule-based clients. Source: \texttt{proposals.json}, \texttt{judge.json}.}\label{tab:prop}
+\begin{tabular}{lrrrrrrrrr}\toprule Retrieval & n & Unsup.\ before & Unsup.\ after & Critic loops & Judge (1--5) & Reply rate & p95 s & Tokens & USD\\\midrule
+Composite (shipped) & 15 & 0.20 & 0.40 & 2.80 & 3.21 & 0.14 & 286 & 4888 & 0.0012 \\
+V0 naive dense & 15 & 0.27 & 0.20 & 2.80 & 3.14 & 0.14 & 168 & 4783 & 0.0010 \\
+\bottomrule\end{tabular}\end{table}
+
+\textbf{Proposal-level results} (Table~\ref{tab:prop}; 15 gold-bid jobs per configuration, Writer gpt-oss-120b, small nodes
+gpt-oss-20b). The verifier removed 1.0--1.3 claims per proposal. Even so, the independent checker still found 0.2--0.4
+unsupported claims per final proposal, and for the shipped retriever the final rate (0.40) was \emph{higher} than the raw draft's
+(0.20). The cause was the Critic loop (below): each rejected draft was rewritten, and a rewrite can add claims that the
+cross-encoder rates as ``partly supported'' while the fact checker does not. Judge scores (3.21 vs.\ 3.14) and GigSim reply
+rates (0.14 vs.\ 0.14, $n=14$ submitted each) do not separate the two retrievers; at this sample size a difference below about
+25 points in reply rate cannot be detected. Cost was \$0.0010--0.0012 per proposal (budget \$0.02). p95 latency was 168\,s for V0
+and 286\,s for the shipped pipeline (budget 300\,s), measured while other evaluations shared the CPU.
+
+\textbf{Judge calibration.} The judge (Qwen3, a different model family from the writer, to limit self-preference) scored 28 proposals.
+These were compared with reference labels on the same 1--5 rubric, given blind to configuration. \noindent\textbf{Judge calibration.} calibrated: quadratic-weighted $\kappa$ = 0.53 on $n$ = 28 labelled proposals (1 disagree by $\ge$2 points). Source: \texttt{judge.json}.
+\emph{Disclosure:} the reference labels in \file{evals/datasets/judge_labels.csv} were written by an AI assistant (Claude) at my
+request, not by me. $\kappa$ therefore measures agreement between two models, not between the judge and a human. The judge
+gave 4 to half the proposals and rarely used 1 or 5, so its scores are compressed. The blind classmate panel was not run.
+
+\textbf{Shipped choice.} \texttt{rag.variant} is the composite pipeline (multi-vector aggregation over hybrid candidates with
+reranking), chosen because V5's aggregation is the only component with a measured gain. The composite itself was not measured
+end to end on the retrieval set, so the honest recommendation from this data is V5's preset without hybrid or decomposition. The \texttt{search\_evidence} tool disables query
+decomposition, since the Fit Matcher already decomposes at the agent level and doing it twice cost 16--25\,s per call. On the
+512\,MB free hosting tier the cross-encoder is replaced by a bi-encoder score (\texttt{RERANK\_DISABLED=1}), which keeps the app
+within memory (measured 276\,MB vs.\ 373\,MB resident).
+
+\section{R\&D question A -- tool granularity}
+\textbf{Hypothesis.} Fewer, coarser tools reduce tool-selection errors for a small model, while rewritten descriptions recover
+argument accuracy. \textbf{Setup} (\file{evals/runners/tool_granularity.py}): 40 tasks with a known correct call, one turn, three
+tool sets bound to the same model: the 14 real tools with their terse descriptions, 3 coarse tools with an \texttt{action} enum,
+and the 14 tools with rewritten ``use when\ldots'' descriptions.
+\begin{table}[t]\centering\small\caption{R\&D A: tool granularity with \texttt{openai/gpt-oss-20b}. Source: \texttt{tool\_granularity.json}.}\label{tab:tools}
+\begin{tabular}{lrrrrr}\toprule Tool set & n & Tool sel.\ acc. & Arg.\ acc. & Tokens/task & Latency s\\\midrule
+Fine-grained (14 tools) & 40 & 1.000 & 1.000 & 508 & 2.11 \\
+Coarse (3 tools + action) & 40 & 0.850 & 0.300 & 296 & 2.24 \\
+Fine + rewritten descriptions & 40 & 0.975 & 0.975 & 759 & 5.02 \\
+\bottomrule\end{tabular}\end{table}
+\textbf{Result: the hypothesis is refuted for this model.} With gpt-oss-20b, the fine-grained set was already at ceiling (40/40 correct
+tool and arguments). Collapsing to three coarse tools cut tokens per task by 42\% (508 to 296) but lowered tool selection to 0.85
+and argument accuracy to 0.30. With a free-form \texttt{args} object, the schema no longer tells the model which fields an action
+needs, so the expected values often went missing (per-call logs were not kept, so the failure modes are not broken down further). Rewritten descriptions added 49\% tokens (759) and gave 0.975 on both, one error more than the terse set. \textbf{Decision:}
+keep fine-grained tools with short descriptions; coarse tools trade a small token saving for a large loss in argument
+accuracy. \emph{Caveats:} the 40 tasks are single-turn and partly paraphrased duplicates, so a 20B model saturates them; the original
+target, Qwen2.5-3B, was not run on this set because of the CPU time it would take, and a small model may well behave differently.
+
+\section{R\&D question C -- is the multi-agent design worth it?}
+\textbf{Setup} (\file{evals/runners/arch_compare.py}): the same jobs, model and in-memory MCP tools run through (a) one ReAct agent
+holding all tools, (b) a \texttt{langgraph-supervisor} with research, portfolio and writer workers, and (c) the hand-built graph.
+\begin{table}[t]\centering\small\caption{R\&D C: the same jobs (3 per persona) through three architectures. Source: \texttt{arch\_compare.json}.}\label{tab:arch}
+\begin{tabular}{lrrrrrrrr}\toprule Architecture & n & Bid/skip acc. & Scams bid & Unsup./prop. & Policy viol. & Tokens/job & p95 s & Errors\\\midrule
+Single ReAct agent & 9 & 0.556 & 0 & 0.00 & 1 & 3936 & 50 & 0 \\
+LangGraph supervisor & 9 & 0.667 & 0 & 1.33 & 0 & 3731 & 30 & 0 \\
+Hand-built graph & 9 & 0.667 & 0 & 0.33 & 0 & 1702 & 114 & 0 \\
+\bottomrule\end{tabular}\end{table}
+\textbf{Result} (9 jobs, 3 per persona, gpt-oss on Groq). The hand-built graph and the supervisor both decided 6 of 9 jobs correctly; the
+single ReAct agent decided 5. The graph used 1{,}702 tokens per job against 3{,}731 (supervisor) and 3{,}936 (ReAct), because its rule-based
+nodes skip LLM calls on jobs that should be skipped. The supervisor's proposals had 1.33 unsupported claims each against 0.33 for the graph,
+because nothing between its writer and the output checks claims. The ReAct agent left one policy violation in its output; the graph and
+the supervisor left none. No architecture bid on a scam. The graph had the worst p95 latency (114\,s), because it runs claim
+verification and up to two Critic loops. \textbf{Conclusion:} at $n=9$ the accuracy difference is noise; the measured benefits of the hand-built
+graph are half the tokens and far fewer unsupported claims, paid for with latency.
+
+\textbf{Decision quality of the hand-built graph} (rules-only mode, \texttt{LLM\_DISABLED=1}, so decisions are deterministic):
+\begin{table}[t]\centering\small\caption{Decisions on the dev set (graph in analysis-only mode through the in-memory MCP client). Source: \texttt{decision\_eval.json}.}\label{tab:dec}
+\begin{tabular}{lrrrrrrrrr}\toprule Slice & n & Bid F1 & P & R & Scam P & Scam R & Inj.\ det. & Price in band & p95 s\\\midrule
+All & 60 & 0.645 & 0.714 & 0.588 & 0.667 & 1.000 & 1.000 & 1.000 & 44.42 \\
+ai\_ml & 20 & 0.444 & 0.667 & 0.333 & 0.500 & 1.000 & 1.000 & 1.000 & 35.36 \\
+fullstack & 20 & 0.500 & 0.500 & 0.500 & 1.000 & 1.000 & \pending{} & 1.000 & 37.97 \\
+data\_analyst & 20 & 0.778 & 0.778 & 0.778 & 0.500 & 1.000 & 1.000 & 1.000 & 54.87 \\
+\bottomrule\end{tabular}\end{table}
+On 60 dev jobs: bid F1 0.65 (precision 0.71, recall 0.59), accuracy 0.82, scam recall 1.00 at precision 0.67 (4 legitimate jobs flagged),
+all injections detected with no false positives, and every quoted price inside the fair band. Recall is the weak point: 7 gold bids were
+skipped, mostly for the AI/ML persona, where the fit score sits just below the 0.55 threshold. The p95 analysis latency of 44\,s
+breaks the 20\,s budget; it was measured while three other evaluation processes shared the 4-core CPU, and the cross-encoder dominates.
+
+\section{The change request}
+GigSim's 2 November policy update was not available to me, so I \emph{simulated} one and label it as such (\file{gigsim/app.py},
+policy v2). It has two parts: (1) proposals may not contain external links (submission returns HTTP 422), and (2) premium jobs (Expert
+level or budget $\ge$\$1{,}000) cost 4 extra Connects. The agents needed no code change. The Compliance Guard reads
+\texttt{policy.v2\_rules} from config, enabled by \texttt{marketplace.policy\_version: 2}, and Pricing reads the per-job Connects cost
+that the marketplace returns. The diff is one line of \file{agent/config.yaml} plus the policy-pack text (\file{docs/CHANGE_REQUEST.md}).
+This worked because rules and prompts were configuration from the start. A change that needs new \emph{logic} (e.g.\ a weekly proposal quota)
+would still need code in \texttt{decide}.
+
+\section{Signature extension -- X2 proposal experiments}
+Two opening strategies (problem-first vs.\ question-first) run as an A/B test in GigSim, analysed with a two-proportion $z$-test and
+Fisher's exact test on reply rate (\file{evals/runners/ab_test.py}, \file{docs/EXTENSION.md}). Each submitted proposal's opening style is
+recorded and feeds outcome memory, so only a winner that clears the promotion rule becomes an insight that the Writer reads.
+\begin{table}[t]\centering\small\caption{X2 A/B test on GigSim reply rate. Two-proportion $z$ = 1.39 ($p$ = 0.166), Fisher exact $p$ = 0.333. Source: \texttt{ab\_test.json}.}\label{tab:ab}
+\begin{tabular}{lrrr}\toprule Arm & Submitted & Replies & Reply rate\\\midrule
+A: problem-first & 16 & 4 & 0.25 \\
+B: question-first & 15 & 1 & 0.07 \\
+\bottomrule\end{tabular}\end{table}
+\textbf{Result} (6 jobs per persona per arm). Problem-first got 4 replies from 16 proposals (25\%) and question-first 1 from 15 (6.7\%).
+Two-proportion $z=1.39$, $p=0.17$; Fisher's exact $p=0.33$. This is \emph{not significant}, and the promotion rule correctly did not promote
+it into memory. Detecting an 18-point difference at 80\% power needs roughly 70 proposals per arm. Reply rates come from GigSim's rule-based
+clients, so they measure fit to that model, not to real clients.
+
+\section{Failure analysis}
+Taxonomy: missed evidence, wrong skip, mispriced, unsupported claim, generic opening, compliance miss, injection, tool error.
+Failures found, with the fix and the measured effect where one exists:
+\begin{enumerate}
+\item \textbf{Unsupported claim / Critic loop (found in the proposal run).} gpt-oss writes citations with full-width brackets (U+3010/U+3011 around \texttt{E:id}), but the Critic
+  counted only \texttt{[E:id]}. It therefore rejected almost every draft (2.8 Critic passes per proposal; the cap of 2 revisions was
+  hit) and the full-width markers leaked into five final drafts that a client would have seen. Fix: normalise both marker forms in
+  the Writer and the verifier, with a regression test. \emph{Effect} (rerun on the same 15 jobs, \file{proposals_fixed.json}): no markers
+  leaked, and unsupported claims after verification fell from 0.40 to 0.13 per proposal. Critic passes stayed at 2.8, so the Critic
+  also rejects for other reasons and its rubric needs inspection. Part of the rerun was served from the LLM cache, so its cost reads \$0
+  and its latency (p95 53\,s) is not comparable.
+\item \textbf{Instruction vs.\ attention check.} One real posting says ``Include `LFG' in your proposal to show that you read this.''
+  The Writer complied, which a human would also do, and the injection detector did not flag it. The boundary between a client's
+  screening instruction and a prompt injection is semantic. I kept this behaviour and wrote the rule into the policy pack (rule 5): a
+  client's request about the proposal's \emph{content} may be followed, while instructions addressed to an AI, or asking for contact details,
+  payment or off-platform moves, never are. A regex detector cannot draw this line reliably; an LLM classifier on flagged sentences could.
+\item \textbf{Generic opening.} Two drafts for the chemistry-classification job opened with ``I am a passionate and hardworking AI/ML Engineer'',
+  a phrase the style rules forbid. Both received the lowest reference label (2). The opening-style check belongs in the Critic's rubric.
+\item \textbf{Missed evidence (off-domain bids).} With \texttt{force\_bid}, the data-analyst persona drafted for an AutoCAD/Revit job using
+  VBA evidence. The decision node had correctly not bid (fit below threshold); the failure is that the harness forced it, and the draft
+  shows what the Writer does with weak evidence.
+\item \textbf{Wrong skip (risk false positive).} One gold-bid AI job was skipped in both configurations despite \texttt{force\_bid}, because the
+  risk lexicon scored it as a likely scam ($\ge$0.5), and force-bid never overrides a scam flag. This is safe by design, but it is a false positive.
+\item \textbf{Earlier fixes during development:} sentence-only requirements now weigh 0.5 in the fit score (a proof-of-concept job had
+  scored 0.40); the gold labeller requires all title skills (a Solidity job was labelled ``bid'' for the full-stack persona); the adapter
+  tolerates non-JSON error bodies when another service answers GigSim's port; MCP sessions get one owner task each (anyio crashed on
+  cross-task close); and \texttt{search\_evidence} skips re-decomposition (16--25\,s per call before).
+\item \textbf{Hosting (tool error).} The first Render deployment restarted in a loop as soon as the worker started an analysis. Loading both
+  ONNX models and three MCP servers in one process exceeded the 512\,MB instance. Fix: in-process MCP transport, single-threaded ONNX,
+  no cross-encoder on that tier.
+\end{enumerate}
+
+\section{Safety and platform respect}
+\textbf{Never does:} submit, message or spend Connects without an approval interrupt; scrape, automate a browser or use session cookies;
+claim experience the evidence does not support; follow instructions found inside a job post or client message.
+\textbf{Enforcement:} untrusted text is PII-masked and delimited at intake, and spoofed delimiters are neutralised. The Risk Assessor detects
+injected instructions and strips those sentences before analysis. The Writer prompt forbids following them, and Compliance removes any
+echo (e.g.\ ``BANANA'', guarantees, contact details). Writes require approval, allowlists and idempotency keys. PII masking covers logs,
+the audit log and trace exports, and OAuth tokens are encrypted and never logged. Every query is scoped by \texttt{user\_id}, and the audit
+table is append-only through a trigger. The injection-detection rate on the dev sample is in Table~\ref{tab:dec}.
+\textbf{What still gets through:} paraphrased injections that match no pattern reach the Writer as delimited data, where only the prompt
+and the compliance echo check defend. The cross-encoder is a relevance model, not an entailment model, so a fluent but subtly wrong
+claim near true evidence can pass as ``partly supported''; the proposal run above shows this happening.
+
+\section{Held-out results against the declared budgets}
+The instructor's hidden run cannot be reproduced here. The stand-in is the git-ignored held-out split (new clients), run with
+\texttt{--split test}. \emph{That run is invalid}: the dev GigSim instance did not load the held-out clients
+(\texttt{GIGSIM\_INCLUDE\_TEST=0}), so every client-history call returned 404 and all 45 jobs ended in \texttt{needs\_attention}. The degraded
+path behaved as designed (no job was bid on without client data), but no held-out quality number is reported.
+Proposal p95 latency (168--286\,s) and cost (\$0.0010--0.0012) are within the 300\,s and \$0.02 budgets on the hosted profile. Analysis latency
+on the CPU laptop exceeded the 20\,s budget whenever the cross-encoder ran under load (V3 p95 16.7\,s for retrieval alone), which is a
+second reason the hosted tier drops it.
+\textbf{Deployment.} \url{https://bidpilot-e409.onrender.com} (Render Blueprint in \file{render.yaml}: app with an inline worker, GigSim,
+Postgres and Key Value, all on the free plan). Free instances sleep after 15 minutes, so the first request can take about a minute. A reviewer
+account is seeded at start-up (credentials in the README).
+
+\section{Models: open configurations compared}\label{sec:models}
+Three open-weight configurations are defined in \file{agent/config.yaml}: \texttt{open} (Qwen2.5-3B for every node, 7B judge),
+\texttt{open\_7b\_writer} (7B Writer) and \texttt{open\_hosted} (gpt-oss-20b small, gpt-oss-120b Writer and Critic, Qwen3 judge, on Groq).
+Measured local throughput was 6.1 tok/s (3B) and 2.9 tok/s (7B). At those speeds one proposal with up to two Critic loops takes 5--10
+minutes, so the proposal-level experiments ran on \texttt{open\_hosted} and the local profiles were exercised only in development and the CI
+smoke test. A controlled quality comparison of the local and hosted profiles on the same jobs was not run. No paid model is used.
+
+\appendix
+\section{Reproducing every number}
+{\scriptsize
+\begin{verbatim}
+make data                                                    # Kaggle -> personas, GigSim seed, dev/held-out sets (seeded)
+python -m evals.runners.rag_eval --limit 60                  # 128-job table; --limit 0 for the full dev set
+LLM_DISABLED=1 python -m evals.runners.decision_eval --limit 20   # decision_eval.json
+MODEL_PROFILE=open_hosted python -m evals.runners.gigsim_outcomes --configs best,v0 --per-persona 5
+python -m evals.runners.judge_calibration    # needs evals/datasets/judge_labels.csv for kappa
+python -m evals.runners.tool_granularity; python -m evals.runners.arch_compare --per-persona 3
+python -m evals.runners.ab_test --per-persona 6; python -m scripts.build_report_tables
+\end{verbatim}}
+\section{AI usage}
+See \file{docs/AI_USAGE.md}. An AI coding assistant (Claude Code) wrote most of the code under my direction. At my request it also
+produced the judge reference labels, as disclosed in \S\ref{sec:rag}. One error it made that was caught: its first data builder applied
+about 500 regexes per job across 110k jobs and ran for over 10 minutes; it was replaced by a substring-prefiltered matcher (97\,s end to end).
+\end{document}

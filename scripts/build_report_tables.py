@@ -43,7 +43,7 @@ def rag_table() -> str:
         rows.append(f"{NICE.get(v['variant'], v['variant'])} & {f(o['recall@5'])} & {f(o['mrr'])} & {f(o['ndcg@10'])} & "
                     f"{'+' if delta and delta > 0 else ''}{f(delta, 1) if delta is not None else '--'} & {f(o['p95_latency_s'], 2)} \\\\")
     n = d["variants"][0]["overall"]["n"]
-    return (r"\begin{table}[t]\centering\small" "\n" r"\caption{Retrieval quality of every variant on the dev set (" + str(n) +
+    return (r"\begin{table}[t]\centering\small" "\n" r"\caption{Retrieval quality on the full dev set (" + str(n) +
             r" non-scam jobs with gold evidence, 3 personas). Source: \texttt{evals/results/rag\_variants.json}.}\label{tab:rag}" "\n"
             r"\begin{tabular}{lrrrrr}\toprule Variant & R@5 & MRR & nDCG@10 & $\Delta$R@5 (pts) & p95 s\\\midrule" "\n" +
             "\n".join(rows) + "\n" r"\bottomrule\end{tabular}\end{table}")
@@ -94,7 +94,7 @@ def decision() -> str:
 
 def table(caption: str, label: str, cols: str, header: str, rows: list[str]) -> str:
     return (r"\begin{table}[t]\centering\small\caption{" + caption + r"}\label{" + label + "}\n"
-            r"\begin{tabular}{" + cols + r"}\toprule " + header + r"\\midrule" "\n" + "\n".join(rows) + "\n" r"\bottomrule\end{tabular}\end{table}")
+            r"\begin{tabular}{" + cols + r"}\toprule " + header + r"\\\midrule" "\n" + "\n".join(rows) + "\n" r"\bottomrule\end{tabular}\end{table}")
 
 
 def proposals() -> str:
@@ -175,6 +175,35 @@ def headline() -> str:
     return "\n".join(rf"\newcommand{{\{k.replace('0', 'zero').replace('1', 'one').replace('2', 'two').replace('3', 'three').replace('4', 'four').replace('5', 'five').replace('6', 'six').replace('8', 'eight')}}}{{{v}}}" for k, v in m.items())
 
 
+def _skip_group(t: str, i: int) -> int:
+    """Index just after the brace group that starts at t[i] == '{'."""
+    depth = 0
+    for j in range(i, len(t)):
+        depth += {"{": 1, "}": -1}.get(t[j], 0)
+        if depth == 0:
+            return j + 1
+    raise ValueError("unbalanced braces")
+
+
+def standalone() -> None:
+    """report/main.tex = report.tex with every generated file inlined (one file compiles on Overleaf by itself)."""
+    t = (ROOT / "report" / "report.tex").read_text(encoding="utf-8")
+    key = "\\InputIfFileExists{generated/"
+    out, i = [], 0
+    while (k := t.find(key, i)) >= 0:
+        out.append(t[i:k])
+        name_end = t.index("}", k)
+        name = t[k + len("\\InputIfFileExists{"):name_end]
+        a_end = _skip_group(t, name_end + 1)          # {then}
+        b_start = a_end
+        b_end = _skip_group(t, b_start)               # {else}
+        f = ROOT / "report" / name
+        out.append(f.read_text(encoding="utf-8") if f.exists() else t[b_start + 1:b_end - 1])
+        i = b_end
+    out.append(t[i:])
+    (ROOT / "report" / "main.tex").write_text("".join(out).replace("% Tables are generated", "% STANDALONE copy, built by scripts/build_report_tables.py. Tables are generated"), encoding="utf-8")
+
+
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "rag_table.tex").write_text(rag_table(), encoding="utf-8")
@@ -185,7 +214,8 @@ def main() -> None:
                      ("arch_table", arch), ("ab_table", abtest)):
         (OUT / f"{name}.tex").write_text(fn(), encoding="utf-8")
     (OUT / "numbers.tex").write_text(headline() + "\n", encoding="utf-8")
-    print("wrote", sorted(p.name for p in OUT.iterdir()))
+    standalone()
+    print("wrote", sorted(p.name for p in OUT.iterdir()), "+ report/main.tex")
 
 
 if __name__ == "__main__":

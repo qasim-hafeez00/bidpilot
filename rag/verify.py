@@ -15,7 +15,7 @@ from typing import Any
 from common import config as cfg
 from common.skills import extract_skills
 
-MARK = re.compile(r"\s*\[E:([^\]]+)\]")
+MARK = re.compile(r"\s*(?:\[|【)E:([^\]】]+)(?:\]|】)")
 SENT = re.compile(r"(?<=[.!?])\s+(?=[A-Z\"'(])")
 FUTURE = re.compile(r"^\s*(i would|i will|i'd|i can|i could|i propose|i plan|i'll|let's|we can|we could|happy to|"
                     r"would you|could you|do you|is the|are you|thanks|thank you|best|regards|cheers|looking forward)", re.I)

@@ -1,0 +1,6 @@
+\begin{table}[t]\centering\small\caption{R\&D C: the same jobs (3 per persona) through three architectures. Source: \texttt{arch\_compare.json}.}\label{tab:arch}
+\begin{tabular}{lrrrrrrrr}\toprule Architecture & n & Bid/skip acc. & Scams bid & Unsup./prop. & Policy viol. & Tokens/job & p95 s & Errors\\\midrule
+Single ReAct agent & 9 & 0.556 & 0 & 0.00 & 1 & 3936 & 50 & 0 \\
+LangGraph supervisor & 9 & 0.667 & 0 & 1.33 & 0 & 3731 & 30 & 0 \\
+Hand-built graph & 9 & 0.667 & 0 & 0.33 & 0 & 1702 & 114 & 0 \\
+\bottomrule\end{tabular}\end{table}
