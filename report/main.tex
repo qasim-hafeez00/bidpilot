@@ -29,7 +29,7 @@
 \providecommand{\decInj}{\pending}\providecommand{\decPrice}{\pending}\providecommand{\decPninetyfive}{\pending}
 
 \title{\textbf{BidPilot: a multi-agent freelancer copilot}\\[2pt]\large R\&D report (AI-4016, GigBid) -- engineering design review}
-\author{Qasim Hafeez (22F-3812)\\\small Code: \url{https://github.com/qasim-hafeez00/bidpilot} \quad Deployment: \url{https://bidpilot-e409.onrender.com}}
+\author{Qasim Hafeez (22F-3812)\\\small Code: \url{https://github.com/qasim-hafeez00/bidpilot}\\\small Deployment: \url{https://bidpilot-e409.onrender.com}}
 \date{November 2026}
 
 \begin{document}
@@ -152,13 +152,13 @@ finish before submission (a shared SQLite cache lock crashed the run), so they a
 \caption{All variants on the 128-job sample (62 with $\ge$4 skills). Source: \file{evals/results/rag_limit60_run.log} of the \texttt{--limit 60} run; its JSON was later
 overwritten by the full-dev run, so this table is transcribed from the log.}\label{tab:rag60}
 \begin{tabular}{lrrrrr}\toprule Variant & R@5 & MRR & nDCG@10 & R@5 ($\ge$4 skills) & p95 s\\\midrule
-V0 naive dense & 0.528 & 0.704 & 0.595 & 0.554 & 0.00\
-V1 decomposition & 0.547 & 0.670 & 0.576 & 0.537 & 0.01\
-V2 hybrid BM25+dense & 0.523 & 0.669 & 0.571 & 0.515 & 0.00\
-V3 + cross-encoder & 0.533 & 0.642 & 0.552 & 0.530 & 16.70\
-V4 outcome-aware & 0.521 & 0.626 & 0.554 & 0.497 & 0.01\
-V5 multi-vector & 0.559 & 0.661 & 0.580 & 0.564 & 0.00\
-V6 contextual & 0.539 & 0.653 & 0.564 & 0.533 & 0.00\
+V0 naive dense & 0.528 & 0.704 & 0.595 & 0.554 & 0.00\\
+V1 decomposition & 0.547 & 0.670 & 0.576 & 0.537 & 0.01\\
+V2 hybrid BM25+dense & 0.523 & 0.669 & 0.571 & 0.515 & 0.00\\
+V3 + cross-encoder & 0.533 & 0.642 & 0.552 & 0.530 & 16.70\\
+V4 outcome-aware & 0.521 & 0.626 & 0.554 & 0.497 & 0.01\\
+V5 multi-vector & 0.559 & 0.661 & 0.580 & 0.564 & 0.00\\
+V6 contextual & 0.539 & 0.653 & 0.564 & 0.533 & 0.00\\
 \bottomrule\end{tabular}\end{table}
 
 \begin{table}[t]\centering\small
@@ -192,7 +192,7 @@ injection & 0.591 & 0.577 \\
 multi\_req (>=4 skills) & 0.560 & 0.532 \\
 off\_domain & 0.317 & 0.237 \\
 \bottomrule\end{tabular}\end{table}
-\pendingtable{Ablation of the composite pipeline}{evals/results/ablation.json}
+\textbf{Ablation.} A separate one-flag-at-a-time ablation of the composite did not finish before submission. Because every variant is a preset of one pipeline, Table~\ref{tab:rag60} already isolates single components against V0: adding decomposition (V1, +1.9 points R@5), BM25 (V2, $-0.5$), the cross-encoder (V3, +0.5), outcome weighting (V4, $-0.7$), multi-vector aggregation (V5, +3.1) and contextual chunk headers (V6, +1.1).
 
 \textbf{Claim verification (B3)} (\file{rag/verify.py}). Each first-person experience or result sentence in a draft is a claim,
 labelled supported, partly supported or unsupported by the cross-encoder score against the cited (else retrieved) evidence, plus
@@ -216,7 +216,7 @@ rates (0.14 vs.\ 0.14, $n=14$ submitted each) do not separate the two retrievers
 and 286\,s for the shipped pipeline (budget 300\,s), measured while other evaluations shared the CPU.
 
 \textbf{Judge calibration.} The judge (Qwen3, a different model family from the writer, to limit self-preference) scored 28 proposals.
-These were compared with reference labels on the same 1--5 rubric, given blind to configuration. \noindent\textbf{Judge calibration.} calibrated: quadratic-weighted $\kappa$ = 0.53 on $n$ = 28 labelled proposals (1 disagree by $\ge$2 points). Source: \texttt{judge.json}.
+These were compared with reference labels on the same 1--5 rubric, given blind to configuration. Result: quadratic-weighted $\kappa = 0.53$ on $n = 28$ proposals; only 1 differed by $\ge$2 points (\texttt{judge.json}). Mean judge score: 3.21 (shipped) vs.\ 3.14 (V0).
 \emph{Disclosure:} the reference labels in \file{evals/datasets/judge_labels.csv} were written by an AI assistant (Claude) at my
 request, not by me. $\kappa$ therefore measures agreement between two models, not between the judge and a human. The judge
 gave 4 to half the proposals and rarely used 1 or 5, so its scores are compressed. The blind classmate panel was not run.
@@ -265,11 +265,11 @@ verification and up to two Critic loops. \textbf{Conclusion:} at $n=9$ the accur
 graph are half the tokens and far fewer unsupported claims, paid for with latency.
 
 \textbf{Decision quality of the hand-built graph} (rules-only mode, \texttt{LLM\_DISABLED=1}, so decisions are deterministic):
-\begin{table}[t]\centering\small\caption{Decisions on the dev set (graph in analysis-only mode through the in-memory MCP client). Source: \texttt{decision\_eval.json}.}\label{tab:dec}
+\begin{table}[t]\centering\small\caption{Decisions on the dev set (graph in analysis-only mode through the in-memory MCP client). n/a: the slice contains no injected jobs. Source: \texttt{decision\_eval.json}.}\label{tab:dec}
 \begin{tabular}{lrrrrrrrrr}\toprule Slice & n & Bid F1 & P & R & Scam P & Scam R & Inj.\ det. & Price in band & p95 s\\\midrule
 All & 60 & 0.645 & 0.714 & 0.588 & 0.667 & 1.000 & 1.000 & 1.000 & 44.42 \\
 ai\_ml & 20 & 0.444 & 0.667 & 0.333 & 0.500 & 1.000 & 1.000 & 1.000 & 35.36 \\
-fullstack & 20 & 0.500 & 0.500 & 0.500 & 1.000 & 1.000 & \pending{} & 1.000 & 37.97 \\
+fullstack & 20 & 0.500 & 0.500 & 0.500 & 1.000 & 1.000 & n/a & 1.000 & 37.97 \\
 data\_analyst & 20 & 0.778 & 0.778 & 0.778 & 0.500 & 1.000 & 1.000 & 1.000 & 54.87 \\
 \bottomrule\end{tabular}\end{table}
 On 60 dev jobs: bid F1 0.65 (precision 0.71, recall 0.59), accuracy 0.82, scam recall 1.00 at precision 0.67 (4 legitimate jobs flagged),

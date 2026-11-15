@@ -17,7 +17,7 @@
 \providecommand{\decInj}{\pending}\providecommand{\decPrice}{\pending}\providecommand{\decPninetyfive}{\pending}
 
 \title{\textbf{BidPilot: a multi-agent freelancer copilot}\\[2pt]\large R\&D report (AI-4016, GigBid) -- engineering design review}
-\author{Qasim Hafeez (22F-3812)\\\small Code: \url{https://github.com/qasim-hafeez00/bidpilot} \quad Deployment: \url{https://bidpilot-e409.onrender.com}}
+\author{Qasim Hafeez (22F-3812)\\\small Code: \url{https://github.com/qasim-hafeez00/bidpilot}\\\small Deployment: \url{https://bidpilot-e409.onrender.com}}
 \date{November 2026}
 
 \begin{document}
@@ -140,13 +140,13 @@ finish before submission (a shared SQLite cache lock crashed the run), so they a
 \caption{All variants on the 128-job sample (62 with $\ge$4 skills). Source: \file{evals/results/rag_limit60_run.log} of the \texttt{--limit 60} run; its JSON was later
 overwritten by the full-dev run, so this table is transcribed from the log.}\label{tab:rag60}
 \begin{tabular}{lrrrrr}\toprule Variant & R@5 & MRR & nDCG@10 & R@5 ($\ge$4 skills) & p95 s\\\midrule
-V0 naive dense & 0.528 & 0.704 & 0.595 & 0.554 & 0.00\
-V1 decomposition & 0.547 & 0.670 & 0.576 & 0.537 & 0.01\
-V2 hybrid BM25+dense & 0.523 & 0.669 & 0.571 & 0.515 & 0.00\
-V3 + cross-encoder & 0.533 & 0.642 & 0.552 & 0.530 & 16.70\
-V4 outcome-aware & 0.521 & 0.626 & 0.554 & 0.497 & 0.01\
-V5 multi-vector & 0.559 & 0.661 & 0.580 & 0.564 & 0.00\
-V6 contextual & 0.539 & 0.653 & 0.564 & 0.533 & 0.00\
+V0 naive dense & 0.528 & 0.704 & 0.595 & 0.554 & 0.00\\
+V1 decomposition & 0.547 & 0.670 & 0.576 & 0.537 & 0.01\\
+V2 hybrid BM25+dense & 0.523 & 0.669 & 0.571 & 0.515 & 0.00\\
+V3 + cross-encoder & 0.533 & 0.642 & 0.552 & 0.530 & 16.70\\
+V4 outcome-aware & 0.521 & 0.626 & 0.554 & 0.497 & 0.01\\
+V5 multi-vector & 0.559 & 0.661 & 0.580 & 0.564 & 0.00\\
+V6 contextual & 0.539 & 0.653 & 0.564 & 0.533 & 0.00\\
 \bottomrule\end{tabular}\end{table}
 
 \InputIfFileExists{generated/rag_table.tex}{}{\pendingtable{RAG variant comparison}{evals/results/rag_variants.json}}
@@ -162,7 +162,7 @@ right and loses on coverage. The full dev set (396 jobs, 163 with $\ge$4 skills)
 V0 0.560, V1 0.550, V2 0.532.
 
 \InputIfFileExists{generated/rag_breakdown.tex}{}{}
-\InputIfFileExists{generated/ablation_table.tex}{}{}
+\textbf{Ablation.} A separate one-flag-at-a-time ablation of the composite did not finish before submission. Because every variant is a preset of one pipeline, Table~\ref{tab:rag60} already isolates single components against V0: adding decomposition (V1, +1.9 points R@5), BM25 (V2, $-0.5$), the cross-encoder (V3, +0.5), outcome weighting (V4, $-0.7$), multi-vector aggregation (V5, +3.1) and contextual chunk headers (V6, +1.1).
 
 \textbf{Claim verification (B3)} (\file{rag/verify.py}). Each first-person experience or result sentence in a draft is a claim,
 labelled supported, partly supported or unsupported by the cross-encoder score against the cited (else retrieved) evidence, plus
@@ -182,7 +182,7 @@ rates (0.14 vs.\ 0.14, $n=14$ submitted each) do not separate the two retrievers
 and 286\,s for the shipped pipeline (budget 300\,s), measured while other evaluations shared the CPU.
 
 \textbf{Judge calibration.} The judge (Qwen3, a different model family from the writer, to limit self-preference) scored 28 proposals.
-These were compared with reference labels on the same 1--5 rubric, given blind to configuration. \InputIfFileExists{generated/judge_calib.tex}{}{}
+These were compared with reference labels on the same 1--5 rubric, given blind to configuration. Result: quadratic-weighted $\kappa = 0.53$ on $n = 28$ proposals; only 1 differed by $\ge$2 points (\texttt{judge.json}). Mean judge score: 3.21 (shipped) vs.\ 3.14 (V0).
 \emph{Disclosure:} the reference labels in \file{evals/datasets/judge_labels.csv} were written by an AI assistant (Claude) at my
 request, not by me. $\kappa$ therefore measures agreement between two models, not between the judge and a human. The judge
 gave 4 to half the proposals and rarely used 1 or 5, so its scores are compressed. The blind classmate panel was not run.

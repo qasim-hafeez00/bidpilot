@@ -27,6 +27,11 @@ def f(x, nd: int = 3) -> str:
     return f"{x:.{nd}f}" if isinstance(x, float) else str(x)
 
 
+def na(x, nd: int = 3) -> str:
+    """n/a when the slice has no positives (e.g. no injected jobs)."""
+    return "n/a" if x is None or (isinstance(x, float) and x != x) else f(x, nd)
+
+
 def esc(s: str) -> str:
     return s.replace("_", r"\_").replace("&", r"\&").replace("%", r"\%")
 
@@ -84,10 +89,10 @@ def decision() -> str:
     rows = []
     for name, b in [("All", d["overall"])] + [(k, v) for k, v in d["by_persona"].items()]:
         rows.append(f"{esc(name)} & {b['n']} & {f(b['bid_skip']['f1'])} & {f(b['bid_skip']['precision'])} & {f(b['bid_skip']['recall'])} & "
-                    f"{f(b['scam']['precision'])} & {f(b['scam']['recall'])} & {f(b['injection_detection_recall'])} & "
+                    f"{f(b['scam']['precision'])} & {f(b['scam']['recall'])} & {na(b['injection_detection_recall'])} & "
                     f"{f(b['price_in_fair_band'])} & {f(b['latency_p95_s'], 2)} \\\\")
     return (r"\begin{table}[t]\centering\small\caption{Decisions on the dev set (graph in analysis-only mode through the in-memory MCP client). "
-            r"Source: \texttt{decision\_eval.json}.}\label{tab:dec}" "\n"
+            r"n/a: the slice contains no injected jobs. Source: \texttt{decision\_eval.json}.}\label{tab:dec}" "\n"
             r"\begin{tabular}{lrrrrrrrrr}\toprule Slice & n & Bid F1 & P & R & Scam P & Scam R & Inj.\ det. & Price in band & p95 s\\\midrule"
             "\n" + "\n".join(rows) + "\n" r"\bottomrule\end{tabular}\end{table}")
 
