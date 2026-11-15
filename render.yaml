@@ -35,6 +35,14 @@ services:
         value: memory
       - key: MODEL_PROFILE
         value: open_hosted
+      - key: ONNX_THREADS        # low-memory mode for the 512 MB free instance (see rag/index/models.py)
+        value: "1"
+      - key: EMBED_BATCH
+        value: "8"
+      - key: RERANK_DISABLED
+        value: "1"
+      - key: MALLOC_ARENA_MAX
+        value: "2"
       - key: SEED_DEMO
         value: "1"
       - key: WORKER_MAX_JOBS

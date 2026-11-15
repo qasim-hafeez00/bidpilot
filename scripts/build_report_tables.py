@@ -92,6 +92,72 @@ def decision() -> str:
             "\n" + "\n".join(rows) + "\n" r"\bottomrule\end{tabular}\end{table}")
 
 
+def table(caption: str, label: str, cols: str, header: str, rows: list[str]) -> str:
+    return (r"\begin{table}[t]\centering\small\caption{" + caption + r"}\label{" + label + "}\n"
+            r"\begin{tabular}{" + cols + r"}\toprule " + header + r"\\midrule" "\n" + "\n".join(rows) + "\n" r"\bottomrule\end{tabular}\end{table}")
+
+
+def proposals() -> str:
+    d = load("proposals.json")
+    if not d:
+        return r"\pendingtable{Proposal-level results}{evals/results/proposals.json}"
+    j = (load("judge.json") or {}).get("mean_overall_by_config", {})
+    rows = []
+    for name, s in d["summary"].items():
+        label = {"best": "Composite (shipped)", "v0": "V0 naive dense"}.get(name, name)
+        rows.append(f"{esc(label)} & {s['n']} & {f(s['unsupported_per_proposal_before'], 2)} & {f(s['unsupported_per_proposal_after'], 2)} & "
+                    f"{f(s['critic_loops_mean'], 2)} & {f(j.get(name), 2)} & {f(s['reply_rate'], 2)} & {f(s['p95_latency_s'], 0)} & "
+                    f"{f(s['tokens_per_proposal'], 0)} & {f(s['usd_per_proposal'], 4)} \\\\")
+    return table(r"Proposal-level results (" + esc(str(d.get("model_profile"))) + r" profile; " + str(d["per_persona"]) +
+                 r" gold-bid jobs per persona). Unsupported claims are counted by the independent fact checker; reply rate is from "
+                 r"GigSim's rule-based clients. Source: \texttt{proposals.json}, \texttt{judge.json}.", "tab:prop", "lrrrrrrrrr",
+                 r"Retrieval & n & Unsup.\ before & Unsup.\ after & Critic loops & Judge (1--5) & Reply rate & p95 s & Tokens & USD", rows)
+
+
+def judge_calib() -> str:
+    d = load("judge.json")
+    if not d:
+        return r"\pendingtable{Judge calibration}{evals/results/judge.json}"
+    c = d["calibration"]
+    return (r"\noindent\textbf{Judge calibration.} " + esc(c["status"]) + r": quadratic-weighted $\kappa$ = " + f(c.get("kappa_quadratic"), 2) +
+            r" on $n$ = " + str(c.get("n", 0)) + r" labelled proposals (" + str(len(c.get("disagreements", []))) +
+            r" disagree by $\ge$2 points). Source: \texttt{judge.json}.")
+
+
+def toolgran() -> str:
+    d = load("tool_granularity.json")
+    if not d:
+        return r"\pendingtable{Tool granularity}{evals/results/tool\_granularity.json}"
+    nice = {"fine": "Fine-grained (14 tools)", "coarse": "Coarse (3 tools + action)", "best": "Fine + rewritten descriptions"}
+    rows = [f"{nice.get(k, k)} & {v['n']} & {f(v['tool_selection_accuracy'])} & {f(v['argument_accuracy'])} & {f(v['tokens_per_task'], 0)} & "
+            f"{f(v['mean_latency_s'], 2)} \\\\" for k, v in d["results"].items()]
+    return table(r"R\&D A: tool granularity with \texttt{" + esc(d["model"]) + r"}. Source: \texttt{tool\_granularity.json}.", "tab:tools",
+                 "lrrrrr", r"Tool set & n & Tool sel.\ acc. & Arg.\ acc. & Tokens/task & Latency s", rows)
+
+
+def arch() -> str:
+    d = load("arch_compare.json")
+    if not d:
+        return r"\pendingtable{Architecture comparison}{evals/results/arch\_compare.json}"
+    nice = {"react_single_agent": "Single ReAct agent", "langgraph_supervisor": "LangGraph supervisor", "hand_built_graph": "Hand-built graph"}
+    rows = [f"{nice.get(k, k)} & {v['n']} & {f(v['bid_skip_accuracy'])} & {v['scams_bid_on']} & {f(v['unsupported_claims_per_proposal'], 2)} & "
+            f"{v['compliance_violations_left']} & {f(v['tokens_per_job'], 0)} & {f(float(v['p95_latency_s']), 0)} & {v['errors']} \\\\"
+            for k, v in d["summary"].items()]
+    return table(r"R\&D C: the same jobs (" + str(d["per_persona"]) + r" per persona) through three architectures. Source: \texttt{arch\_compare.json}.",
+                 "tab:arch", "lrrrrrrrr", r"Architecture & n & Bid/skip acc. & Scams bid & Unsup./prop. & Policy viol. & Tokens/job & p95 s & Errors", rows)
+
+
+def abtest() -> str:
+    d = load("ab_test.json")
+    if not d:
+        return r"\pendingtable{A/B test}{evals/results/ab\_test.json}"
+    a, b = d["arms"]["A_problem_first"], d["arms"]["B_question_first"]
+    rows = [f"A: problem-first & {a['n']} & {a['replies']} & {f(a['rate'], 2)} \\\\", f"B: question-first & {b['n']} & {b['replies']} & {f(b['rate'], 2)} \\\\"]
+    return table(r"X2 A/B test on GigSim reply rate. Two-proportion $z$ = " + f(d["z"], 2) + r" ($p$ = " + f(d["p_two_prop_z"], 3) +
+                 r"), Fisher exact $p$ = " + f(d["p_fisher"], 3) + r". Source: \texttt{ab\_test.json}.", "tab:ab", "lrrr",
+                 r"Arm & Submitted & Replies & Reply rate", rows)
+
+
 def headline() -> str:
     """\\newcommand macros for numbers quoted in prose."""
     m = {}
@@ -115,6 +181,9 @@ def main() -> None:
     (OUT / "rag_breakdown.tex").write_text(rag_breakdown(), encoding="utf-8")
     (OUT / "ablation_table.tex").write_text(ablation(), encoding="utf-8")
     (OUT / "decision_table.tex").write_text(decision(), encoding="utf-8")
+    for name, fn in (("proposals_table", proposals), ("judge_calib", judge_calib), ("toolgran_table", toolgran),
+                     ("arch_table", arch), ("ab_table", abtest)):
+        (OUT / f"{name}.tex").write_text(fn(), encoding="utf-8")
     (OUT / "numbers.tex").write_text(headline() + "\n", encoding="utf-8")
     print("wrote", sorted(p.name for p in OUT.iterdir()))
 

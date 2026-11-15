@@ -14,13 +14,16 @@ from common import config as cfg
 
 QUERY_PREFIX = "Represent this sentence for searching relevant passages: "
 _lock = threading.Lock()
+# Low-memory hosting (512 MB free instances): ONNX_THREADS=1, EMBED_BATCH=8, RERANK_DISABLED=1.
+_THREADS = int(os.environ["ONNX_THREADS"]) if os.environ.get("ONNX_THREADS") else None
+_BATCH = int(os.environ.get("EMBED_BATCH", "32"))
 
 
 @lru_cache(maxsize=1)
 def _embedder():
     from fastembed import TextEmbedding
 
-    return TextEmbedding(model_name=cfg.get("models.embeddings", "BAAI/bge-small-en-v1.5"),
+    return TextEmbedding(model_name=cfg.get("models.embeddings", "BAAI/bge-small-en-v1.5"), threads=_THREADS,
                          cache_dir=os.environ.get("FASTEMBED_CACHE", str(cfg.ROOT / "data" / "processed" / "models")))
 
 
@@ -28,7 +31,7 @@ def _embedder():
 def _reranker():
     from fastembed.rerank.cross_encoder import TextCrossEncoder
 
-    return TextCrossEncoder(model_name=cfg.get("models.reranker", "Xenova/ms-marco-MiniLM-L-6-v2"),
+    return TextCrossEncoder(model_name=cfg.get("models.reranker", "Xenova/ms-marco-MiniLM-L-6-v2"), threads=_THREADS,
                             cache_dir=os.environ.get("FASTEMBED_CACHE", str(cfg.ROOT / "data" / "processed" / "models")))
 
 
@@ -54,7 +57,7 @@ def embed(texts: list[str], is_query: bool = False) -> np.ndarray:
                 out[i] = np.frombuffer(r[0], dtype=np.float32)
         miss = [i for i, v in enumerate(out) if v is None]
         if miss:
-            vecs = list(_embedder().embed([texts[i] for i in miss], batch_size=32))
+            vecs = list(_embedder().embed([texts[i] for i in miss], batch_size=_BATCH))
             for i, v in zip(miss, vecs, strict=True):
                 v = np.asarray(v, dtype=np.float32)
                 v = v / (np.linalg.norm(v) + 1e-9)
@@ -68,6 +71,10 @@ def rerank(query: str, docs: list[str]) -> np.ndarray:
     """Cross-encoder relevance logits -> sigmoid probabilities in [0, 1]."""
     if not docs:
         return np.zeros(0)
+    if os.environ.get("RERANK_DISABLED") == "1":
+        # degraded hosted mode: bi-encoder cosine mapped onto the cross-encoder's probability scale (no second model in RAM)
+        q, d = embed([query], is_query=True)[0], embed(docs)
+        return np.clip((d @ q - 0.55) / 0.35, 0.0, 1.0)
     with _lock:
-        logits = np.asarray(list(_reranker().rerank(query, docs, batch_size=32)), dtype=np.float32)
+        logits = np.asarray(list(_reranker().rerank(query, docs, batch_size=_BATCH)), dtype=np.float32)
     return 1 / (1 + np.exp(-logits))
