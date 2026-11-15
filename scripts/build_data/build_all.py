@@ -19,7 +19,7 @@ import json
 import random
 import re
 import sys
-from collections import Counter, defaultdict
+from collections import Counter
 from pathlib import Path
 
 import numpy as np
