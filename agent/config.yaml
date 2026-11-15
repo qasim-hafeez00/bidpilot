@@ -1,0 +1,142 @@
+# BidPilot / GigBid runtime configuration. Rules, budgets, thresholds and model routing live HERE,
+# never in code. The change request (GigSim policy v2) is absorbed by editing this file + the policy pack.
+version: 3
+
+marketplace:
+  mode: gigsim                 # gigsim | upwork_live   (R1: one port, two adapters)
+  policy_version: 1            # GigSim policy the system is configured for (see data/policy_pack/)
+  max_requests_per_minute: 50  # stay under GigSim's 120 rpm per token
+  scout_interval_minutes:
+    gigsim: 10
+    upwork_live: 180           # conservative; justified in docs/RUNBOOK.md
+  connects_usd: 0.15           # price of one Connect, for the Connects-worth-it calculation
+  upwork_tool_map:             # official Upwork MCP tool names -> port methods (verified at connect time)
+    search_jobs: search_jobs
+    get_job: get_job_details
+    get_client_history: get_client_info
+    get_connects_balance: get_connects
+    list_messages: list_messages
+    create_proposal_draft: create_proposal_draft
+    submit_proposal: create_proposal_draft   # live mode: drafts only, user confirms on Upwork
+    send_message: create_message_draft
+
+models:
+  profile: open                # open | open_hosted | paid   (env MODEL_PROFILE overrides)
+  profiles:
+    open:                      # local Ollama, CPU laptop (i7-8550U, 16 GB) - required profile
+      provider: ollama
+      small: qwen2.5:3b
+      strong: qwen2.5:3b
+      judge: qwen2.5:7b-instruct
+      fallback_small: qwen2.5:3b
+    open_7b_writer:            # second open configuration compared on the dev set
+      provider: ollama
+      small: qwen2.5:3b
+      strong: qwen2.5:7b-instruct
+      judge: qwen2.5:7b-instruct
+      fallback_small: qwen2.5:3b
+    open_hosted:               # hosted open-weight models (deployment; needs GROQ_API_KEY)
+      provider: groq
+      small: openai/gpt-oss-20b
+      strong: openai/gpt-oss-120b
+      judge: openai/gpt-oss-120b
+      fallback_small: llama-3.1-8b-instant
+    paid:                      # optional; only if it beats open by enough to justify cost
+      provider: openai
+      small: gpt-4.1-mini
+      strong: gpt-4.1
+      judge: gpt-4.1
+      fallback_small: gpt-4.1-mini
+  nodes:                       # node -> tier (small|strong). Route cheap, frequent nodes to small.
+    scout: small
+    analyst: small
+    risk_assessor: small
+    fit_matcher: small
+    pricing: small
+    writer: strong
+    verifier: small
+    critic: strong
+    compliance: small
+    client_liaison: strong
+    intent: small
+  use_llm:                     # rules-first nodes: turn the LLM refinement on/off per node
+    analyst: true
+    risk_assessor: false       # measured: rules+client history matched LLM on dev (see evals/results)
+    critic: true
+    compliance: false
+    intent: true
+  temperature: 0.2
+  timeout_s: 240
+  prices_usd_per_mtok:         # input, output (0 for local)
+    "qwen2.5:3b": [0, 0]
+    "qwen2.5:7b-instruct": [0, 0]
+    "openai/gpt-oss-20b": [0.075, 0.30]
+    "openai/gpt-oss-120b": [0.15, 0.60]
+    "llama-3.1-8b-instant": [0.05, 0.08]
+    "gpt-4.1-mini": [0.40, 1.60]
+    "gpt-4.1": [2.00, 8.00]
+  embeddings: BAAI/bge-small-en-v1.5
+  reranker: Xenova/ms-marco-MiniLM-L-6-v2
+
+rag:
+  variant: best                # chosen by evals/results/rag_variants.json (R6)
+  k: 8
+
+budgets:
+  max_graph_steps: 30
+  max_revisions: 2
+  max_tokens_per_job: 16000
+  p95_latency_s:               # declared budgets (R8); measured values in evals/results/budgets.json
+    job_analysed: 20
+    proposal: 300
+  usd:
+    job_analysed: 0.002
+    proposal: 0.02
+
+thresholds:
+  minimum_fit_score: 0.55
+  watch_fit_score: 0.40
+  maximum_risk_score: 0.60
+  critic_min_supported_ratio: 0.80
+  proposal_words: [110, 260]
+  verify_support: 0.30         # cross-encoder sigmoid score for "supported"
+  verify_partial: 0.08
+
+autonomy:
+  default: suggest             # suggest | auto_skip_low_fit   (never auto-send)
+
+policy:
+  pack: data/policy_pack/marketplace_policy.md
+  # Compliance Guard rules. Each: id, pattern (regex, case-insensitive), action (remove|block), message
+  rules:
+    - id: contact_email
+      pattern: '[\w.+-]+@[\w-]+\.[\w.]{2,}'
+      action: remove
+      message: Contact details are not allowed in proposals (off-platform contact).
+    - id: contact_phone
+      pattern: '(\+?\d[\d\s().-]{8,}\d)'
+      action: remove
+      message: Phone numbers are not allowed in proposals.
+    - id: off_platform_apps
+      pattern: '\b(telegram|whatsapp|skype|discord|signal app|wechat)\b'
+      action: remove
+      message: Moving the conversation off-platform is prohibited.
+    - id: off_platform_payment
+      pattern: '\b(paypal|western union|crypto|usdt|bitcoin|gift ?cards?|bank transfer)\b'
+      action: remove
+      message: Payment outside the platform is prohibited.
+    - id: guarantees
+      pattern: '\b(i |we )?(guarantee[sd]?|100% (success|satisfaction|accuracy)|risk[- ]free|first[- ]page ranking)\b'
+      action: remove
+      message: Guarantees of results are not allowed.
+    - id: free_work
+      pattern: '\b(free (sample|trial|test)|work for free|no charge)\b'
+      action: remove
+      message: Offering unpaid production work is discouraged by policy.
+  # Added by the change request (policy v2). Enabled when marketplace.policy_version >= 2.
+  v2_rules:
+    - id: external_links
+      pattern: '(https?://\S+|www\.\S+|\b[\w-]+\.(com|io|dev|net|org|me|app)\b)'
+      action: remove
+      message: Policy v2 (2026-11-02) forbids external links in proposals; reference portfolio items by title.
+  connects_premium_surcharge: 0   # v2 sets 4; used by Pricing for Connects worth-it maths

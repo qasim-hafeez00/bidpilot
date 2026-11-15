@@ -1,0 +1,607 @@
+{
+  "persona_id": "fullstack",
+  "years_experience": 5,
+  "skills": [
+    "AWS",
+    "Authentication",
+    "CI/CD",
+    "Celery",
+    "Django",
+    "Django REST Framework",
+    "Docker",
+    "Express",
+    "FastAPI",
+    "Firebase",
+    "Flask",
+    "Google Sheets",
+    "GraphQL",
+    "HTML/CSS",
+    "JavaScript",
+    "Kubernetes",
+    "MongoDB",
+    "MySQL",
+    "Next.js",
+    "Node.js",
+    "PHP",
+    "PostgreSQL",
+    "Python",
+    "REST API",
+    "React",
+    "React Native",
+    "Redis",
+    "Shopify",
+    "Stripe",
+    "Tailwind CSS",
+    "TypeScript",
+    "Vue.js",
+    "WebSockets"
+  ],
+  "industries": [
+    "SaaS",
+    "agency",
+    "agritech",
+    "edtech",
+    "enterprise software",
+    "fashion retail",
+    "fintech",
+    "fitness",
+    "food delivery",
+    "healthcare",
+    "home services",
+    "logistics",
+    "media",
+    "nonprofit",
+    "productivity",
+    "travel"
+  ],
+  "project_titles": [
+    "Multi-tenant SaaS analytics dashboard",
+    "Two-sided services marketplace",
+    "Logistics REST API",
+    "Real-time team chat",
+    "Headless e-commerce storefront",
+    "GraphQL gateway over microservices",
+    "Admin portal for a clinic network",
+    "Subscription billing integration",
+    "Serving an ML model behind FastAPI",
+    "CI/CD and Kubernetes migration",
+    "Booking web app with calendar sync",
+    "Inventory API for a warehouse",
+    "Marketing site and CMS",
+    "SSO and role-based access control",
+    "Delivery tracking mobile app",
+    "PHP to Django migration",
+    "Front-end performance audit",
+    "Partner API integrations hub"
+  ],
+  "numbers": [
+    "0.5",
+    "1",
+    "1,800",
+    "1.2",
+    "15",
+    "18",
+    "180",
+    "2",
+    "2.3",
+    "2.4",
+    "210",
+    "23",
+    "3",
+    "30",
+    "310",
+    "4",
+    "4,000",
+    "41",
+    "45",
+    "50",
+    "6",
+    "60",
+    "7.1",
+    "70",
+    "80",
+    "9",
+    "93",
+    "95"
+  ],
+  "projects": [
+    {
+      "project_id": "fullstack:saas-dashboard",
+      "slug": "saas-dashboard",
+      "title": "Multi-tenant SaaS analytics dashboard",
+      "client_industry": "SaaS",
+      "date": "2025-04",
+      "explicit_skills": [
+        "React",
+        "TypeScript",
+        "Django",
+        "PostgreSQL"
+      ],
+      "implied_skills": [
+        "Celery",
+        "Redis",
+        "Docker"
+      ],
+      "all_skills": [
+        "Celery",
+        "Django",
+        "Docker",
+        "PostgreSQL",
+        "React",
+        "Redis",
+        "TypeScript"
+      ],
+      "problem": "A startup's customers wanted self-serve usage analytics.",
+      "approach": "Tenant-scoped API, background aggregation jobs and a charting UI.",
+      "result": "dashboard load time under 1.2 s for 50k-row tenants",
+      "has_repo": true
+    },
+    {
+      "project_id": "fullstack:marketplace",
+      "slug": "marketplace",
+      "title": "Two-sided services marketplace",
+      "client_industry": "home services",
+      "date": "2024-10",
+      "explicit_skills": [
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "PostgreSQL",
+        "Stripe"
+      ],
+      "implied_skills": [
+        "Redis",
+        "Docker"
+      ],
+      "all_skills": [
+        "Docker",
+        "Next.js",
+        "Node.js",
+        "PostgreSQL",
+        "Redis",
+        "Stripe",
+        "TypeScript"
+      ],
+      "problem": "A founder needed an MVP to match homeowners with tradespeople.",
+      "approach": "Listings, bookings, escrow-style payments and reviews.",
+      "result": "launched in 9 weeks; 1,800 bookings in the first quarter",
+      "has_repo": true
+    },
+    {
+      "project_id": "fullstack:drf-api",
+      "slug": "drf-api",
+      "title": "Logistics REST API",
+      "client_industry": "logistics",
+      "date": "2024-05",
+      "explicit_skills": [
+        "Django",
+        "Django REST Framework",
+        "REST API",
+        "PostgreSQL"
+      ],
+      "implied_skills": [
+        "Celery",
+        "Docker",
+        "Authentication"
+      ],
+      "all_skills": [
+        "Authentication",
+        "Celery",
+        "Django",
+        "Django REST Framework",
+        "Docker",
+        "PostgreSQL",
+        "REST API"
+      ],
+      "problem": "Drivers' apps hit a slow legacy PHP backend.",
+      "approach": "Rebuilt the API with token auth, pagination and async route optimisation jobs.",
+      "result": "p95 latency from 2.4 s to 310 ms",
+      "has_repo": false
+    },
+    {
+      "project_id": "fullstack:realtime-chat",
+      "slug": "realtime-chat",
+      "title": "Real-time team chat",
+      "client_industry": "productivity",
+      "date": "2023-09",
+      "explicit_skills": [
+        "React",
+        "Node.js",
+        "WebSockets",
+        "MongoDB"
+      ],
+      "implied_skills": [
+        "Redis",
+        "Docker"
+      ],
+      "all_skills": [
+        "Docker",
+        "MongoDB",
+        "Node.js",
+        "React",
+        "Redis",
+        "WebSockets"
+      ],
+      "problem": "A remote team wanted chat embedded in their project tool.",
+      "approach": "Socket server with presence, typing indicators and message history.",
+      "result": "handled 4,000 concurrent connections in load tests",
+      "has_repo": true
+    },
+    {
+      "project_id": "fullstack:ecom-headless",
+      "slug": "ecom-headless",
+      "title": "Headless e-commerce storefront",
+      "client_industry": "fashion retail",
+      "date": "2024-01",
+      "explicit_skills": [
+        "Next.js",
+        "React",
+        "Shopify",
+        "Tailwind CSS"
+      ],
+      "implied_skills": [
+        "GraphQL"
+      ],
+      "all_skills": [
+        "GraphQL",
+        "Next.js",
+        "React",
+        "Shopify",
+        "Tailwind CSS"
+      ],
+      "problem": "A fashion brand's theme store was slow on mobile.",
+      "approach": "Headless storefront on the Storefront API with static generation.",
+      "result": "Lighthouse mobile score from 41 to 93; conversion up 18%",
+      "has_repo": true
+    },
+    {
+      "project_id": "fullstack:graphql-gateway",
+      "slug": "graphql-gateway",
+      "title": "GraphQL gateway over microservices",
+      "client_industry": "fintech",
+      "date": "2023-06",
+      "explicit_skills": [
+        "GraphQL",
+        "Node.js",
+        "TypeScript"
+      ],
+      "implied_skills": [
+        "Docker",
+        "Redis",
+        "Authentication"
+      ],
+      "all_skills": [
+        "Authentication",
+        "Docker",
+        "GraphQL",
+        "Node.js",
+        "Redis",
+        "TypeScript"
+      ],
+      "problem": "Mobile clients made 14 REST calls per screen.",
+      "approach": "Federated gateway with dataloaders and per-field auth.",
+      "result": "screen load calls reduced to 1; payload size down 60%",
+      "has_repo": false
+    },
+    {
+      "project_id": "fullstack:vue-admin",
+      "slug": "vue-admin",
+      "title": "Admin portal for a clinic network",
+      "client_industry": "healthcare",
+      "date": "2023-02",
+      "explicit_skills": [
+        "Vue.js",
+        "Flask",
+        "MySQL"
+      ],
+      "implied_skills": [
+        "Docker",
+        "Authentication"
+      ],
+      "all_skills": [
+        "Authentication",
+        "Docker",
+        "Flask",
+        "MySQL",
+        "Vue.js"
+      ],
+      "problem": "Staff managed schedules in shared spreadsheets.",
+      "approach": "Role-based admin portal with audit trail.",
+      "result": "scheduling errors dropped by 70%",
+      "has_repo": true
+    },
+    {
+      "project_id": "fullstack:stripe-billing",
+      "slug": "stripe-billing",
+      "title": "Subscription billing integration",
+      "client_industry": "edtech",
+      "date": "2024-08",
+      "explicit_skills": [
+        "Stripe",
+        "Django",
+        "React"
+      ],
+      "implied_skills": [
+        "Celery",
+        "PostgreSQL"
+      ],
+      "all_skills": [
+        "Celery",
+        "Django",
+        "PostgreSQL",
+        "React",
+        "Stripe"
+      ],
+      "problem": "An edtech platform billed manually by invoice.",
+      "approach": "Plans, trials, proration and dunning via Stripe webhooks.",
+      "result": "involuntary churn down 23%",
+      "has_repo": true
+    },
+    {
+      "project_id": "fullstack:fastapi-ml",
+      "slug": "fastapi-ml",
+      "title": "Serving an ML model behind FastAPI",
+      "client_industry": "agritech",
+      "date": "2025-02",
+      "explicit_skills": [
+        "FastAPI",
+        "Python",
+        "Docker"
+      ],
+      "implied_skills": [
+        "Redis",
+        "AWS"
+      ],
+      "all_skills": [
+        "AWS",
+        "Docker",
+        "FastAPI",
+        "Python",
+        "Redis"
+      ],
+      "problem": "A data science team could not expose their model to the mobile app.",
+      "approach": "Typed API with request validation, caching and autoscaling container.",
+      "result": "serves 30 requests/s at p95 180 ms",
+      "has_repo": false
+    },
+    {
+      "project_id": "fullstack:cicd-k8s",
+      "slug": "cicd-k8s",
+      "title": "CI/CD and Kubernetes migration",
+      "client_industry": "SaaS",
+      "date": "2025-07",
+      "explicit_skills": [
+        "Kubernetes",
+        "Docker",
+        "CI/CD",
+        "AWS"
+      ],
+      "implied_skills": [
+        "PostgreSQL"
+      ],
+      "all_skills": [
+        "AWS",
+        "CI/CD",
+        "Docker",
+        "Kubernetes",
+        "PostgreSQL"
+      ],
+      "problem": "Deploys were manual SSH sessions with downtime.",
+      "approach": "Containerised 6 services, GitHub Actions pipelines, rolling deploys on EKS.",
+      "result": "zero-downtime deploys, 15 per week",
+      "has_repo": true
+    },
+    {
+      "project_id": "fullstack:booking-app",
+      "slug": "booking-app",
+      "title": "Booking web app with calendar sync",
+      "client_industry": "fitness",
+      "date": "2023-11",
+      "explicit_skills": [
+        "React",
+        "Firebase",
+        "Authentication"
+      ],
+      "implied_skills": [
+        "Google Sheets"
+      ],
+      "all_skills": [
+        "Authentication",
+        "Firebase",
+        "Google Sheets",
+        "React"
+      ],
+      "problem": "A gym chain took class bookings by phone.",
+      "approach": "Booking SPA with Google sign-in and calendar sync.",
+      "result": "phone bookings down 80%",
+      "has_repo": true
+    },
+    {
+      "project_id": "fullstack:express-api",
+      "slug": "express-api",
+      "title": "Inventory API for a warehouse",
+      "client_industry": "logistics",
+      "date": "2022-12",
+      "explicit_skills": [
+        "Node.js",
+        "Express",
+        "MySQL",
+        "REST API"
+      ],
+      "implied_skills": [
+        "Docker"
+      ],
+      "all_skills": [
+        "Docker",
+        "Express",
+        "MySQL",
+        "Node.js",
+        "REST API"
+      ],
+      "problem": "Stock counts drifted between warehouse and website.",
+      "approach": "Event-driven inventory API with nightly reconciliation.",
+      "result": "stock discrepancies cut from 6% to 0.5%",
+      "has_repo": false
+    },
+    {
+      "project_id": "fullstack:next-blog-cms",
+      "slug": "next-blog-cms",
+      "title": "Marketing site and CMS",
+      "client_industry": "agency",
+      "date": "2024-03",
+      "explicit_skills": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "HTML/CSS"
+      ],
+      "implied_skills": [
+        "GraphQL"
+      ],
+      "all_skills": [
+        "GraphQL",
+        "HTML/CSS",
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript"
+      ],
+      "problem": "An agency's marketers needed to publish without developers.",
+      "approach": "Headless CMS with preview, i18n and image optimisation.",
+      "result": "publishing time from 2 days to 15 minutes",
+      "has_repo": true
+    },
+    {
+      "project_id": "fullstack:auth-sso",
+      "slug": "auth-sso",
+      "title": "SSO and role-based access control",
+      "client_industry": "enterprise software",
+      "date": "2025-05",
+      "explicit_skills": [
+        "Authentication",
+        "Node.js",
+        "React"
+      ],
+      "implied_skills": [
+        "Redis",
+        "PostgreSQL"
+      ],
+      "all_skills": [
+        "Authentication",
+        "Node.js",
+        "PostgreSQL",
+        "React",
+        "Redis"
+      ],
+      "problem": "Enterprise clients demanded SSO before signing.",
+      "approach": "OIDC/SAML SSO with SCIM provisioning and fine-grained roles.",
+      "result": "unblocked 3 enterprise deals",
+      "has_repo": true
+    },
+    {
+      "project_id": "fullstack:react-native-app",
+      "slug": "react-native-app",
+      "title": "Delivery tracking mobile app",
+      "client_industry": "food delivery",
+      "date": "2024-07",
+      "explicit_skills": [
+        "React Native",
+        "TypeScript",
+        "Firebase"
+      ],
+      "implied_skills": [
+        "WebSockets"
+      ],
+      "all_skills": [
+        "Firebase",
+        "React Native",
+        "TypeScript",
+        "WebSockets"
+      ],
+      "problem": "Customers called restaurants to ask where their order was.",
+      "approach": "Live map tracking with push notifications.",
+      "result": "support calls about order status down 45%",
+      "has_repo": false
+    },
+    {
+      "project_id": "fullstack:legacy-migration",
+      "slug": "legacy-migration",
+      "title": "PHP to Django migration",
+      "client_industry": "nonprofit",
+      "date": "2023-04",
+      "explicit_skills": [
+        "Django",
+        "PHP",
+        "PostgreSQL"
+      ],
+      "implied_skills": [
+        "Docker",
+        "Celery"
+      ],
+      "all_skills": [
+        "Celery",
+        "Django",
+        "Docker",
+        "PHP",
+        "PostgreSQL"
+      ],
+      "problem": "A donor database ran on unmaintained PHP code.",
+      "approach": "Incremental strangler migration with data validation scripts.",
+      "result": "migrated 210k donor records with zero data loss",
+      "has_repo": true
+    },
+    {
+      "project_id": "fullstack:perf-audit",
+      "slug": "perf-audit",
+      "title": "Front-end performance audit",
+      "client_industry": "media",
+      "date": "2025-09",
+      "explicit_skills": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ],
+      "implied_skills": [
+        "CI/CD"
+      ],
+      "all_skills": [
+        "CI/CD",
+        "HTML/CSS",
+        "JavaScript",
+        "React"
+      ],
+      "problem": "A news site's pages took 7 s to become interactive.",
+      "approach": "Code splitting, image strategy and performance budgets in CI.",
+      "result": "Time-to-interactive from 7.1 s to 2.3 s",
+      "has_repo": true
+    },
+    {
+      "project_id": "fullstack:scraper-api-integration",
+      "slug": "scraper-api-integration",
+      "title": "Partner API integrations hub",
+      "client_industry": "travel",
+      "date": "2024-11",
+      "explicit_skills": [
+        "REST API",
+        "Python",
+        "FastAPI"
+      ],
+      "implied_skills": [
+        "Celery",
+        "Redis",
+        "PostgreSQL"
+      ],
+      "all_skills": [
+        "Celery",
+        "FastAPI",
+        "PostgreSQL",
+        "Python",
+        "REST API",
+        "Redis"
+      ],
+      "problem": "A travel startup integrated 9 supplier APIs by hand.",
+      "approach": "Adapter layer with retries, idempotent sync jobs and monitoring.",
+      "result": "new supplier onboarding from 3 weeks to 4 days",
+      "has_repo": false
+    }
+  ]
+}

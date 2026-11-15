@@ -1,0 +1,101 @@
+[
+  {
+    "review_id": "ai_ml:review:legal-rag",
+    "project_id": "ai_ml:legal-rag",
+    "rating": 4.6,
+    "date": "2025-03",
+    "client_industry": "legal services",
+    "provenance": "synthetic",
+    "text": "Ayesha delivered exactly what we needed for the contract q&a assistant over 12k legal documents. Communication was clear and the result: cut clause lookup time from 25 minutes to under 2 minutes; 91% answer accuracy on a 200-question test set."
+  },
+  {
+    "review_id": "ai_ml:review:defect-vision",
+    "project_id": "ai_ml:defect-vision",
+    "rating": 5.0,
+    "date": "2024-06",
+    "client_industry": "manufacturing",
+    "provenance": "synthetic",
+    "text": "Solid engineer. The steel surface defect detection shipped on time; recall on cracks rose from 72% to 94%. Minor delays on documentation but overall excellent."
+  },
+  {
+    "review_id": "ai_ml:review:churn-model",
+    "project_id": "ai_ml:churn-model",
+    "rating": 4.6,
+    "date": "2023-10",
+    "client_industry": "SaaS",
+    "provenance": "synthetic",
+    "text": "Ayesha delivered exactly what we needed for the subscription churn prediction. Communication was clear and the result: the retention team saved 140 at-risk accounts in a quarter."
+  },
+  {
+    "review_id": "ai_ml:review:resume-ner",
+    "project_id": "ai_ml:resume-ner",
+    "rating": 5.0,
+    "date": "2023-07",
+    "client_industry": "HR tech",
+    "provenance": "synthetic",
+    "text": "Great work on our HR tech project. Ayesha understood the problem quickly and field-level F1 of 0.89; data entry time halved. Would hire again."
+  },
+  {
+    "review_id": "ai_ml:review:rec-engine",
+    "project_id": "ai_ml:rec-engine",
+    "rating": 5.0,
+    "date": "2023-04",
+    "client_industry": "media",
+    "provenance": "synthetic",
+    "text": "Very professional. Ayesha asked the right questions up front and the content recommendation engine pages per session up 22%."
+  },
+  {
+    "review_id": "ai_ml:review:ocr-invoices",
+    "project_id": "ai_ml:ocr-invoices",
+    "rating": 5.0,
+    "date": "2024-09",
+    "client_industry": "accounting",
+    "provenance": "synthetic",
+    "text": "Great work on our accounting project. Ayesha understood the problem quickly and 98.1% accuracy on totals; 3 FTE-days saved per week. Would hire again."
+  },
+  {
+    "review_id": "ai_ml:review:sagemaker-mlops",
+    "project_id": "ai_ml:sagemaker-mlops",
+    "rating": 5.0,
+    "date": "2024-04",
+    "client_industry": "fintech",
+    "provenance": "synthetic",
+    "text": "Solid engineer. The mlops pipeline on sagemaker shipped on time; release time cut from two weeks to one day. Minor delays on documentation but overall excellent."
+  },
+  {
+    "review_id": "ai_ml:review:sentiment-dash",
+    "project_id": "ai_ml:sentiment-dash",
+    "rating": 4.6,
+    "date": "2023-01",
+    "client_industry": "hospitality",
+    "provenance": "synthetic",
+    "text": "Ayesha delivered exactly what we needed for the review sentiment analysis. Communication was clear and the result: identified two recurring service issues that were then fixed."
+  },
+  {
+    "review_id": "ai_ml:review:image-search",
+    "project_id": "ai_ml:image-search",
+    "rating": 5.0,
+    "date": "2024-12",
+    "client_industry": "e-commerce",
+    "provenance": "synthetic",
+    "text": "Solid engineer. The visual product search shipped on time; search-to-cart rate up 15%. Minor delays on documentation but overall excellent."
+  },
+  {
+    "review_id": "ai_ml:review:tf-medical",
+    "project_id": "ai_ml:tf-medical",
+    "rating": 5.0,
+    "date": "2022-11",
+    "client_industry": "healthcare",
+    "provenance": "synthetic",
+    "text": "Very professional. Ayesha asked the right questions up front and the chest x-ray triage classifier (research) AUROC 0.87 on the held-out split; published as a reproducible notebook."
+  },
+  {
+    "review_id": "ai_ml:review:whatsapp-bot",
+    "project_id": "ai_ml:whatsapp-bot",
+    "rating": 5.0,
+    "date": "2024-08",
+    "client_industry": "healthcare",
+    "provenance": "synthetic",
+    "text": "Great work on our healthcare project. Ayesha understood the problem quickly and 62% of bookings completed without staff. Would hire again."
+  }
+]

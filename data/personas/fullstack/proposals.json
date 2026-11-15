@@ -1,0 +1,1502 @@
+[
+  {
+    "proposal_id": "fullstack:proposal:000",
+    "job_title": "Transfer Wordpress site to Webflow",
+    "style": "question",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Quick question before I scope this: is the PHP setup already in production? I ask because on PHP to Django migration the biggest win came from that decision - migrated 210k donor records with zero data loss. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-01-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:001",
+    "job_title": "Senior Full Stack Developer for SaaS Applications",
+    "style": "specific",
+    "cited_project_id": "fullstack:fastapi-ml",
+    "text": "Your senior full stack developer for saas applications post mentions a tight timeline. In a similar agritech project (Serving an ML model behind FastAPI) I typed API with request validation, caching and autoscaling container. The result: serves 30 requests/s at p95 180 ms. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-02-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:002",
+    "job_title": "System.io Portfolio website creator",
+    "style": "question",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on PHP to Django migration the biggest win came from that decision - migrated 210k donor records with zero data loss. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2025-03-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:003",
+    "job_title": "Need Word Press Developer For IT Solutions Website",
+    "style": "generic",
+    "cited_project_id": "fullstack:fastapi-ml",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-04-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:004",
+    "job_title": "Mobile site hosted on WordPress",
+    "style": "generic",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2024-05-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:005",
+    "job_title": "Need help with Mapbox . Need to create a button or selector for layers",
+    "style": "specific",
+    "cited_project_id": "fullstack:realtime-chat",
+    "text": "Your need help with mapbox . need to create a button or selector for layers post mentions a tight timeline. In a similar productivity project (Real-time team chat) I socket server with presence, typing indicators and message history. The result: handled 4,000 concurrent connections in load tests. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-06-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:006",
+    "job_title": "Expert AWS / Web Application / iOS Developer",
+    "style": "specific",
+    "cited_project_id": "fullstack:cicd-k8s",
+    "text": "Your expert aws / web application / ios developer post mentions AWS. In a similar SaaS project (CI/CD and Kubernetes migration) I containerised 6 services, GitHub Actions pipelines, rolling deploys on EKS. The result: zero-downtime deploys, 15 per week. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2023-07-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:007",
+    "job_title": "Looking for software developers",
+    "style": "specific",
+    "cited_project_id": "fullstack:fastapi-ml",
+    "text": "Your looking for software developers post mentions a tight timeline. In a similar agritech project (Serving an ML model behind FastAPI) I typed API with request validation, caching and autoscaling container. The result: serves 30 requests/s at p95 180 ms. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-08-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:008",
+    "job_title": "Fullstack trainer",
+    "style": "generic",
+    "cited_project_id": "fullstack:vue-admin",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-09-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:009",
+    "job_title": "Build Website and App with ability for users to make accounts and link external urls.",
+    "style": "generic",
+    "cited_project_id": "fullstack:fastapi-ml",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-10-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:010",
+    "job_title": "Changes to the WordPress Website",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your changes to the wordpress website post mentions PHP. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2024-11-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:011",
+    "job_title": "Low latency, performant real time data scraper for backend of news feed aggregator webapp",
+    "style": "specific",
+    "cited_project_id": "fullstack:booking-app",
+    "text": "Your low latency, performant real time data scraper for backend of news feed aggregator webapp post mentions Web Scraping. In a similar fitness project (Booking web app with calendar sync) I booking SPA with Google sign-in and calendar sync. The result: phone bookings down 80%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-12-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:012",
+    "job_title": "Website Creation for new idea",
+    "style": "question",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on PHP to Django migration the biggest win came from that decision - migrated 210k donor records with zero data loss. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-01-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:013",
+    "job_title": "WhatsApp Integration for Java Application",
+    "style": "generic",
+    "cited_project_id": "fullstack:saas-dashboard",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-02-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:014",
+    "job_title": "WordPress Developer Contractor",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your wordpress developer contractor post mentions PHP. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-03-15",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:015",
+    "job_title": "Looking for MERN stack developer to build small multi vendor Buying/Selling Website",
+    "style": "specific",
+    "cited_project_id": "fullstack:stripe-billing",
+    "text": "Your looking for mern stack developer to build small multi vendor buying/selling website post mentions a tight timeline. In a similar edtech project (Subscription billing integration) I plans, trials, proration and dunning via Stripe webhooks. The result: involuntary churn down 23%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-04-16",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:016",
+    "job_title": "Build booking system for Limousine service in WordPress",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your build booking system for limousine service in wordpress post mentions PHP. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-05-17",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:017",
+    "job_title": "Wordpress Web Developer",
+    "style": "question",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Quick question before I scope this: is the PHP setup already in production? I ask because on PHP to Django migration the biggest win came from that decision - migrated 210k donor records with zero data loss. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2025-06-18",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:018",
+    "job_title": "Build responsive WordPress site Optimized for Mobile and SEO.",
+    "style": "generic",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-19",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:019",
+    "job_title": "Azure backend video streaming",
+    "style": "generic",
+    "cited_project_id": "fullstack:auth-sso",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-08-20",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:020",
+    "job_title": "Looking for a web designer",
+    "style": "specific",
+    "cited_project_id": "fullstack:vue-admin",
+    "text": "Your looking for a web designer post mentions a tight timeline. In a similar healthcare project (Admin portal for a clinic network) I role-based admin portal with audit trail. The result: scheduling errors dropped by 70%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-09-21",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:021",
+    "job_title": "Wordpress developer with proven experience",
+    "style": "generic",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-10-22",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:022",
+    "job_title": "Engineer - Developer Experience for Customer Integration Test",
+    "style": "question",
+    "cited_project_id": "fullstack:stripe-billing",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Subscription billing integration the biggest win came from that decision - involuntary churn down 23%. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2024-11-23",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:023",
+    "job_title": "Custom Visual Studio Code (VSCode) extension wanted",
+    "style": "generic",
+    "cited_project_id": "fullstack:express-api",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2025-12-24",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:024",
+    "job_title": "Website Landing Page to Konnektive CRM",
+    "style": "generic",
+    "cited_project_id": "fullstack:react-native-app",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-01-25",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:025",
+    "job_title": "Full Stack Developer Needed!",
+    "style": "specific",
+    "cited_project_id": "fullstack:booking-app",
+    "text": "Your full stack developer needed! post mentions a tight timeline. In a similar fitness project (Booking web app with calendar sync) I booking SPA with Google sign-in and calendar sync. The result: phone bookings down 80%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-02-26",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:026",
+    "job_title": "Looking for a Gatsby.js Expert",
+    "style": "specific",
+    "cited_project_id": "fullstack:perf-audit",
+    "text": "Your looking for a gatsby.js expert post mentions JavaScript. In a similar media project (Front-end performance audit) I code splitting, image strategy and performance budgets in CI. The result: Time-to-interactive from 7.1 s to 2.3 s. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2025-03-27",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:027",
+    "job_title": "Word Press Expert",
+    "style": "question",
+    "cited_project_id": "fullstack:auth-sso",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on SSO and role-based access control the biggest win came from that decision - unblocked 3 enterprise deals. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2023-04-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:028",
+    "job_title": "Desenvolvimento Front End para um portal de im\u00f3veis - React/Next.js",
+    "style": "question",
+    "cited_project_id": "fullstack:ecom-headless",
+    "text": "Quick question before I scope this: is the React setup already in production? I ask because on Headless e-commerce storefront the biggest win came from that decision - Lighthouse mobile score from 41 to 93; conversion up 18%. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2024-05-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:029",
+    "job_title": "Custom Website Design + Development",
+    "style": "generic",
+    "cited_project_id": "fullstack:fastapi-ml",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-06-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:030",
+    "job_title": "Expert Laravel Developer For Build E-Commerce website",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your expert laravel developer for build e-commerce website post mentions PHP. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-07-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:031",
+    "job_title": "Load Taskbot plugin pages and functionality into a custom Anesta theme (WORDPRESS)",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your load taskbot plugin pages and functionality into a custom anesta theme (wordpress) post mentions PHP. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-08-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:032",
+    "job_title": "Jot Form Relationship Database & App Creation Expert",
+    "style": "question",
+    "cited_project_id": "fullstack:fastapi-ml",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Serving an ML model behind FastAPI the biggest win came from that decision - serves 30 requests/s at p95 180 ms. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2025-09-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:033",
+    "job_title": "Bubble.io Developer (No-Code) for Bubble Agency",
+    "style": "generic",
+    "cited_project_id": "fullstack:stripe-billing",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-10-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:034",
+    "job_title": "WordPress Ecommerce Website Development",
+    "style": "generic",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-11-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:035",
+    "job_title": "Facebook and Telegram data extraction",
+    "style": "question",
+    "cited_project_id": "fullstack:stripe-billing",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Subscription billing integration the biggest win came from that decision - involuntary churn down 23%. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2025-12-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:036",
+    "job_title": "Shopify Bug fix, custom requirements and integration",
+    "style": "specific",
+    "cited_project_id": "fullstack:ecom-headless",
+    "text": "Your shopify bug fix, custom requirements and integration post mentions Shopify. In a similar fashion retail project (Headless e-commerce storefront) I headless storefront on the Storefront API with static generation. The result: Lighthouse mobile score from 41 to 93; conversion up 18%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-01-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:037",
+    "job_title": "PostAffiliatePro expert",
+    "style": "question",
+    "cited_project_id": "fullstack:fastapi-ml",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Serving an ML model behind FastAPI the biggest win came from that decision - serves 30 requests/s at p95 180 ms. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2024-02-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:038",
+    "job_title": "Customer journey mapping & web design for new life coaching business",
+    "style": "generic",
+    "cited_project_id": "fullstack:scraper-api-integration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-03-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:039",
+    "job_title": "Build an online CCG mobile game",
+    "style": "generic",
+    "cited_project_id": "fullstack:react-native-app",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-04-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:040",
+    "job_title": "Static website redesign",
+    "style": "specific",
+    "cited_project_id": "fullstack:stripe-billing",
+    "text": "Your static website redesign post mentions a tight timeline. In a similar edtech project (Subscription billing integration) I plans, trials, proration and dunning via Stripe webhooks. The result: involuntary churn down 23%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-05-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:041",
+    "job_title": "Google Tag Manager / Conversion Architecture Expert needed to work with media agency.",
+    "style": "specific",
+    "cited_project_id": "fullstack:realtime-chat",
+    "text": "Your google tag manager / conversion architecture expert needed to work with media agency. post mentions a tight timeline. In a similar productivity project (Real-time team chat) I socket server with presence, typing indicators and message history. The result: handled 4,000 concurrent connections in load tests. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2025-06-15",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:042",
+    "job_title": "Build a SharePoint Site with Access Control",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your build a sharepoint site with access control post mentions a tight timeline. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-07-16",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:043",
+    "job_title": "Unreal Engine & Metahuman Expert",
+    "style": "generic",
+    "cited_project_id": "fullstack:ecom-headless",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-08-17",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:044",
+    "job_title": "Instagram Bot Phyton",
+    "style": "generic",
+    "cited_project_id": "fullstack:next-blog-cms",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-09-18",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:045",
+    "job_title": "Squarespace e-commerce website updates and software integration",
+    "style": "specific",
+    "cited_project_id": "fullstack:vue-admin",
+    "text": "Your squarespace e-commerce website updates and software integration post mentions a tight timeline. In a similar healthcare project (Admin portal for a clinic network) I role-based admin portal with audit trail. The result: scheduling errors dropped by 70%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-10-19",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:046",
+    "job_title": "Full Stack Software Engineer - Go",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your full stack software engineer - go post mentions a tight timeline. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-11-20",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:047",
+    "job_title": "Proof of Concept JSON to Ownership Chart with JavaScript Library",
+    "style": "question",
+    "cited_project_id": "fullstack:perf-audit",
+    "text": "Quick question before I scope this: is the JavaScript setup already in production? I ask because on Front-end performance audit the biggest win came from that decision - Time-to-interactive from 7.1 s to 2.3 s. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2025-12-21",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:048",
+    "job_title": "Full Stack Developer Consultant",
+    "style": "generic",
+    "cited_project_id": "fullstack:next-blog-cms",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-01-22",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:049",
+    "job_title": "Woocommerce xml feed issue",
+    "style": "specific",
+    "cited_project_id": "fullstack:next-blog-cms",
+    "text": "Your woocommerce xml feed issue post mentions a tight timeline. In a similar agency project (Marketing site and CMS) I headless CMS with preview, i18n and image optimisation. The result: publishing time from 2 days to 15 minutes. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-02-23",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:050",
+    "job_title": "Android developer needed for application publish on gp.",
+    "style": "specific",
+    "cited_project_id": "fullstack:stripe-billing",
+    "text": "Your android developer needed for application publish on gp. post mentions a tight timeline. In a similar edtech project (Subscription billing integration) I plans, trials, proration and dunning via Stripe webhooks. The result: involuntary churn down 23%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-03-24",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:051",
+    "job_title": "Small client/server to connect to OpenAI",
+    "style": "specific",
+    "cited_project_id": "fullstack:booking-app",
+    "text": "Your small client/server to connect to openai post mentions a tight timeline. In a similar fitness project (Booking web app with calendar sync) I booking SPA with Google sign-in and calendar sync. The result: phone bookings down 80%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-04-25",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:052",
+    "job_title": "Tech, Design & Business Ninja",
+    "style": "question",
+    "cited_project_id": "fullstack:marketplace",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Two-sided services marketplace the biggest win came from that decision - launched in 9 weeks; 1,800 bookings in the first quarter. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2024-05-26",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:053",
+    "job_title": "ReWrite Web-App - Proxy Dashboard",
+    "style": "generic",
+    "cited_project_id": "fullstack:graphql-gateway",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-06-27",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:054",
+    "job_title": "Create a WordPress Customer and Admin facing Webapp",
+    "style": "generic",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:055",
+    "job_title": "[$1000] Default Skin Tone is being highlighted when leaving hover of SkinTone picker #15490 - Expensify",
+    "style": "specific",
+    "cited_project_id": "fullstack:express-api",
+    "text": "Your [$1000] default skin tone is being highlighted when leaving hover of skintone picker #15490 - expensify post mentions a tight timeline. In a similar logistics project (Inventory API for a warehouse) I event-driven inventory API with nightly reconciliation. The result: stock discrepancies cut from 6% to 0.5%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-08-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:056",
+    "job_title": "Create a CRM",
+    "style": "generic",
+    "cited_project_id": "fullstack:scraper-api-integration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-09-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:057",
+    "job_title": "Senior full stack developer (experience with nodejs & react mainly, HTML & CSS)",
+    "style": "question",
+    "cited_project_id": "fullstack:realtime-chat",
+    "text": "Quick question before I scope this: is the Node.js setup already in production? I ask because on Real-time team chat the biggest win came from that decision - handled 4,000 concurrent connections in load tests. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2023-10-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:058",
+    "job_title": "Create Clone of Website",
+    "style": "generic",
+    "cited_project_id": "fullstack:vue-admin",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-11-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:059",
+    "job_title": "Ionic Build fix for android using capacitor",
+    "style": "generic",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-12-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:060",
+    "job_title": "Web developer to build OpenAI ChatGPT tool on website",
+    "style": "specific",
+    "cited_project_id": "fullstack:cicd-k8s",
+    "text": "Your web developer to build openai chatgpt tool on website post mentions a tight timeline. In a similar SaaS project (CI/CD and Kubernetes migration) I containerised 6 services, GitHub Actions pipelines, rolling deploys on EKS. The result: zero-downtime deploys, 15 per week. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-01-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:061",
+    "job_title": "Looking for a Data Scientist with specific skills in Wordpress and Integration of GPT3 AI Pinecone",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your looking for a data scientist with specific skills in wordpress and integration of gpt3 ai pinecone post mentions PHP, Vector Database. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-02-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:062",
+    "job_title": "I need a custom website built for a tutoring startup",
+    "style": "question",
+    "cited_project_id": "fullstack:express-api",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Inventory API for a warehouse the biggest win came from that decision - stock discrepancies cut from 6% to 0.5%. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2025-03-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:063",
+    "job_title": "Develop NFT Marketplace",
+    "style": "question",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Quick question before I scope this: is the Blockchain setup already in production? I ask because on PHP to Django migration the biggest win came from that decision - migrated 210k donor records with zero data loss. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-04-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:064",
+    "job_title": "Collaborate on a web form that produces output",
+    "style": "generic",
+    "cited_project_id": "fullstack:ecom-headless",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-05-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:065",
+    "job_title": "Laravel Market Place",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your laravel market place post mentions PHP. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-06-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:066",
+    "job_title": "Real Estate Website Development",
+    "style": "specific",
+    "cited_project_id": "fullstack:fastapi-ml",
+    "text": "Your real estate website development post mentions a tight timeline. In a similar agritech project (Serving an ML model behind FastAPI) I typed API with request validation, caching and autoscaling container. The result: serves 30 requests/s at p95 180 ms. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-07-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:067",
+    "job_title": "Blog with Next.js or similar",
+    "style": "question",
+    "cited_project_id": "fullstack:perf-audit",
+    "text": "Quick question before I scope this: is the Next.js setup already in production? I ask because on Front-end performance audit the biggest win came from that decision - Time-to-interactive from 7.1 s to 2.3 s. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2024-08-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:068",
+    "job_title": "Create a Shopify Site for Brick and Mortar Coffee Shop",
+    "style": "generic",
+    "cited_project_id": "fullstack:ecom-headless",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-09-15",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:069",
+    "job_title": "Refactoring ~300 lines of NodeJS Code",
+    "style": "generic",
+    "cited_project_id": "fullstack:realtime-chat",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-10-16",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:070",
+    "job_title": "Software Developer (ChatGPT and Airtable API)",
+    "style": "generic",
+    "cited_project_id": "fullstack:auth-sso",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-11-17",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:071",
+    "job_title": "Web Editor/developer",
+    "style": "specific",
+    "cited_project_id": "fullstack:scraper-api-integration",
+    "text": "Your web editor/developer post mentions a tight timeline. In a similar travel project (Partner API integrations hub) I adapter layer with retries, idempotent sync jobs and monitoring. The result: new supplier onboarding from 3 weeks to 4 days. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-12-18",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:072",
+    "job_title": "MERN Stack developer",
+    "style": "question",
+    "cited_project_id": "fullstack:stripe-billing",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Subscription billing integration the biggest win came from that decision - involuntary churn down 23%. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2023-01-19",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:073",
+    "job_title": "Shark Tank TV / product needs Shopify expert to make back order and sold-out process seamless.",
+    "style": "generic",
+    "cited_project_id": "fullstack:ecom-headless",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2024-02-20",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:074",
+    "job_title": "Expert Full Stack Developer with React and Node.js",
+    "style": "generic",
+    "cited_project_id": "fullstack:auth-sso",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-03-21",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:075",
+    "job_title": "WordPress/ Gravity Forms Developer",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your wordpress/ gravity forms developer post mentions PHP. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2023-04-22",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:076",
+    "job_title": "Creating a web3 blockchain application",
+    "style": "specific",
+    "cited_project_id": "fullstack:auth-sso",
+    "text": "Your creating a web3 blockchain application post mentions Blockchain. In a similar enterprise software project (SSO and role-based access control) I oIDC/SAML SSO with SCIM provisioning and fine-grained roles. The result: unblocked 3 enterprise deals. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-05-23",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:077",
+    "job_title": "ALAW Wordpress Website w/ Blog",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your alaw wordpress website w/ blog post mentions PHP. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2025-06-24",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:078",
+    "job_title": "Family Shopify business needs revamp & marketing help",
+    "style": "generic",
+    "cited_project_id": "fullstack:ecom-headless",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-25",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:079",
+    "job_title": "Looking to Create a (ChatBot) Web App using OpenAI API for Law Firm",
+    "style": "generic",
+    "cited_project_id": "fullstack:cicd-k8s",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-08-26",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:080",
+    "job_title": "React Native Developer required",
+    "style": "specific",
+    "cited_project_id": "fullstack:auth-sso",
+    "text": "Your react native developer required post mentions React, React Native. In a similar enterprise software project (SSO and role-based access control) I oIDC/SAML SSO with SCIM provisioning and fine-grained roles. The result: unblocked 3 enterprise deals. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-09-27",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:081",
+    "job_title": "Button to repeat the last order placed in the Woocommerce website",
+    "style": "specific",
+    "cited_project_id": "fullstack:express-api",
+    "text": "Your button to repeat the last order placed in the woocommerce website post mentions a tight timeline. In a similar logistics project (Inventory API for a warehouse) I event-driven inventory API with nightly reconciliation. The result: stock discrepancies cut from 6% to 0.5%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-10-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:082",
+    "job_title": "Android App publishing (If you have Google console account apply this job)",
+    "style": "question",
+    "cited_project_id": "fullstack:stripe-billing",
+    "text": "Quick question before I scope this: is the Mobile App Development setup already in production? I ask because on Subscription billing integration the biggest win came from that decision - involuntary churn down 23%. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2024-11-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:083",
+    "job_title": "Google Chrome Extension with Open AI used",
+    "style": "generic",
+    "cited_project_id": "fullstack:express-api",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-12-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:084",
+    "job_title": "Wordpress website build, one week",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your wordpress website build, one week post mentions PHP. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-01-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:085",
+    "job_title": "Figma Designer for One-Page Landing website",
+    "style": "specific",
+    "cited_project_id": "fullstack:stripe-billing",
+    "text": "Your figma designer for one-page landing website post mentions a tight timeline. In a similar edtech project (Subscription billing integration) I plans, trials, proration and dunning via Stripe webhooks. The result: involuntary churn down 23%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-02-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:086",
+    "job_title": "JTL Shopify Synchronizion fix",
+    "style": "specific",
+    "cited_project_id": "fullstack:ecom-headless",
+    "text": "Your jtl shopify synchronizion fix post mentions Shopify. In a similar fashion retail project (Headless e-commerce storefront) I headless storefront on the Storefront API with static generation. The result: Lighthouse mobile score from 41 to 93; conversion up 18%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-03-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:087",
+    "job_title": "Shopify - Workaround for product options limit",
+    "style": "question",
+    "cited_project_id": "fullstack:ecom-headless",
+    "text": "Quick question before I scope this: is the Shopify setup already in production? I ask because on Headless e-commerce storefront the biggest win came from that decision - Lighthouse mobile score from 41 to 93; conversion up 18%. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2023-04-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:088",
+    "job_title": "Python Developer - Modify exiting flask project",
+    "style": "generic",
+    "cited_project_id": "fullstack:scraper-api-integration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-05-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:089",
+    "job_title": "Setup API on Wordpress to pull images from external site",
+    "style": "generic",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "won",
+    "date": "2025-06-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:090",
+    "job_title": "Azure consultant for long term",
+    "style": "specific",
+    "cited_project_id": "fullstack:perf-audit",
+    "text": "Your azure consultant for long term post mentions Azure. In a similar media project (Front-end performance audit) I code splitting, image strategy and performance budgets in CI. The result: Time-to-interactive from 7.1 s to 2.3 s. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2023-07-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:091",
+    "job_title": "1 Year FullTime \u2014 WordPress Plugin, PHP, JavaScript, API, and other Developments.",
+    "style": "specific",
+    "cited_project_id": "fullstack:perf-audit",
+    "text": "Your 1 year fulltime \u2014 wordpress plugin, php, javascript, api, and other developments. post mentions PHP, JavaScript. In a similar media project (Front-end performance audit) I code splitting, image strategy and performance budgets in CI. The result: Time-to-interactive from 7.1 s to 2.3 s. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-08-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:092",
+    "job_title": "Build a response landing page from design",
+    "style": "question",
+    "cited_project_id": "fullstack:saas-dashboard",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Multi-tenant SaaS analytics dashboard the biggest win came from that decision - dashboard load time under 1.2 s for 50k-row tenants. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2025-09-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:093",
+    "job_title": "Website",
+    "style": "generic",
+    "cited_project_id": "fullstack:vue-admin",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-10-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:094",
+    "job_title": "API First Design Trainer",
+    "style": "generic",
+    "cited_project_id": "fullstack:booking-app",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-11-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:095",
+    "job_title": "fix a create react app edi parser javascript CRA",
+    "style": "specific",
+    "cited_project_id": "fullstack:perf-audit",
+    "text": "Your fix a create react app edi parser javascript cra post mentions React, JavaScript. In a similar media project (Front-end performance audit) I code splitting, image strategy and performance budgets in CI. The result: Time-to-interactive from 7.1 s to 2.3 s. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-12-15",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:096",
+    "job_title": "Senior Full Stack TypeScript Developer",
+    "style": "specific",
+    "cited_project_id": "fullstack:next-blog-cms",
+    "text": "Your senior full stack typescript developer post mentions TypeScript. In a similar agency project (Marketing site and CMS) I headless CMS with preview, i18n and image optimisation. The result: publishing time from 2 days to 15 minutes. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2023-01-16",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:097",
+    "job_title": "Urgent: Android Developer Needed for Publishing App on G Play Store.",
+    "style": "question",
+    "cited_project_id": "fullstack:vue-admin",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Admin portal for a clinic network the biggest win came from that decision - scheduling errors dropped by 70%. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2024-02-17",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:098",
+    "job_title": "Web designer needed",
+    "style": "generic",
+    "cited_project_id": "fullstack:drf-api",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-03-18",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:099",
+    "job_title": "Full Stack Developer (Events)",
+    "style": "generic",
+    "cited_project_id": "fullstack:drf-api",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-04-19",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:100",
+    "job_title": "ACF WordPress & Elementor EXPERT Needed",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your acf wordpress & elementor expert needed post mentions PHP. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-05-20",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:101",
+    "job_title": "Verified AdSense Website Required with DOT.COM Domain and With at least 6month+ Hosting",
+    "style": "specific",
+    "cited_project_id": "fullstack:realtime-chat",
+    "text": "Your verified adsense website required with dot.com domain and with at least 6month+ hosting post mentions a tight timeline. In a similar productivity project (Real-time team chat) I socket server with presence, typing indicators and message history. The result: handled 4,000 concurrent connections in load tests. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-06-21",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:102",
+    "job_title": "JavaScript developer for automation platform",
+    "style": "question",
+    "cited_project_id": "fullstack:perf-audit",
+    "text": "Quick question before I scope this: is the JavaScript setup already in production? I ask because on Front-end performance audit the biggest win came from that decision - Time-to-interactive from 7.1 s to 2.3 s. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-07-22",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:103",
+    "job_title": "JSON Content Importer (Wordpress Plugin) Template Needed",
+    "style": "generic",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2024-08-23",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:104",
+    "job_title": "Require an expert PHP Laravel JQuery API Developer",
+    "style": "generic",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-09-24",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:105",
+    "job_title": "Python/Flask REST, Database Schema Design",
+    "style": "specific",
+    "cited_project_id": "fullstack:scraper-api-integration",
+    "text": "Your python/flask rest, database schema design post mentions Python, Flask. In a similar travel project (Partner API integrations hub) I adapter layer with retries, idempotent sync jobs and monitoring. The result: new supplier onboarding from 3 weeks to 4 days. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2023-10-25",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:106",
+    "job_title": "SQL Data Developer (Microsoft Stack)",
+    "style": "specific",
+    "cited_project_id": "fullstack:booking-app",
+    "text": "Your sql data developer (microsoft stack) post mentions SQL. In a similar fitness project (Booking web app with calendar sync) I booking SPA with Google sign-in and calendar sync. The result: phone bookings down 80%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-11-26",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:107",
+    "job_title": "GPT4 Coding expert. Teach me how to use GPT4 to create a mobile app like Dental Monitoring.",
+    "style": "question",
+    "cited_project_id": "fullstack:ecom-headless",
+    "text": "Quick question before I scope this: is the LLM setup already in production? I ask because on Headless e-commerce storefront the biggest win came from that decision - Lighthouse mobile score from 41 to 93; conversion up 18%. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2025-12-27",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:108",
+    "job_title": "Figma to Webflow Site",
+    "style": "generic",
+    "cited_project_id": "fullstack:fastapi-ml",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-01-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:109",
+    "job_title": "User Experience/ Interface Designer",
+    "style": "generic",
+    "cited_project_id": "fullstack:drf-api",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-02-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:110",
+    "job_title": "Simple Laravel Uploader App",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your simple laravel uploader app post mentions PHP. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-03-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:111",
+    "job_title": "Full Stack Developer Needed",
+    "style": "specific",
+    "cited_project_id": "fullstack:cicd-k8s",
+    "text": "Your full stack developer needed post mentions a tight timeline. In a similar SaaS project (CI/CD and Kubernetes migration) I containerised 6 services, GitHub Actions pipelines, rolling deploys on EKS. The result: zero-downtime deploys, 15 per week. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-04-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:112",
+    "job_title": "Create indexing website (replicate existing site)",
+    "style": "specific",
+    "cited_project_id": "fullstack:graphql-gateway",
+    "text": "Your create indexing website (replicate existing site) post mentions a tight timeline. In a similar fintech project (GraphQL gateway over microservices) I federated gateway with dataloaders and per-field auth. The result: screen load calls reduced to 1; payload size down 60%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2024-05-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:113",
+    "job_title": "WooCommerce Plugin Development",
+    "style": "generic",
+    "cited_project_id": "fullstack:next-blog-cms",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-06-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:114",
+    "job_title": "Wordpress Storefront",
+    "style": "generic",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:115",
+    "job_title": "Backend Developer",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your backend developer post mentions a tight timeline. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-08-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:116",
+    "job_title": "Flutter Development for New Social App",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your flutter development for new social app post mentions Flutter. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-09-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:117",
+    "job_title": "Website design and development",
+    "style": "question",
+    "cited_project_id": "fullstack:drf-api",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Logistics REST API the biggest win came from that decision - p95 latency from 2.4 s to 310 ms. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-10-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:118",
+    "job_title": "Wordpress Website with Shop",
+    "style": "generic",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-11-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:119",
+    "job_title": "Make my Shopify E commerce store more appealing, user friendly & fix some of the pricing/ discount",
+    "style": "question",
+    "cited_project_id": "fullstack:ecom-headless",
+    "text": "Quick question before I scope this: is the Shopify setup already in production? I ask because on Headless e-commerce storefront the biggest win came from that decision - Lighthouse mobile score from 41 to 93; conversion up 18%. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2025-12-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:120",
+    "job_title": "Design website for new busines",
+    "style": "specific",
+    "cited_project_id": "fullstack:vue-admin",
+    "text": "Your design website for new busines post mentions a tight timeline. In a similar healthcare project (Admin portal for a clinic network) I role-based admin portal with audit trail. The result: scheduling errors dropped by 70%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2023-01-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:121",
+    "job_title": "Embed Live Zoom Meetings and Webinars into Personal Website",
+    "style": "specific",
+    "cited_project_id": "fullstack:drf-api",
+    "text": "Your embed live zoom meetings and webinars into personal website post mentions a tight timeline. In a similar logistics project (Logistics REST API) I rebuilt the API with token auth, pagination and async route optimisation jobs. The result: p95 latency from 2.4 s to 310 ms. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-02-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:122",
+    "job_title": "Web App Developer Needed",
+    "style": "question",
+    "cited_project_id": "fullstack:graphql-gateway",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on GraphQL gateway over microservices the biggest win came from that decision - screen load calls reduced to 1; payload size down 60%. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2025-03-15",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:123",
+    "job_title": "Looking for WordPress/PHP to fix why opening the page downloads a file instead of loading",
+    "style": "generic",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2023-04-16",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:124",
+    "job_title": "Incorporating ads to our wordpress.org website",
+    "style": "generic",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-05-17",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:125",
+    "job_title": "PHP, CSS, Bootstrap Expert for Custom WordPress Theme Changes",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your php, css, bootstrap expert for custom wordpress theme changes post mentions PHP, HTML/CSS. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-06-18",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:126",
+    "job_title": "HTML email developer - Turo UK",
+    "style": "generic",
+    "cited_project_id": "fullstack:perf-audit",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-19",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:127",
+    "job_title": "Senior Full Stack Developer",
+    "style": "question",
+    "cited_project_id": "fullstack:cicd-k8s",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on CI/CD and Kubernetes migration the biggest win came from that decision - zero-downtime deploys, 15 per week. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2024-08-20",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:128",
+    "job_title": "Beginner webflow designer willing to learn fast",
+    "style": "generic",
+    "cited_project_id": "fullstack:next-blog-cms",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-09-21",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:129",
+    "job_title": "Create CRM system",
+    "style": "generic",
+    "cited_project_id": "fullstack:perf-audit",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-10-22",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:130",
+    "job_title": "Need a Moodle Expert",
+    "style": "specific",
+    "cited_project_id": "fullstack:saas-dashboard",
+    "text": "Your need a moodle expert post mentions a tight timeline. In a similar SaaS project (Multi-tenant SaaS analytics dashboard) I tenant-scoped API, background aggregation jobs and a charting UI. The result: dashboard load time under 1.2 s for 50k-row tenants. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2024-11-23",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:131",
+    "job_title": "Required wordpress developer",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your required wordpress developer post mentions PHP. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2025-12-24",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:132",
+    "job_title": "Python Flask frontend dev to work with me",
+    "style": "question",
+    "cited_project_id": "fullstack:vue-admin",
+    "text": "Quick question before I scope this: is the Python setup already in production? I ask because on Admin portal for a clinic network the biggest win came from that decision - scheduling errors dropped by 70%. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2023-01-25",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:133",
+    "job_title": "Klayvio/Squarespace triggers required: Abandoned Cart and Abandoned Browse",
+    "style": "question",
+    "cited_project_id": "fullstack:fastapi-ml",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Serving an ML model behind FastAPI the biggest win came from that decision - serves 30 requests/s at p95 180 ms. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2024-02-26",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:134",
+    "job_title": "Create a Shopify and BigCommerce Store",
+    "style": "generic",
+    "cited_project_id": "fullstack:ecom-headless",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-03-27",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:135",
+    "job_title": "Software Development/ language German for long time",
+    "style": "specific",
+    "cited_project_id": "fullstack:graphql-gateway",
+    "text": "Your software development/ language german for long time post mentions a tight timeline. In a similar fintech project (GraphQL gateway over microservices) I federated gateway with dataloaders and per-field auth. The result: screen load calls reduced to 1; payload size down 60%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-04-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:136",
+    "job_title": "Web Application",
+    "style": "specific",
+    "cited_project_id": "fullstack:vue-admin",
+    "text": "Your web application post mentions a tight timeline. In a similar healthcare project (Admin portal for a clinic network) I role-based admin portal with audit trail. The result: scheduling errors dropped by 70%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-05-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:137",
+    "job_title": "Looking to build a web application that is user friendly and interface for multi-tenant deployment",
+    "style": "question",
+    "cited_project_id": "fullstack:react-native-app",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Delivery tracking mobile app the biggest win came from that decision - support calls about order status down 45%. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2025-06-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:138",
+    "job_title": "Integrate SamCart with Teachable for My Landing Pages + Checkout Process",
+    "style": "generic",
+    "cited_project_id": "fullstack:drf-api",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:139",
+    "job_title": "API Integration in Web Services",
+    "style": "generic",
+    "cited_project_id": "fullstack:drf-api",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2024-08-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:140",
+    "job_title": "SalesForce backup and restoration",
+    "style": "question",
+    "cited_project_id": "fullstack:marketplace",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Two-sided services marketplace the biggest win came from that decision - launched in 9 weeks; 1,800 bookings in the first quarter. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2025-09-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:141",
+    "job_title": "Penetration Tester",
+    "style": "specific",
+    "cited_project_id": "fullstack:fastapi-ml",
+    "text": "Your penetration tester post mentions a tight timeline. In a similar agritech project (Serving an ML model behind FastAPI) I typed API with request validation, caching and autoscaling container. The result: serves 30 requests/s at p95 180 ms. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-10-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:142",
+    "job_title": "HTML to WordPress conversion",
+    "style": "question",
+    "cited_project_id": "fullstack:perf-audit",
+    "text": "Quick question before I scope this: is the HTML/CSS setup already in production? I ask because on Front-end performance audit the biggest win came from that decision - Time-to-interactive from 7.1 s to 2.3 s. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2024-11-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:143",
+    "job_title": "Freelance trainer for Core Java in Coimbatore",
+    "style": "generic",
+    "cited_project_id": "fullstack:express-api",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-12-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:144",
+    "job_title": "Wordpress, Divi Builder, WooCommerce expert needed for help with 2 websites",
+    "style": "generic",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-01-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:145",
+    "job_title": "Small Event feature",
+    "style": "specific",
+    "cited_project_id": "fullstack:graphql-gateway",
+    "text": "Your small event feature post mentions a tight timeline. In a similar fintech project (GraphQL gateway over microservices) I federated gateway with dataloaders and per-field auth. The result: screen load calls reduced to 1; payload size down 60%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-02-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:146",
+    "job_title": "Move website to WordPress",
+    "style": "specific",
+    "cited_project_id": "fullstack:legacy-migration",
+    "text": "Your move website to wordpress post mentions PHP. In a similar nonprofit project (PHP to Django migration) I incremental strangler migration with data validation scripts. The result: migrated 210k donor records with zero data loss. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-03-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:147",
+    "job_title": "Looking For an App Developer with Crypto",
+    "style": "generic",
+    "cited_project_id": "fullstack:vue-admin",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-04-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:148",
+    "job_title": "NodeJs Developer",
+    "style": "generic",
+    "cited_project_id": "fullstack:auth-sso",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-05-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "fullstack:proposal:149",
+    "job_title": "React Native App Developer",
+    "style": "generic",
+    "cited_project_id": "fullstack:saas-dashboard",
+    "text": "Hello, I am a passionate and hardworking Full-Stack Web Developer with 5 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-06-15",
+    "provenance": "synthetic (job title real)"
+  }
+]

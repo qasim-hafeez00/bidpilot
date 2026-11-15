@@ -1,0 +1,92 @@
+[
+  {
+    "review_id": "data_analyst:review:sales-powerbi",
+    "project_id": "data_analyst:sales-powerbi",
+    "rating": 4.6,
+    "date": "2025-03",
+    "client_industry": "wholesale",
+    "provenance": "synthetic",
+    "text": "Sara delivered exactly what we needed for the sales performance dashboard. Communication was clear and the result: report refresh daily instead of weekly; used by 45 managers."
+  },
+  {
+    "review_id": "data_analyst:review:dbt-snowflake",
+    "project_id": "data_analyst:dbt-snowflake",
+    "rating": 5.0,
+    "date": "2025-06",
+    "client_industry": "SaaS",
+    "provenance": "synthetic",
+    "text": "Solid engineer. The analytics engineering with dbt on snowflake shipped on time; one source of truth for 38 KPIs; 140 dbt tests. Minor delays on documentation but overall excellent."
+  },
+  {
+    "review_id": "data_analyst:review:ab-test-analysis",
+    "project_id": "data_analyst:ab-test-analysis",
+    "rating": 4.6,
+    "date": "2024-04",
+    "client_industry": "e-commerce",
+    "provenance": "synthetic",
+    "text": "Sara delivered exactly what we needed for the checkout a/b test analysis. Communication was clear and the result: identified a variant with +3.1% conversion (p=0.01)."
+  },
+  {
+    "review_id": "data_analyst:review:cohort-retention",
+    "project_id": "data_analyst:cohort-retention",
+    "rating": 5.0,
+    "date": "2023-11",
+    "client_industry": "subscription box",
+    "provenance": "synthetic",
+    "text": "Great work on our subscription box project. Sara understood the problem quickly and found month-3 drop-off that led to a new onboarding email series. Would hire again."
+  },
+  {
+    "review_id": "data_analyst:review:python-cleaning",
+    "project_id": "data_analyst:python-cleaning",
+    "rating": 5.0,
+    "date": "2023-03",
+    "client_industry": "insurance",
+    "provenance": "synthetic",
+    "text": "Very professional. Sara asked the right questions up front and the customer master data cleanup removed 41k duplicates with 99% precision on an audited sample."
+  },
+  {
+    "review_id": "data_analyst:review:survey-stats",
+    "project_id": "data_analyst:survey-stats",
+    "rating": 5.0,
+    "date": "2022-10",
+    "client_industry": "healthcare",
+    "provenance": "synthetic",
+    "text": "Great work on our healthcare project. Sara understood the problem quickly and 3 service changes prioritised from the findings. Would hire again."
+  },
+  {
+    "review_id": "data_analyst:review:ga4-funnel",
+    "project_id": "data_analyst:ga4-funnel",
+    "rating": 5.0,
+    "date": "2024-06",
+    "client_industry": "SaaS",
+    "provenance": "synthetic",
+    "text": "Solid engineer. The ga4 funnel and web analytics audit shipped on time; fixed tracking for 14 events; trial sign-ups attributable again. Minor delays on documentation but overall excellent."
+  },
+  {
+    "review_id": "data_analyst:review:inventory-sql",
+    "project_id": "data_analyst:inventory-sql",
+    "rating": 4.6,
+    "date": "2023-06",
+    "client_industry": "retail",
+    "provenance": "synthetic",
+    "text": "Sara delivered exactly what we needed for the inventory analytics in sql. Communication was clear and the result: dead stock reduced by 27% in two quarters."
+  },
+  {
+    "review_id": "data_analyst:review:forecast-sheets",
+    "project_id": "data_analyst:forecast-sheets",
+    "rating": 5.0,
+    "date": "2023-12",
+    "client_industry": "SaaS",
+    "provenance": "synthetic",
+    "text": "Solid engineer. The sales forecasting model in google sheets shipped on time; forecast within 4% of actual for 3 consecutive quarters. Minor delays on documentation but overall excellent."
+  },
+  {
+    "review_id": "data_analyst:review:tableau-public-health",
+    "project_id": "data_analyst:tableau-public-health",
+    "rating": 5.0,
+    "date": "2024-07",
+    "client_industry": "nonprofit",
+    "provenance": "synthetic",
+    "text": "Very professional. Sara asked the right questions up front and the public health indicators dashboard monthly views up from ~0 to 2,300."
+  }
+]

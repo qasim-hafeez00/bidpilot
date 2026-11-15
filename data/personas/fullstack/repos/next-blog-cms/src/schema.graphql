@@ -1,0 +1,6 @@
+type Product {
+  id: ID!
+  title: String!
+  variants: [Variant!]!
+}
+type Query { product(handle: String!): Product }

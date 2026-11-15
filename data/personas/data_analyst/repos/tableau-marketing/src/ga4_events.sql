@@ -1,0 +1,3 @@
+SELECT event_name, COUNT(*) FROM `proj.analytics_123.events_*`
+WHERE _TABLE_SUFFIX BETWEEN '20240601' AND '20240630'
+GROUP BY 1;

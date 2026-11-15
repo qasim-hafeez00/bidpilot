@@ -1,0 +1,38 @@
+# secrets
+.env
+.env.*
+!.env.example
+*.pem
+secrets/
+
+# python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# node / web
+node_modules/
+.next/
+dist/
+build/
+apps/web/test-results/
+apps/web/playwright-report/
+!apps/web/playwright-report/.gitkeep
+
+# data: raw Kaggle downloads, generated artefacts and the held-out (hidden-stand-in) split never enter git
+data/raw/
+data/processed/
+data/uploads/
+
+# report build artefacts
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.fls
+report/*.fdb_latexmk
+report/*.synctex.gz

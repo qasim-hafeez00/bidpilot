@@ -1,0 +1,1502 @@
+[
+  {
+    "proposal_id": "data_analyst:proposal:000",
+    "job_title": "Im looking for an Individual to scrape a thousand of companies for me in the gym products niche.",
+    "style": "generic",
+    "cited_project_id": "data_analyst:excel-automation",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-01-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:001",
+    "job_title": "Credit Card Processing Market & Industry Analysis",
+    "style": "specific",
+    "cited_project_id": "data_analyst:tableau-public-health",
+    "text": "Your credit card processing market & industry analysis post mentions a tight timeline. In a similar nonprofit project (Public health indicators dashboard) I interactive district-level dashboard with accessible colour palette. The result: monthly views up from ~0 to 2,300. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-02-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:002",
+    "job_title": "Application Dashboard/User Interface Design Creation",
+    "style": "question",
+    "cited_project_id": "data_analyst:tableau-public-health",
+    "text": "Quick question before I scope this: is the Data Visualization setup already in production? I ask because on Public health indicators dashboard the biggest win came from that decision - monthly views up from ~0 to 2,300. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2025-03-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:003",
+    "job_title": "Elasticsearch and Kibana guru",
+    "style": "generic",
+    "cited_project_id": "data_analyst:sales-powerbi",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-04-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:004",
+    "job_title": "Graph with ***TigerGraph*** in C# and Matlab",
+    "style": "generic",
+    "cited_project_id": "data_analyst:tableau-public-health",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-05-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:005",
+    "job_title": "Product Research Specialist",
+    "style": "specific",
+    "cited_project_id": "data_analyst:airflow-etl",
+    "text": "Your product research specialist post mentions a tight timeline. In a similar marketing agency project (ETL pipeline for ad platforms) I scheduled extract-load jobs with schema checks and alerting. The result: saved 10 analyst hours per week. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-06-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:006",
+    "job_title": "A/B Testing Consultant and Implementor",
+    "style": "specific",
+    "cited_project_id": "data_analyst:ab-test-analysis",
+    "text": "Your a/b testing consultant and implementor post mentions A/B Testing. In a similar e-commerce project (Checkout A/B test analysis) I power analysis, sequential testing guardrails and a readout template. The result: identified a variant with +3.1% conversion (p=0.01). For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-07-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:007",
+    "job_title": "Google Ads Consultant",
+    "style": "question",
+    "cited_project_id": "data_analyst:bigquery-cost",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on BigQuery cost and query optimisation the biggest win came from that decision - monthly warehouse cost down 46%. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2024-08-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:008",
+    "job_title": "Data analyst/BI expert to integrate data sources and with a series of reports (complex charts)",
+    "style": "generic",
+    "cited_project_id": "data_analyst:tableau-public-health",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2025-09-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:009",
+    "job_title": "Google Big Query eCommerce Expert",
+    "style": "generic",
+    "cited_project_id": "data_analyst:cohort-retention",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-10-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:010",
+    "job_title": "Business Analyst/ Data Analyst",
+    "style": "specific",
+    "cited_project_id": "data_analyst:tableau-marketing",
+    "text": "Your business analyst/ data analyst post mentions a tight timeline. In a similar D2C brand project (Marketing attribution dashboard) I multi-touch attribution views blending ad spend and orders. The result: reallocated 20% of budget, CAC down 14%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-11-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:011",
+    "job_title": "Data Science Engineer",
+    "style": "specific",
+    "cited_project_id": "data_analyst:dbt-snowflake",
+    "text": "Your data science engineer post mentions a tight timeline. In a similar SaaS project (Analytics engineering with dbt on Snowflake) I layered staging/marts models with tests and documentation. The result: one source of truth for 38 KPIs; 140 dbt tests. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-12-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:012",
+    "job_title": "Python script to load data from one Excel file (2 sheets) to PostgreSQL tables",
+    "style": "question",
+    "cited_project_id": "data_analyst:excel-automation",
+    "text": "Quick question before I scope this: is the Python setup already in production? I ask because on Finance reporting automation in Excel the biggest win came from that decision - month-end reporting from 6 days to 1.5 days. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-01-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:013",
+    "job_title": "Tableau Expert for Decomposition Tree Custom Chart Development",
+    "style": "generic",
+    "cited_project_id": "data_analyst:tableau-public-health",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-02-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:014",
+    "job_title": "Create attractive dashboard from google sheets",
+    "style": "generic",
+    "cited_project_id": "data_analyst:cohort-retention",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-03-15",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:015",
+    "job_title": "Custom Website with Creative Data Visualisation",
+    "style": "specific",
+    "cited_project_id": "data_analyst:tableau-public-health",
+    "text": "Your custom website with creative data visualisation post mentions Data Visualization. In a similar nonprofit project (Public health indicators dashboard) I interactive district-level dashboard with accessible colour palette. The result: monthly views up from ~0 to 2,300. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-04-16",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:016",
+    "job_title": "Economical statistics data collecting",
+    "style": "specific",
+    "cited_project_id": "data_analyst:price-elasticity",
+    "text": "Your economical statistics data collecting post mentions Statistics. In a similar grocery project (Price elasticity study) I log-log regression by category with promotion controls. The result: recommended price changes worth an estimated 2.2% margin. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2024-05-17",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:017",
+    "job_title": "Netsuite Inventory Implementation",
+    "style": "question",
+    "cited_project_id": "data_analyst:price-elasticity",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Price elasticity study the biggest win came from that decision - recommended price changes worth an estimated 2.2% margin. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2025-06-18",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:018",
+    "job_title": "Supermetrics & Google Data Studio Expert",
+    "style": "generic",
+    "cited_project_id": "data_analyst:looker-studio-ops",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-19",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:019",
+    "job_title": "Create an App in Tableau's Exchange",
+    "style": "generic",
+    "cited_project_id": "data_analyst:tableau-public-health",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-08-20",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:020",
+    "job_title": "Looking For A Google Ads Expert Mediabuyer To Manage Clients In My Agency.",
+    "style": "specific",
+    "cited_project_id": "data_analyst:sales-powerbi",
+    "text": "Your looking for a google ads expert mediabuyer to manage clients in my agency. post mentions a tight timeline. In a similar wholesale project (Sales performance dashboard) I star-schema model, DAX measures and row-level security per region. The result: report refresh daily instead of weekly; used by 45 managers. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-09-21",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:021",
+    "job_title": "Adwords Testing in Google",
+    "style": "generic",
+    "cited_project_id": "data_analyst:ab-test-analysis",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-10-22",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:022",
+    "job_title": "Lawyer google ads micro-targeting",
+    "style": "question",
+    "cited_project_id": "data_analyst:price-elasticity",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Price elasticity study the biggest win came from that decision - recommended price changes worth an estimated 2.2% margin. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2024-11-23",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:023",
+    "job_title": "Senior Data Engineer",
+    "style": "generic",
+    "cited_project_id": "data_analyst:looker-studio-ops",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-12-24",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:024",
+    "job_title": "VA Required To Source 100 Smart Home Product eCommerce leads per day (With Room To Grow)",
+    "style": "generic",
+    "cited_project_id": "data_analyst:looker-studio-ops",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-01-25",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:025",
+    "job_title": "Build Interactive production dashboard by merging info from electronic production database",
+    "style": "specific",
+    "cited_project_id": "data_analyst:tableau-public-health",
+    "text": "Your build interactive production dashboard by merging info from electronic production database post mentions Data Visualization. In a similar nonprofit project (Public health indicators dashboard) I interactive district-level dashboard with accessible colour palette. The result: monthly views up from ~0 to 2,300. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-02-26",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:026",
+    "job_title": "PowerBI Developer Needed",
+    "style": "specific",
+    "cited_project_id": "data_analyst:sales-powerbi",
+    "text": "Your powerbi developer needed post mentions Power BI. In a similar wholesale project (Sales performance dashboard) I star-schema model, DAX measures and row-level security per region. The result: report refresh daily instead of weekly; used by 45 managers. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2025-03-27",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:027",
+    "job_title": "Amazon Product Opportunity Research Specialist",
+    "style": "question",
+    "cited_project_id": "data_analyst:tableau-marketing",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Marketing attribution dashboard the biggest win came from that decision - reallocated 20% of budget, CAC down 14%. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-04-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:028",
+    "job_title": "Power BI Custom HR Board",
+    "style": "specific",
+    "cited_project_id": "data_analyst:powerbi-hr",
+    "text": "Your power bi custom hr board post mentions Power BI. In a similar manufacturing project (HR attrition analytics) I attrition drivers, tenure curves and headcount forecasts. The result: targeted retention plan for 2 departments with highest risk. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-05-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:029",
+    "job_title": "Data visualization and analysis expert for a new project",
+    "style": "generic",
+    "cited_project_id": "data_analyst:tableau-marketing",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-06-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:030",
+    "job_title": "Youtube ads specialist",
+    "style": "specific",
+    "cited_project_id": "data_analyst:sales-powerbi",
+    "text": "Your youtube ads specialist post mentions a tight timeline. In a similar wholesale project (Sales performance dashboard) I star-schema model, DAX measures and row-level security per region. The result: report refresh daily instead of weekly; used by 45 managers. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-07-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:031",
+    "job_title": "Passing Website Data to the GTM Data Layer",
+    "style": "specific",
+    "cited_project_id": "data_analyst:cohort-retention",
+    "text": "Your passing website data to the gtm data layer post mentions a tight timeline. In a similar subscription box project (Customer cohort retention analysis) I cohort tables and survival curves by acquisition channel. The result: found month-3 drop-off that led to a new onboarding email series. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-08-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:032",
+    "job_title": "Subsurface Remote Sensing Developer and Geological Consultant",
+    "style": "question",
+    "cited_project_id": "data_analyst:cohort-retention",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Customer cohort retention analysis the biggest win came from that decision - found month-3 drop-off that led to a new onboarding email series. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2025-09-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:033",
+    "job_title": "Database Extraction Infrastructure Setup with Payment Integration and App Development",
+    "style": "generic",
+    "cited_project_id": "data_analyst:forecast-sheets",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-10-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:034",
+    "job_title": "Setup conversion tracking and analytics for a b2b SaaS",
+    "style": "generic",
+    "cited_project_id": "data_analyst:sales-powerbi",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-11-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:035",
+    "job_title": "Google Ads Expert",
+    "style": "generic",
+    "cited_project_id": "data_analyst:airflow-etl",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-12-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:036",
+    "job_title": "Market Research Data Entry Analyst",
+    "style": "specific",
+    "cited_project_id": "data_analyst:price-elasticity",
+    "text": "Your market research data entry analyst post mentions Virtual Assistant. In a similar grocery project (Price elasticity study) I log-log regression by category with promotion controls. The result: recommended price changes worth an estimated 2.2% margin. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-01-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:037",
+    "job_title": "SEO Specialist",
+    "style": "question",
+    "cited_project_id": "data_analyst:tableau-public-health",
+    "text": "Quick question before I scope this: is the SEO setup already in production? I ask because on Public health indicators dashboard the biggest win came from that decision - monthly views up from ~0 to 2,300. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2024-02-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:038",
+    "job_title": "Google map expert needed to build a dynamic color coded map utilizing multiple data sources",
+    "style": "generic",
+    "cited_project_id": "data_analyst:ga4-funnel",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-03-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:039",
+    "job_title": "Google Analytics Consultant Required",
+    "style": "generic",
+    "cited_project_id": "data_analyst:ga4-funnel",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "won",
+    "date": "2023-04-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:040",
+    "job_title": "Mulesoft Developer",
+    "style": "specific",
+    "cited_project_id": "data_analyst:looker-studio-ops",
+    "text": "Your mulesoft developer post mentions a tight timeline. In a similar logistics project (Operations KPI board in Looker Studio) I automated data feeds and a live KPI board. The result: on-time delivery visible hourly; late deliveries down 9%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-05-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:041",
+    "job_title": "Data Analyst",
+    "style": "specific",
+    "cited_project_id": "data_analyst:bigquery-cost",
+    "text": "Your data analyst post mentions a tight timeline. In a similar media project (BigQuery cost and query optimisation) I partitioning, clustering and materialised summary tables. The result: monthly warehouse cost down 46%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-06-15",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:042",
+    "job_title": "Skilled Google Ads Specialist Wanted",
+    "style": "generic",
+    "cited_project_id": "data_analyst:sales-powerbi",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2023-07-16",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:043",
+    "job_title": "Dashboard and report creation",
+    "style": "generic",
+    "cited_project_id": "data_analyst:tableau-marketing",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-08-17",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:044",
+    "job_title": "Google Data Studio Expert",
+    "style": "generic",
+    "cited_project_id": "data_analyst:cohort-retention",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2025-09-18",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:045",
+    "job_title": "Research & Write an article based on the effects of the abuse of alcohol",
+    "style": "specific",
+    "cited_project_id": "data_analyst:looker-studio-ops",
+    "text": "Your research & write an article based on the effects of the abuse of alcohol post mentions a tight timeline. In a similar logistics project (Operations KPI board in Looker Studio) I automated data feeds and a live KPI board. The result: on-time delivery visible hourly; late deliveries down 9%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2023-10-19",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:046",
+    "job_title": "Increase YT views with Google Ads",
+    "style": "specific",
+    "cited_project_id": "data_analyst:price-elasticity",
+    "text": "Your increase yt views with google ads post mentions a tight timeline. In a similar grocery project (Price elasticity study) I log-log regression by category with promotion controls. The result: recommended price changes worth an estimated 2.2% margin. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-11-20",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:047",
+    "job_title": "Matillion + Snowflake engineer",
+    "style": "question",
+    "cited_project_id": "data_analyst:dbt-snowflake",
+    "text": "Quick question before I scope this: is the Snowflake setup already in production? I ask because on Analytics engineering with dbt on Snowflake the biggest win came from that decision - one source of truth for 38 KPIs; 140 dbt tests. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2025-12-21",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:048",
+    "job_title": "Data Analysis with Google BigQuery",
+    "style": "generic",
+    "cited_project_id": "data_analyst:ga4-funnel",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-01-22",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:049",
+    "job_title": "Curve fitting software module developer",
+    "style": "specific",
+    "cited_project_id": "data_analyst:price-elasticity",
+    "text": "Your curve fitting software module developer post mentions a tight timeline. In a similar grocery project (Price elasticity study) I log-log regression by category with promotion controls. The result: recommended price changes worth an estimated 2.2% margin. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2024-02-23",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:050",
+    "job_title": "Consulting Calls for Unity3D",
+    "style": "specific",
+    "cited_project_id": "data_analyst:tableau-public-health",
+    "text": "Your consulting calls for unity3d post mentions a tight timeline. In a similar nonprofit project (Public health indicators dashboard) I interactive district-level dashboard with accessible colour palette. The result: monthly views up from ~0 to 2,300. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-03-24",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:051",
+    "job_title": "web application written in C#.net with IIS and SQL SERVER",
+    "style": "specific",
+    "cited_project_id": "data_analyst:airflow-etl",
+    "text": "Your web application written in c#.net with iis and sql server post mentions SQL. In a similar marketing agency project (ETL pipeline for ad platforms) I scheduled extract-load jobs with schema checks and alerting. The result: saved 10 analyst hours per week. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2023-04-25",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:052",
+    "job_title": "QA Tester - Bubble.io Applications",
+    "style": "question",
+    "cited_project_id": "data_analyst:dbt-snowflake",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Analytics engineering with dbt on Snowflake the biggest win came from that decision - one source of truth for 38 KPIs; 140 dbt tests. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2024-05-26",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:053",
+    "job_title": "Extracting two papers for publishing",
+    "style": "generic",
+    "cited_project_id": "data_analyst:tableau-public-health",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-06-27",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:054",
+    "job_title": "Roblox developer needed for gamified sport environment",
+    "style": "generic",
+    "cited_project_id": "data_analyst:dbt-snowflake",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:055",
+    "job_title": "Python Tutor for Data Analysis",
+    "style": "specific",
+    "cited_project_id": "data_analyst:price-elasticity",
+    "text": "Your python tutor for data analysis post mentions Python, Data Analysis. In a similar grocery project (Price elasticity study) I log-log regression by category with promotion controls. The result: recommended price changes worth an estimated 2.2% margin. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2024-08-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:056",
+    "job_title": "Extensive online market research needed to list US based independent grocery store information.",
+    "style": "generic",
+    "cited_project_id": "data_analyst:forecast-sheets",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-09-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:057",
+    "job_title": "I need a Google Tag Manager Specialist to track events",
+    "style": "question",
+    "cited_project_id": "data_analyst:python-cleaning",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Customer master data cleanup the biggest win came from that decision - removed 41k duplicates with 99% precision on an audited sample. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-10-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:058",
+    "job_title": "White Label Pay Per Click Consult",
+    "style": "generic",
+    "cited_project_id": "data_analyst:excel-automation",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-11-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:059",
+    "job_title": "Google ads manager",
+    "style": "generic",
+    "cited_project_id": "data_analyst:looker-studio-ops",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-12-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:060",
+    "job_title": "Data Mining for Sales Leads",
+    "style": "specific",
+    "cited_project_id": "data_analyst:price-elasticity",
+    "text": "Your data mining for sales leads post mentions a tight timeline. In a similar grocery project (Price elasticity study) I log-log regression by category with promotion controls. The result: recommended price changes worth an estimated 2.2% margin. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-01-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:061",
+    "job_title": "Tableau report enhancement",
+    "style": "specific",
+    "cited_project_id": "data_analyst:tableau-public-health",
+    "text": "Your tableau report enhancement post mentions Tableau. In a similar nonprofit project (Public health indicators dashboard) I interactive district-level dashboard with accessible colour palette. The result: monthly views up from ~0 to 2,300. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2024-02-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:062",
+    "job_title": "Data Engineer with German",
+    "style": "question",
+    "cited_project_id": "data_analyst:ga4-funnel",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on GA4 funnel and web analytics audit the biggest win came from that decision - fixed tracking for 14 events; trial sign-ups attributable again. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2025-03-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:063",
+    "job_title": "Google Analytics Consultant",
+    "style": "specific",
+    "cited_project_id": "data_analyst:tableau-marketing",
+    "text": "Your google analytics consultant post mentions Google Analytics. In a similar D2C brand project (Marketing attribution dashboard) I multi-touch attribution views blending ad spend and orders. The result: reallocated 20% of budget, CAC down 14%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2023-04-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:064",
+    "job_title": "Acquisitions Specialist",
+    "style": "generic",
+    "cited_project_id": "data_analyst:looker-studio-ops",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-05-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:065",
+    "job_title": "Online Casino Mathematical Analyst",
+    "style": "specific",
+    "cited_project_id": "data_analyst:looker-studio-ops",
+    "text": "Your online casino mathematical analyst post mentions a tight timeline. In a similar logistics project (Operations KPI board in Looker Studio) I automated data feeds and a live KPI board. The result: on-time delivery visible hourly; late deliveries down 9%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-06-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:066",
+    "job_title": "Google ads campaign setup for e-commerce",
+    "style": "specific",
+    "cited_project_id": "data_analyst:sales-powerbi",
+    "text": "Your google ads campaign setup for e-commerce post mentions a tight timeline. In a similar wholesale project (Sales performance dashboard) I star-schema model, DAX measures and row-level security per region. The result: report refresh daily instead of weekly; used by 45 managers. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-07-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:067",
+    "job_title": "A/B Testing - Shopify",
+    "style": "question",
+    "cited_project_id": "data_analyst:ab-test-analysis",
+    "text": "Quick question before I scope this: is the A/B Testing setup already in production? I ask because on Checkout A/B test analysis the biggest win came from that decision - identified a variant with +3.1% conversion (p=0.01). Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2024-08-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:068",
+    "job_title": "Lead Generation Expert - Data Mining",
+    "style": "generic",
+    "cited_project_id": "data_analyst:cohort-retention",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-09-15",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:069",
+    "job_title": "Entry-Level Local SEO Specialist for MedSpa Marketing Agency",
+    "style": "generic",
+    "cited_project_id": "data_analyst:powerbi-hr",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-10-16",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:070",
+    "job_title": "Developer needed to create an Alteryx or similar based platform for Supply Chain Planning",
+    "style": "specific",
+    "cited_project_id": "data_analyst:ab-test-analysis",
+    "text": "Your developer needed to create an alteryx or similar based platform for supply chain planning post mentions a tight timeline. In a similar e-commerce project (Checkout A/B test analysis) I power analysis, sequential testing guardrails and a readout template. The result: identified a variant with +3.1% conversion (p=0.01). For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-11-17",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:071",
+    "job_title": "Need advice with creating analytics events \\ goals",
+    "style": "specific",
+    "cited_project_id": "data_analyst:ga4-funnel",
+    "text": "Your need advice with creating analytics events \\ goals post mentions a tight timeline. In a similar SaaS project (GA4 funnel and web analytics audit) I event taxonomy, funnel exploration and a QA checklist. The result: fixed tracking for 14 events; trial sign-ups attributable again. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2025-12-18",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:072",
+    "job_title": "Project manager for a music marketing startup company",
+    "style": "question",
+    "cited_project_id": "data_analyst:price-elasticity",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Price elasticity study the biggest win came from that decision - recommended price changes worth an estimated 2.2% margin. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-01-19",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:073",
+    "job_title": "Data Engineering",
+    "style": "generic",
+    "cited_project_id": "data_analyst:tableau-public-health",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-02-20",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:074",
+    "job_title": "We are looking for an Amazon advertising PPC expert",
+    "style": "generic",
+    "cited_project_id": "data_analyst:powerbi-hr",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-03-21",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:075",
+    "job_title": "Marketing analytics support engineer",
+    "style": "specific",
+    "cited_project_id": "data_analyst:excel-automation",
+    "text": "Your marketing analytics support engineer post mentions a tight timeline. In a similar accounting project (Finance reporting automation in Excel) I power Query transforms, structured tables and VBA exports. The result: month-end reporting from 6 days to 1.5 days. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-04-22",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:076",
+    "job_title": "Script to pull occupancy data from STR Website",
+    "style": "specific",
+    "cited_project_id": "data_analyst:cohort-retention",
+    "text": "Your script to pull occupancy data from str website post mentions a tight timeline. In a similar subscription box project (Customer cohort retention analysis) I cohort tables and survival curves by acquisition channel. The result: found month-3 drop-off that led to a new onboarding email series. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2024-05-23",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:077",
+    "job_title": "Pipe data from CRM into Bigquery using Qlik or Tableau as middleware",
+    "style": "generic",
+    "cited_project_id": "data_analyst:tableau-marketing",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-06-24",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:078",
+    "job_title": "Google Analytics for Woocommerce with funnelkit",
+    "style": "generic",
+    "cited_project_id": "data_analyst:ga4-funnel",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-25",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:079",
+    "job_title": "Google Analytics support",
+    "style": "generic",
+    "cited_project_id": "data_analyst:ga4-funnel",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2024-08-26",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:080",
+    "job_title": "Auto matching contacts with deals based on multiple criteria",
+    "style": "specific",
+    "cited_project_id": "data_analyst:python-cleaning",
+    "text": "Your auto matching contacts with deals based on multiple criteria post mentions a tight timeline. In a similar insurance project (Customer master data cleanup) I fuzzy matching, address standardisation and merge rules with review queues. The result: removed 41k duplicates with 99% precision on an audited sample. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-09-27",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:081",
+    "job_title": "Creating Dashboards on Google Data Studio based on already existing templates",
+    "style": "specific",
+    "cited_project_id": "data_analyst:cohort-retention",
+    "text": "Your creating dashboards on google data studio based on already existing templates post mentions Data Visualization, Looker Studio. In a similar subscription box project (Customer cohort retention analysis) I cohort tables and survival curves by acquisition channel. The result: found month-3 drop-off that led to a new onboarding email series. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-10-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:082",
+    "job_title": "Looker Expert",
+    "style": "question",
+    "cited_project_id": "data_analyst:ga4-funnel",
+    "text": "Quick question before I scope this: is the Looker Studio setup already in production? I ask because on GA4 funnel and web analytics audit the biggest win came from that decision - fixed tracking for 14 events; trial sign-ups attributable again. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2024-11-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:083",
+    "job_title": "Oracle Analytics Analyst",
+    "style": "generic",
+    "cited_project_id": "data_analyst:looker-studio-ops",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-12-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:084",
+    "job_title": "Branded Answer Tool",
+    "style": "generic",
+    "cited_project_id": "data_analyst:ga4-funnel",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-01-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:085",
+    "job_title": "Experienced Ads Manager B2B & B2C.",
+    "style": "specific",
+    "cited_project_id": "data_analyst:ga4-funnel",
+    "text": "Your experienced ads manager b2b & b2c. post mentions a tight timeline. In a similar SaaS project (GA4 funnel and web analytics audit) I event taxonomy, funnel exploration and a QA checklist. The result: fixed tracking for 14 events; trial sign-ups attributable again. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-02-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:086",
+    "job_title": "SEO Specialist Needed For Multiple Projects",
+    "style": "specific",
+    "cited_project_id": "data_analyst:inventory-sql",
+    "text": "Your seo specialist needed for multiple projects post mentions SEO. In a similar retail project (Inventory analytics in SQL) I aBC/XYZ classification and weekly exception reports. The result: dead stock reduced by 27% in two quarters. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-03-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:087",
+    "job_title": "Data Engineer and Power BI Developer",
+    "style": "question",
+    "cited_project_id": "data_analyst:sales-powerbi",
+    "text": "Quick question before I scope this: is the Power BI setup already in production? I ask because on Sales performance dashboard the biggest win came from that decision - report refresh daily instead of weekly; used by 45 managers. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2023-04-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:088",
+    "job_title": "Senior Data Scientist",
+    "style": "generic",
+    "cited_project_id": "data_analyst:ab-test-analysis",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-05-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:089",
+    "job_title": "Power BI | PowerApps| Visualization| Data Analyst",
+    "style": "generic",
+    "cited_project_id": "data_analyst:powerbi-hr",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-06-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:090",
+    "job_title": "SQL Server Specialist",
+    "style": "specific",
+    "cited_project_id": "data_analyst:bigquery-cost",
+    "text": "Your sql server specialist post mentions SQL. In a similar media project (BigQuery cost and query optimisation) I partitioning, clustering and materialised summary tables. The result: monthly warehouse cost down 46%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-07-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:091",
+    "job_title": "Film Recommendation System Buildout + eventual app",
+    "style": "question",
+    "cited_project_id": "data_analyst:tableau-public-health",
+    "text": "Quick question before I scope this: is the Recommendation Systems setup already in production? I ask because on Public health indicators dashboard the biggest win came from that decision - monthly views up from ~0 to 2,300. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2024-08-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:092",
+    "job_title": "Data Engineer - Full time and permanent",
+    "style": "question",
+    "cited_project_id": "data_analyst:airflow-etl",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on ETL pipeline for ad platforms the biggest win came from that decision - saved 10 analyst hours per week. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2025-09-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:093",
+    "job_title": "Need an a/b testing expert",
+    "style": "generic",
+    "cited_project_id": "data_analyst:ab-test-analysis",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-10-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:094",
+    "job_title": "Executive Summary design update",
+    "style": "generic",
+    "cited_project_id": "data_analyst:tableau-marketing",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-11-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:095",
+    "job_title": "Excel Dashboard KPI designer",
+    "style": "specific",
+    "cited_project_id": "data_analyst:sales-powerbi",
+    "text": "Your excel dashboard kpi designer post mentions Excel, Data Visualization. In a similar wholesale project (Sales performance dashboard) I star-schema model, DAX measures and row-level security per region. The result: report refresh daily instead of weekly; used by 45 managers. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2025-12-15",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:096",
+    "job_title": "Google ads expert for Roofing Business - Expert Only",
+    "style": "specific",
+    "cited_project_id": "data_analyst:price-elasticity",
+    "text": "Your google ads expert for roofing business - expert only post mentions a tight timeline. In a similar grocery project (Price elasticity study) I log-log regression by category with promotion controls. The result: recommended price changes worth an estimated 2.2% margin. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2023-01-16",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:097",
+    "job_title": "SEO help for small WebFlow website and Google Account",
+    "style": "question",
+    "cited_project_id": "data_analyst:ab-test-analysis",
+    "text": "Quick question before I scope this: is the SEO setup already in production? I ask because on Checkout A/B test analysis the biggest win came from that decision - identified a variant with +3.1% conversion (p=0.01). Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2024-02-17",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:098",
+    "job_title": "Looking for a Google Analytics expert to set up Lead / Goal tracking",
+    "style": "question",
+    "cited_project_id": "data_analyst:tableau-marketing",
+    "text": "Quick question before I scope this: is the Google Analytics setup already in production? I ask because on Marketing attribution dashboard the biggest win came from that decision - reallocated 20% of budget, CAC down 14%. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2025-03-18",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:099",
+    "job_title": "Google Ads Trainer: Specialist in Bidding Strategies, Call Tracking & Conversions",
+    "style": "generic",
+    "cited_project_id": "data_analyst:inventory-sql",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-04-19",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:100",
+    "job_title": "Lead Generation Expert",
+    "style": "specific",
+    "cited_project_id": "data_analyst:airflow-etl",
+    "text": "Your lead generation expert post mentions Lead Generation. In a similar marketing agency project (ETL pipeline for ad platforms) I scheduled extract-load jobs with schema checks and alerting. The result: saved 10 analyst hours per week. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2024-05-20",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:101",
+    "job_title": "Data Modeler and Data Management Specialist",
+    "style": "specific",
+    "cited_project_id": "data_analyst:tableau-marketing",
+    "text": "Your data modeler and data management specialist post mentions a tight timeline. In a similar D2C brand project (Marketing attribution dashboard) I multi-touch attribution views blending ad spend and orders. The result: reallocated 20% of budget, CAC down 14%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-06-21",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:102",
+    "job_title": "Project Manager",
+    "style": "question",
+    "cited_project_id": "data_analyst:excel-automation",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Finance reporting automation in Excel the biggest win came from that decision - month-end reporting from 6 days to 1.5 days. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-07-22",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:103",
+    "job_title": "Do Competitive Market Analysis",
+    "style": "generic",
+    "cited_project_id": "data_analyst:forecast-sheets",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-08-23",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:104",
+    "job_title": "Data Analyst to help analyze and automate the cleaning of Business Location Data",
+    "style": "generic",
+    "cited_project_id": "data_analyst:powerbi-hr",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-09-24",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:105",
+    "job_title": "Japanese speakers needed for a long term web research and data entry job",
+    "style": "question",
+    "cited_project_id": "data_analyst:powerbi-hr",
+    "text": "Quick question before I scope this: is the Virtual Assistant setup already in production? I ask because on HR attrition analytics the biggest win came from that decision - targeted retention plan for 2 departments with highest risk. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-10-25",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:106",
+    "job_title": "Embed obiee dashboard with tableau view",
+    "style": "specific",
+    "cited_project_id": "data_analyst:tableau-marketing",
+    "text": "Your embed obiee dashboard with tableau view post mentions Data Visualization, Tableau. In a similar D2C brand project (Marketing attribution dashboard) I multi-touch attribution views blending ad spend and orders. The result: reallocated 20% of budget, CAC down 14%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-11-26",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:107",
+    "job_title": "Facebook & IG manager",
+    "style": "question",
+    "cited_project_id": "data_analyst:inventory-sql",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Inventory analytics in SQL the biggest win came from that decision - dead stock reduced by 27% in two quarters. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2025-12-27",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:108",
+    "job_title": "A CRO Expert Needed",
+    "style": "generic",
+    "cited_project_id": "data_analyst:price-elasticity",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-01-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:109",
+    "job_title": "Google Analytics & Tracking ROCKSTAR",
+    "style": "generic",
+    "cited_project_id": "data_analyst:tableau-marketing",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-02-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:110",
+    "job_title": "Senior Paid Ads Specialist",
+    "style": "specific",
+    "cited_project_id": "data_analyst:python-cleaning",
+    "text": "Your senior paid ads specialist post mentions a tight timeline. In a similar insurance project (Customer master data cleanup) I fuzzy matching, address standardisation and merge rules with review queues. The result: removed 41k duplicates with 99% precision on an audited sample. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-03-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:111",
+    "job_title": "Growing innovative communications and Culture firm needs executive PM/VA for mission -driven project",
+    "style": "specific",
+    "cited_project_id": "data_analyst:looker-studio-ops",
+    "text": "Your growing innovative communications and culture firm needs executive pm/va for mission -driven project post mentions a tight timeline. In a similar logistics project (Operations KPI board in Looker Studio) I automated data feeds and a live KPI board. The result: on-time delivery visible hourly; late deliveries down 9%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2023-04-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:112",
+    "job_title": "Data Analyst",
+    "style": "specific",
+    "cited_project_id": "data_analyst:python-cleaning",
+    "text": "Your data analyst post mentions a tight timeline. In a similar insurance project (Customer master data cleanup) I fuzzy matching, address standardisation and merge rules with review queues. The result: removed 41k duplicates with 99% precision on an audited sample. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-05-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:113",
+    "job_title": "Digital Advertiser (Meta Ads, Google Ads, TikTok Ads)",
+    "style": "generic",
+    "cited_project_id": "data_analyst:bigquery-cost",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-06-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:114",
+    "job_title": "Help me fix some problems with our Google Analytics (GA4) and create a custom report",
+    "style": "generic",
+    "cited_project_id": "data_analyst:tableau-marketing",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2023-07-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:115",
+    "job_title": "Data Analyst",
+    "style": "specific",
+    "cited_project_id": "data_analyst:looker-studio-ops",
+    "text": "Your data analyst post mentions a tight timeline. In a similar logistics project (Operations KPI board in Looker Studio) I automated data feeds and a live KPI board. The result: on-time delivery visible hourly; late deliveries down 9%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2024-08-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:116",
+    "job_title": "Suggest on s web scrapper tool for facebook posts",
+    "style": "specific",
+    "cited_project_id": "data_analyst:price-elasticity",
+    "text": "Your suggest on s web scrapper tool for facebook posts post mentions a tight timeline. In a similar grocery project (Price elasticity study) I log-log regression by category with promotion controls. The result: recommended price changes worth an estimated 2.2% margin. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2025-09-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:117",
+    "job_title": "Google Ads Specialist (Spanish Speaking)",
+    "style": "question",
+    "cited_project_id": "data_analyst:price-elasticity",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Price elasticity study the biggest win came from that decision - recommended price changes worth an estimated 2.2% margin. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-10-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:118",
+    "job_title": "Stock level management system",
+    "style": "generic",
+    "cited_project_id": "data_analyst:survey-stats",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-11-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:119",
+    "job_title": "AS400 RPG Developer",
+    "style": "generic",
+    "cited_project_id": "data_analyst:airflow-etl",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-12-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:120",
+    "job_title": "Looking for a Google Marketing Platform Expert",
+    "style": "specific",
+    "cited_project_id": "data_analyst:forecast-sheets",
+    "text": "Your looking for a google marketing platform expert post mentions a tight timeline. In a similar SaaS project (Sales forecasting model in Google Sheets) I driver-based model with scenarios and a seasonality baseline. The result: forecast within 4% of actual for 3 consecutive quarters. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-01-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:121",
+    "job_title": "Data collection/entry into a spreadsheet",
+    "style": "specific",
+    "cited_project_id": "data_analyst:excel-automation",
+    "text": "Your data collection/entry into a spreadsheet post mentions Excel. In a similar accounting project (Finance reporting automation in Excel) I power Query transforms, structured tables and VBA exports. The result: month-end reporting from 6 days to 1.5 days. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2024-02-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:122",
+    "job_title": "Looking for an experienced digital ads coordinator",
+    "style": "question",
+    "cited_project_id": "data_analyst:tableau-marketing",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Marketing attribution dashboard the biggest win came from that decision - reallocated 20% of budget, CAC down 14%. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2025-03-15",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:123",
+    "job_title": "Create PowerBI Report",
+    "style": "generic",
+    "cited_project_id": "data_analyst:sales-powerbi",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-04-16",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:124",
+    "job_title": "Salesforce Developer to Support Commercial Sales",
+    "style": "generic",
+    "cited_project_id": "data_analyst:powerbi-hr",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-05-17",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:125",
+    "job_title": "Manage Social Ads, Setup Marketing Analytics - subscription food service",
+    "style": "specific",
+    "cited_project_id": "data_analyst:ab-test-analysis",
+    "text": "Your manage social ads, setup marketing analytics - subscription food service post mentions a tight timeline. In a similar e-commerce project (Checkout A/B test analysis) I power analysis, sequential testing guardrails and a readout template. The result: identified a variant with +3.1% conversion (p=0.01). For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-06-18",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:126",
+    "job_title": "Crypto Based Game Development Backlog",
+    "style": "generic",
+    "cited_project_id": "data_analyst:price-elasticity",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-19",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:127",
+    "job_title": "Executive Level Dashboard in Excel (Google Sheets)",
+    "style": "question",
+    "cited_project_id": "data_analyst:sales-powerbi",
+    "text": "Quick question before I scope this: is the Data Visualization setup already in production? I ask because on Sales performance dashboard the biggest win came from that decision - report refresh daily instead of weekly; used by 45 managers. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2024-08-20",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:128",
+    "job_title": "Senior Google Analytics & Tag Manager Implementation Consultant",
+    "style": "generic",
+    "cited_project_id": "data_analyst:ga4-funnel",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-09-21",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:129",
+    "job_title": "Reporting Lead",
+    "style": "generic",
+    "cited_project_id": "data_analyst:forecast-sheets",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-10-22",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:130",
+    "job_title": "Web scraping",
+    "style": "specific",
+    "cited_project_id": "data_analyst:powerbi-hr",
+    "text": "Your web scraping post mentions Web Scraping. In a similar manufacturing project (HR attrition analytics) I attrition drivers, tenure curves and headcount forecasts. The result: targeted retention plan for 2 departments with highest risk. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-11-23",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:131",
+    "job_title": "Tableau Trainer / Expert Required",
+    "style": "specific",
+    "cited_project_id": "data_analyst:inventory-sql",
+    "text": "Your tableau trainer / expert required post mentions Tableau. In a similar retail project (Inventory analytics in SQL) I aBC/XYZ classification and weekly exception reports. The result: dead stock reduced by 27% in two quarters. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2025-12-24",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:132",
+    "job_title": "Client Services - Game Tech",
+    "style": "question",
+    "cited_project_id": "data_analyst:airflow-etl",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on ETL pipeline for ad platforms the biggest win came from that decision - saved 10 analyst hours per week. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2023-01-25",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:133",
+    "job_title": "SEO consultant required to help succcessful SEO business build better reporting capabilities",
+    "style": "generic",
+    "cited_project_id": "data_analyst:looker-studio-ops",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-02-26",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:134",
+    "job_title": "Google ads assistance",
+    "style": "generic",
+    "cited_project_id": "data_analyst:powerbi-hr",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-03-27",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:135",
+    "job_title": "ETL + Power BI + Looker",
+    "style": "specific",
+    "cited_project_id": "data_analyst:dbt-snowflake",
+    "text": "Your etl + power bi + looker post mentions ETL, Power BI. In a similar SaaS project (Analytics engineering with dbt on Snowflake) I layered staging/marts models with tests and documentation. The result: one source of truth for 38 KPIs; 140 dbt tests. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2023-04-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:136",
+    "job_title": "Data Visualization",
+    "style": "specific",
+    "cited_project_id": "data_analyst:tableau-marketing",
+    "text": "Your data visualization post mentions Data Visualization. In a similar D2C brand project (Marketing attribution dashboard) I multi-touch attribution views blending ad spend and orders. The result: reallocated 20% of budget, CAC down 14%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-05-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:137",
+    "job_title": "Set up GCP DataForm project to migrate Big query",
+    "style": "question",
+    "cited_project_id": "data_analyst:airflow-etl",
+    "text": "Quick question before I scope this: is the GCP setup already in production? I ask because on ETL pipeline for ad platforms the biggest win came from that decision - saved 10 analyst hours per week. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2025-06-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:138",
+    "job_title": "Web and Google data scraping",
+    "style": "generic",
+    "cited_project_id": "data_analyst:python-cleaning",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:139",
+    "job_title": "Segment - Amplitude - Conversion - Customer Journey Integration for Website and Mobile Application",
+    "style": "generic",
+    "cited_project_id": "data_analyst:bigquery-cost",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-08-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:140",
+    "job_title": "Manual Data Scraping",
+    "style": "question",
+    "cited_project_id": "data_analyst:excel-automation",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Finance reporting automation in Excel the biggest win came from that decision - month-end reporting from 6 days to 1.5 days. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2025-09-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:141",
+    "job_title": "Holiday Home/ Luxury Airbnb pricing strategy",
+    "style": "specific",
+    "cited_project_id": "data_analyst:python-cleaning",
+    "text": "Your holiday home/ luxury airbnb pricing strategy post mentions a tight timeline. In a similar insurance project (Customer master data cleanup) I fuzzy matching, address standardisation and merge rules with review queues. The result: removed 41k duplicates with 99% precision on an audited sample. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2023-10-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:142",
+    "job_title": "Google Ads Specialist",
+    "style": "question",
+    "cited_project_id": "data_analyst:dbt-snowflake",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Analytics engineering with dbt on Snowflake the biggest win came from that decision - one source of truth for 38 KPIs; 140 dbt tests. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2024-11-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:143",
+    "job_title": "Amazon PPC Specialists (Hourly Based Contract)",
+    "style": "generic",
+    "cited_project_id": "data_analyst:tableau-public-health",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-12-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:144",
+    "job_title": "System to generate random data and load it to a Google database",
+    "style": "generic",
+    "cited_project_id": "data_analyst:airflow-etl",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-01-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:145",
+    "job_title": "Create a dummy course in learn dash so that real courses can be used to replace them",
+    "style": "specific",
+    "cited_project_id": "data_analyst:python-cleaning",
+    "text": "Your create a dummy course in learn dash so that real courses can be used to replace them post mentions a tight timeline. In a similar insurance project (Customer master data cleanup) I fuzzy matching, address standardisation and merge rules with review queues. The result: removed 41k duplicates with 99% precision on an audited sample. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-02-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:146",
+    "job_title": "User testing Machine learning tool 1 hour",
+    "style": "specific",
+    "cited_project_id": "data_analyst:ab-test-analysis",
+    "text": "Your user testing machine learning tool 1 hour post mentions Machine Learning. In a similar e-commerce project (Checkout A/B test analysis) I power analysis, sequential testing guardrails and a readout template. The result: identified a variant with +3.1% conversion (p=0.01). For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-03-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:147",
+    "job_title": "Need GA4 Analytics setup on multiple Wordpress Websites",
+    "style": "specific",
+    "cited_project_id": "data_analyst:tableau-marketing",
+    "text": "Your need ga4 analytics setup on multiple wordpress websites post mentions Google Analytics, PHP. In a similar D2C brand project (Marketing attribution dashboard) I multi-touch attribution views blending ad spend and orders. The result: reallocated 20% of budget, CAC down 14%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-04-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:148",
+    "job_title": "Power BI",
+    "style": "generic",
+    "cited_project_id": "data_analyst:powerbi-hr",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2024-05-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "data_analyst:proposal:149",
+    "job_title": "Wordpress site needs SEO orientated update-Swedish website.",
+    "style": "generic",
+    "cited_project_id": "data_analyst:python-cleaning",
+    "text": "Hello, I am a passionate and hardworking Data Analyst with 3 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-06-15",
+    "provenance": "synthetic (job title real)"
+  }
+]

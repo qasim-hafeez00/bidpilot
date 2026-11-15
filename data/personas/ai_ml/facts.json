@@ -1,0 +1,622 @@
+{
+  "persona_id": "ai_ml",
+  "years_experience": 4,
+  "skills": [
+    "AWS",
+    "AWS SageMaker",
+    "Airflow",
+    "CI/CD",
+    "Celery",
+    "Chatbot",
+    "Computer Vision",
+    "Data Visualization",
+    "Deep Learning",
+    "Docker",
+    "FastAPI",
+    "Fine-tuning",
+    "Flask",
+    "Hugging Face",
+    "LLM",
+    "LangChain",
+    "MLOps",
+    "MLflow",
+    "Machine Learning",
+    "NLP",
+    "NumPy",
+    "OpenCV",
+    "PostgreSQL",
+    "Prompt Engineering",
+    "PyTorch",
+    "Python",
+    "RAG",
+    "Recommendation Systems",
+    "Redis",
+    "Speech Recognition",
+    "TensorFlow",
+    "Time Series Forecasting",
+    "Vector Database",
+    "YOLO",
+    "pandas",
+    "scikit-learn"
+  ],
+  "industries": [
+    "AI startup",
+    "HR tech",
+    "SaaS",
+    "accounting",
+    "consulting",
+    "e-commerce",
+    "fintech",
+    "healthcare",
+    "hospitality",
+    "insurance",
+    "legal services",
+    "manufacturing",
+    "market research",
+    "media",
+    "retail"
+  ],
+  "project_titles": [
+    "Contract Q&A assistant over 12k legal documents",
+    "Customer-support chatbot with ticket deflection",
+    "Steel surface defect detection",
+    "Weekly demand forecasting for 600 SKUs",
+    "Subscription churn prediction",
+    "Resume parsing with named-entity recognition",
+    "Domain fine-tune of an open LLM for insurance emails",
+    "Content recommendation engine",
+    "Meeting transcription and summarisation",
+    "Invoice OCR and field extraction",
+    "MLOps pipeline on SageMaker",
+    "Multi-agent research assistant",
+    "Review sentiment analysis",
+    "Transaction anomaly detection",
+    "Visual product search",
+    "Chest X-ray triage classifier (research)",
+    "Prompt evaluation harness for an AI startup",
+    "WhatsApp appointment bot for clinics"
+  ],
+  "numbers": [
+    "0.4",
+    "0.87",
+    "0.89",
+    "1",
+    "11",
+    "120",
+    "140",
+    "15",
+    "18",
+    "2",
+    "2,000",
+    "200",
+    "22",
+    "25",
+    "3",
+    "300",
+    "31",
+    "38",
+    "4",
+    "4,300",
+    "61",
+    "62",
+    "64",
+    "7",
+    "72",
+    "9",
+    "91",
+    "94",
+    "98.1"
+  ],
+  "projects": [
+    {
+      "project_id": "ai_ml:legal-rag",
+      "slug": "legal-rag",
+      "title": "Contract Q&A assistant over 12k legal documents",
+      "client_industry": "legal services",
+      "date": "2025-03",
+      "explicit_skills": [
+        "Python",
+        "RAG",
+        "LLM",
+        "LangChain"
+      ],
+      "implied_skills": [
+        "Vector Database",
+        "FastAPI",
+        "Docker"
+      ],
+      "all_skills": [
+        "Docker",
+        "FastAPI",
+        "LLM",
+        "LangChain",
+        "Python",
+        "RAG",
+        "Vector Database"
+      ],
+      "problem": "Paralegals spent hours searching contracts for clauses.",
+      "approach": "Chunked contracts by clause, added hybrid retrieval and citation-checked answers.",
+      "result": "cut clause lookup time from 25 minutes to under 2 minutes; 91% answer accuracy on a 200-question test set",
+      "has_repo": true
+    },
+    {
+      "project_id": "ai_ml:support-bot",
+      "slug": "support-bot",
+      "title": "Customer-support chatbot with ticket deflection",
+      "client_industry": "e-commerce",
+      "date": "2024-11",
+      "explicit_skills": [
+        "Python",
+        "Chatbot",
+        "LLM",
+        "Prompt Engineering"
+      ],
+      "implied_skills": [
+        "Redis",
+        "FastAPI"
+      ],
+      "all_skills": [
+        "Chatbot",
+        "FastAPI",
+        "LLM",
+        "Prompt Engineering",
+        "Python",
+        "Redis"
+      ],
+      "problem": "A Shopify store's support inbox was overwhelmed during sales.",
+      "approach": "Built an intent router plus an LLM answerer grounded on the help centre, with human hand-off.",
+      "result": "deflected 38% of tickets in the first month",
+      "has_repo": true
+    },
+    {
+      "project_id": "ai_ml:defect-vision",
+      "slug": "defect-vision",
+      "title": "Steel surface defect detection",
+      "client_industry": "manufacturing",
+      "date": "2024-06",
+      "explicit_skills": [
+        "Python",
+        "Computer Vision",
+        "PyTorch",
+        "YOLO"
+      ],
+      "implied_skills": [
+        "OpenCV",
+        "Docker"
+      ],
+      "all_skills": [
+        "Computer Vision",
+        "Docker",
+        "OpenCV",
+        "PyTorch",
+        "Python",
+        "YOLO"
+      ],
+      "problem": "Manual inspection missed hairline cracks on a production line.",
+      "approach": "Labelled 4,300 images, trained a detector, and deployed it on an edge box.",
+      "result": "recall on cracks rose from 72% to 94%",
+      "has_repo": false
+    },
+    {
+      "project_id": "ai_ml:demand-forecast",
+      "slug": "demand-forecast",
+      "title": "Weekly demand forecasting for 600 SKUs",
+      "client_industry": "retail",
+      "date": "2024-02",
+      "explicit_skills": [
+        "Python",
+        "Time Series Forecasting",
+        "pandas",
+        "scikit-learn"
+      ],
+      "implied_skills": [
+        "Airflow",
+        "PostgreSQL"
+      ],
+      "all_skills": [
+        "Airflow",
+        "PostgreSQL",
+        "Python",
+        "Time Series Forecasting",
+        "pandas",
+        "scikit-learn"
+      ],
+      "problem": "Stock-outs and overstock on fast-moving products.",
+      "approach": "Built hierarchical forecasts with gradient boosting and calendar features, retrained weekly.",
+      "result": "MAPE improved from 31% to 18%",
+      "has_repo": true
+    },
+    {
+      "project_id": "ai_ml:churn-model",
+      "slug": "churn-model",
+      "title": "Subscription churn prediction",
+      "client_industry": "SaaS",
+      "date": "2023-10",
+      "explicit_skills": [
+        "Python",
+        "Machine Learning",
+        "scikit-learn",
+        "pandas"
+      ],
+      "implied_skills": [
+        "MLflow"
+      ],
+      "all_skills": [
+        "MLflow",
+        "Machine Learning",
+        "Python",
+        "pandas",
+        "scikit-learn"
+      ],
+      "problem": "A SaaS company could not tell which accounts were about to cancel.",
+      "approach": "Engineered usage features, calibrated a classifier, explained drivers with SHAP.",
+      "result": "the retention team saved 140 at-risk accounts in a quarter",
+      "has_repo": true
+    },
+    {
+      "project_id": "ai_ml:resume-ner",
+      "slug": "resume-ner",
+      "title": "Resume parsing with named-entity recognition",
+      "client_industry": "HR tech",
+      "date": "2023-07",
+      "explicit_skills": [
+        "Python",
+        "NLP",
+        "Hugging Face"
+      ],
+      "implied_skills": [
+        "PyTorch",
+        "FastAPI"
+      ],
+      "all_skills": [
+        "FastAPI",
+        "Hugging Face",
+        "NLP",
+        "PyTorch",
+        "Python"
+      ],
+      "problem": "Recruiters re-typed candidate details from PDF resumes.",
+      "approach": "Fine-tuned a token classifier on 2,000 annotated resumes and wrapped it as an API.",
+      "result": "field-level F1 of 0.89; data entry time halved",
+      "has_repo": false
+    },
+    {
+      "project_id": "ai_ml:llm-finetune",
+      "slug": "llm-finetune",
+      "title": "Domain fine-tune of an open LLM for insurance emails",
+      "client_industry": "insurance",
+      "date": "2025-06",
+      "explicit_skills": [
+        "Python",
+        "Fine-tuning",
+        "LLM",
+        "Hugging Face"
+      ],
+      "implied_skills": [
+        "PyTorch",
+        "AWS"
+      ],
+      "all_skills": [
+        "AWS",
+        "Fine-tuning",
+        "Hugging Face",
+        "LLM",
+        "PyTorch",
+        "Python"
+      ],
+      "problem": "Generic models wrote off-tone replies to policy holders.",
+      "approach": "Fine-tuned a 7B model with LoRA on 9k approved replies and evaluated with a rubric judge.",
+      "result": "agents accepted 64% of drafts unchanged",
+      "has_repo": true
+    },
+    {
+      "project_id": "ai_ml:rec-engine",
+      "slug": "rec-engine",
+      "title": "Content recommendation engine",
+      "client_industry": "media",
+      "date": "2023-04",
+      "explicit_skills": [
+        "Python",
+        "Recommendation Systems",
+        "Machine Learning"
+      ],
+      "implied_skills": [
+        "Redis",
+        "PostgreSQL"
+      ],
+      "all_skills": [
+        "Machine Learning",
+        "PostgreSQL",
+        "Python",
+        "Recommendation Systems",
+        "Redis"
+      ],
+      "problem": "Readers left after one article.",
+      "approach": "Two-tower retrieval plus a re-ranker, served behind a cache.",
+      "result": "pages per session up 22%",
+      "has_repo": true
+    },
+    {
+      "project_id": "ai_ml:speech-notes",
+      "slug": "speech-notes",
+      "title": "Meeting transcription and summarisation",
+      "client_industry": "consulting",
+      "date": "2025-01",
+      "explicit_skills": [
+        "Python",
+        "Speech Recognition",
+        "LLM",
+        "NLP"
+      ],
+      "implied_skills": [
+        "Docker",
+        "Celery"
+      ],
+      "all_skills": [
+        "Celery",
+        "Docker",
+        "LLM",
+        "NLP",
+        "Python",
+        "Speech Recognition"
+      ],
+      "problem": "Consultants lost action items from long client calls.",
+      "approach": "Transcribed with Whisper, diarised speakers, summarised into action items with an LLM.",
+      "result": "summaries ready 3 minutes after a call ends",
+      "has_repo": false
+    },
+    {
+      "project_id": "ai_ml:ocr-invoices",
+      "slug": "ocr-invoices",
+      "title": "Invoice OCR and field extraction",
+      "client_industry": "accounting",
+      "date": "2024-09",
+      "explicit_skills": [
+        "Python",
+        "Computer Vision",
+        "NLP"
+      ],
+      "implied_skills": [
+        "OpenCV",
+        "Celery",
+        "PostgreSQL"
+      ],
+      "all_skills": [
+        "Celery",
+        "Computer Vision",
+        "NLP",
+        "OpenCV",
+        "PostgreSQL",
+        "Python"
+      ],
+      "problem": "An accounting firm keyed in 5,000 invoices a month by hand.",
+      "approach": "Pre-processed scans, ran OCR, extracted totals and vendor fields with a layout model.",
+      "result": "98.1% accuracy on totals; 3 FTE-days saved per week",
+      "has_repo": true
+    },
+    {
+      "project_id": "ai_ml:sagemaker-mlops",
+      "slug": "sagemaker-mlops",
+      "title": "MLOps pipeline on SageMaker",
+      "client_industry": "fintech",
+      "date": "2024-04",
+      "explicit_skills": [
+        "MLOps",
+        "AWS SageMaker",
+        "AWS",
+        "Python"
+      ],
+      "implied_skills": [
+        "Docker",
+        "CI/CD",
+        "MLflow"
+      ],
+      "all_skills": [
+        "AWS",
+        "AWS SageMaker",
+        "CI/CD",
+        "Docker",
+        "MLOps",
+        "MLflow",
+        "Python"
+      ],
+      "problem": "Models were trained in notebooks and deployed by hand.",
+      "approach": "Built training, registry and blue-green deployment pipelines with automated checks.",
+      "result": "release time cut from two weeks to one day",
+      "has_repo": true
+    },
+    {
+      "project_id": "ai_ml:agentic-research",
+      "slug": "agentic-research",
+      "title": "Multi-agent research assistant",
+      "client_industry": "market research",
+      "date": "2025-08",
+      "explicit_skills": [
+        "Python",
+        "LLM",
+        "LangChain",
+        "RAG"
+      ],
+      "implied_skills": [
+        "Vector Database",
+        "Redis"
+      ],
+      "all_skills": [
+        "LLM",
+        "LangChain",
+        "Python",
+        "RAG",
+        "Redis",
+        "Vector Database"
+      ],
+      "problem": "Analysts spent days compiling competitor briefs.",
+      "approach": "Planner, researcher and critic agents with tool use and source-cited outputs.",
+      "result": "brief turnaround from 3 days to 4 hours",
+      "has_repo": false
+    },
+    {
+      "project_id": "ai_ml:sentiment-dash",
+      "slug": "sentiment-dash",
+      "title": "Review sentiment analysis",
+      "client_industry": "hospitality",
+      "date": "2023-01",
+      "explicit_skills": [
+        "Python",
+        "NLP",
+        "Machine Learning"
+      ],
+      "implied_skills": [
+        "pandas",
+        "Data Visualization"
+      ],
+      "all_skills": [
+        "Data Visualization",
+        "Machine Learning",
+        "NLP",
+        "Python",
+        "pandas"
+      ],
+      "problem": "A hotel chain could not track guest complaints across 40 properties.",
+      "approach": "Aspect-based sentiment model over 120k reviews with a weekly report.",
+      "result": "identified two recurring service issues that were then fixed",
+      "has_repo": true
+    },
+    {
+      "project_id": "ai_ml:fraud-anomaly",
+      "slug": "fraud-anomaly",
+      "title": "Transaction anomaly detection",
+      "client_industry": "fintech",
+      "date": "2023-12",
+      "explicit_skills": [
+        "Python",
+        "Machine Learning",
+        "scikit-learn"
+      ],
+      "implied_skills": [
+        "PostgreSQL",
+        "Docker"
+      ],
+      "all_skills": [
+        "Docker",
+        "Machine Learning",
+        "PostgreSQL",
+        "Python",
+        "scikit-learn"
+      ],
+      "problem": "Card fraud was caught only after chargebacks.",
+      "approach": "Isolation forest plus rules with an analyst feedback loop.",
+      "result": "flagged 61% of fraud before settlement at a 0.4% false-positive rate",
+      "has_repo": true
+    },
+    {
+      "project_id": "ai_ml:image-search",
+      "slug": "image-search",
+      "title": "Visual product search",
+      "client_industry": "e-commerce",
+      "date": "2024-12",
+      "explicit_skills": [
+        "Python",
+        "Computer Vision",
+        "Deep Learning"
+      ],
+      "implied_skills": [
+        "Vector Database",
+        "FastAPI",
+        "PyTorch"
+      ],
+      "all_skills": [
+        "Computer Vision",
+        "Deep Learning",
+        "FastAPI",
+        "PyTorch",
+        "Python",
+        "Vector Database"
+      ],
+      "problem": "Shoppers could not find products from photos.",
+      "approach": "CLIP embeddings with an approximate nearest-neighbour index.",
+      "result": "search-to-cart rate up 15%",
+      "has_repo": false
+    },
+    {
+      "project_id": "ai_ml:tf-medical",
+      "slug": "tf-medical",
+      "title": "Chest X-ray triage classifier (research)",
+      "client_industry": "healthcare",
+      "date": "2022-11",
+      "explicit_skills": [
+        "Python",
+        "Deep Learning",
+        "TensorFlow",
+        "Computer Vision"
+      ],
+      "implied_skills": [
+        "NumPy"
+      ],
+      "all_skills": [
+        "Computer Vision",
+        "Deep Learning",
+        "NumPy",
+        "Python",
+        "TensorFlow"
+      ],
+      "problem": "A research lab wanted a triage baseline for public X-ray data.",
+      "approach": "Transfer learning with careful patient-level splits and calibration.",
+      "result": "AUROC 0.87 on the held-out split; published as a reproducible notebook",
+      "has_repo": true
+    },
+    {
+      "project_id": "ai_ml:prompt-eval",
+      "slug": "prompt-eval",
+      "title": "Prompt evaluation harness for an AI startup",
+      "client_industry": "AI startup",
+      "date": "2025-10",
+      "explicit_skills": [
+        "Python",
+        "Prompt Engineering",
+        "LLM"
+      ],
+      "implied_skills": [
+        "pandas",
+        "CI/CD"
+      ],
+      "all_skills": [
+        "CI/CD",
+        "LLM",
+        "Prompt Engineering",
+        "Python",
+        "pandas"
+      ],
+      "problem": "Prompt changes kept silently breaking production behaviour.",
+      "approach": "Regression suite of 300 cases with LLM and rule graders running in CI.",
+      "result": "caught 11 regressions before release in two months",
+      "has_repo": true
+    },
+    {
+      "project_id": "ai_ml:whatsapp-bot",
+      "slug": "whatsapp-bot",
+      "title": "WhatsApp appointment bot for clinics",
+      "client_industry": "healthcare",
+      "date": "2024-08",
+      "explicit_skills": [
+        "Python",
+        "Chatbot",
+        "NLP"
+      ],
+      "implied_skills": [
+        "Flask",
+        "Redis"
+      ],
+      "all_skills": [
+        "Chatbot",
+        "Flask",
+        "NLP",
+        "Python",
+        "Redis"
+      ],
+      "problem": "Clinic receptionists handled hundreds of booking messages a day.",
+      "approach": "Intent and slot extraction bot integrated with the clinic calendar via the official API.",
+      "result": "62% of bookings completed without staff",
+      "has_repo": false
+    }
+  ]
+}

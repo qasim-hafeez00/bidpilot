@@ -1,0 +1,1502 @@
+[
+  {
+    "proposal_id": "ai_ml:proposal:000",
+    "job_title": "Looking for a technical recruiter with ML/AI experience",
+    "style": "generic",
+    "cited_project_id": "ai_ml:tf-medical",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-01-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:001",
+    "job_title": "Turn PowerPoint slides into a PDF/Word Summary with AI",
+    "style": "specific",
+    "cited_project_id": "ai_ml:speech-notes",
+    "text": "Your turn powerpoint slides into a pdf/word summary with ai post mentions a tight timeline. In a similar consulting project (Meeting transcription and summarisation) I transcribed with Whisper, diarised speakers, summarised into action items with an LLM. The result: summaries ready 3 minutes after a call ends. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-02-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:002",
+    "job_title": "AWS Sagemaker Expert",
+    "style": "question",
+    "cited_project_id": "ai_ml:sagemaker-mlops",
+    "text": "Quick question before I scope this: is the AWS SageMaker setup already in production? I ask because on MLOps pipeline on SageMaker the biggest win came from that decision - release time cut from two weeks to one day. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2025-03-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:003",
+    "job_title": "Portfolio Backtesting",
+    "style": "generic",
+    "cited_project_id": "ai_ml:prompt-eval",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-04-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:004",
+    "job_title": "NLP Engineer",
+    "style": "generic",
+    "cited_project_id": "ai_ml:resume-ner",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-05-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:005",
+    "job_title": "Sales representative for remote team",
+    "style": "specific",
+    "cited_project_id": "ai_ml:resume-ner",
+    "text": "Your sales representative for remote team post mentions a tight timeline. In a similar HR tech project (Resume parsing with named-entity recognition) I fine-tuned a token classifier on 2,000 annotated resumes and wrapped it as an API. The result: field-level F1 of 0.89; data entry time halved. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2025-06-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:006",
+    "job_title": "Vertex AI consultant sought",
+    "style": "specific",
+    "cited_project_id": "ai_ml:legal-rag",
+    "text": "Your vertex ai consultant sought post mentions a tight timeline. In a similar legal services project (Contract Q&A assistant over 12k legal documents) I chunked contracts by clause, added hybrid retrieval and citation-checked answers. The result: cut clause lookup time from 25 minutes to under 2 minutes; 91% answer accuracy on a 200-question test set. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-07-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:007",
+    "job_title": "Scraping social media",
+    "style": "generic",
+    "cited_project_id": "ai_ml:legal-rag",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-08-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:008",
+    "job_title": "RPA expert needed to build an automation tool",
+    "style": "generic",
+    "cited_project_id": "ai_ml:sagemaker-mlops",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2025-09-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:009",
+    "job_title": "OpenAI Chatbot proof of concept",
+    "style": "generic",
+    "cited_project_id": "ai_ml:whatsapp-bot",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2023-10-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:010",
+    "job_title": "Change MAC ID",
+    "style": "specific",
+    "cited_project_id": "ai_ml:resume-ner",
+    "text": "Your change mac id post mentions a tight timeline. In a similar HR tech project (Resume parsing with named-entity recognition) I fine-tuned a token classifier on 2,000 annotated resumes and wrapped it as an API. The result: field-level F1 of 0.89; data entry time halved. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2024-11-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:011",
+    "job_title": "Up-to-date Expert Needed to Create Chat GPT-4 Based Productivity Bot for Healthcare Intermediaries",
+    "style": "specific",
+    "cited_project_id": "ai_ml:speech-notes",
+    "text": "Your up-to-date expert needed to create chat gpt-4 based productivity bot for healthcare intermediaries post mentions LLM. In a similar consulting project (Meeting transcription and summarisation) I transcribed with Whisper, diarised speakers, summarised into action items with an LLM. The result: summaries ready 3 minutes after a call ends. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-12-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:012",
+    "job_title": "AI/ML Specialist for Consulting Agency",
+    "style": "question",
+    "cited_project_id": "ai_ml:llm-finetune",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Domain fine-tune of an open LLM for insurance emails the biggest win came from that decision - agents accepted 64% of drafts unchanged. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-01-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:013",
+    "job_title": "create a software solution that reads questions using a camera and answers using APIs to a GPT AI",
+    "style": "generic",
+    "cited_project_id": "ai_ml:defect-vision",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-02-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:014",
+    "job_title": "Natural Language App (embeddings + Flan T5)",
+    "style": "specific",
+    "cited_project_id": "ai_ml:sagemaker-mlops",
+    "text": "Your natural language app (embeddings + flan t5) post mentions a tight timeline. In a similar fintech project (MLOps pipeline on SageMaker) I built training, registry and blue-green deployment pipelines with automated checks. The result: release time cut from two weeks to one day. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-03-15",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:015",
+    "job_title": "Implement functionality to open-source python library [ Budget Negotiable ]",
+    "style": "specific",
+    "cited_project_id": "ai_ml:legal-rag",
+    "text": "Your implement functionality to open-source python library [ budget negotiable ] post mentions Python. In a similar legal services project (Contract Q&A assistant over 12k legal documents) I chunked contracts by clause, added hybrid retrieval and citation-checked answers. The result: cut clause lookup time from 25 minutes to under 2 minutes; 91% answer accuracy on a 200-question test set. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2023-04-16",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:016",
+    "job_title": "Temp-to-Permanent Position for Python Developer",
+    "style": "specific",
+    "cited_project_id": "ai_ml:speech-notes",
+    "text": "Your temp-to-permanent position for python developer post mentions Python. In a similar consulting project (Meeting transcription and summarisation) I transcribed with Whisper, diarised speakers, summarised into action items with an LLM. The result: summaries ready 3 minutes after a call ends. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-05-17",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:017",
+    "job_title": "Data science",
+    "style": "question",
+    "cited_project_id": "ai_ml:churn-model",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Subscription churn prediction the biggest win came from that decision - the retention team saved 140 at-risk accounts in a quarter. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2025-06-18",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:018",
+    "job_title": "Trading bot",
+    "style": "generic",
+    "cited_project_id": "ai_ml:image-search",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "won",
+    "date": "2023-07-19",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:019",
+    "job_title": "Sketchup and CAD modeller with good python knowledge",
+    "style": "generic",
+    "cited_project_id": "ai_ml:churn-model",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-08-20",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:020",
+    "job_title": "Text to video - generative AI",
+    "style": "specific",
+    "cited_project_id": "ai_ml:prompt-eval",
+    "text": "Your text to video - generative ai post mentions a tight timeline. In a similar AI startup project (Prompt evaluation harness for an AI startup) I regression suite of 300 cases with LLM and rule graders running in CI. The result: caught 11 regressions before release in two months. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-09-21",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:021",
+    "job_title": "Template generator",
+    "style": "question",
+    "cited_project_id": "ai_ml:whatsapp-bot",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on WhatsApp appointment bot for clinics the biggest win came from that decision - 62% of bookings completed without staff. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2023-10-22",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:022",
+    "job_title": "Desktop App Modernization & Enhancement based on PyQt and Python",
+    "style": "question",
+    "cited_project_id": "ai_ml:tf-medical",
+    "text": "Quick question before I scope this: is the Python setup already in production? I ask because on Chest X-ray triage classifier (research) the biggest win came from that decision - AUROC 0.87 on the held-out split; published as a reproducible notebook. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2024-11-23",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:023",
+    "job_title": "AI Expert (OpenAI, ChatGPT, Midjourney, etc.) for Content Creation",
+    "style": "generic",
+    "cited_project_id": "ai_ml:resume-ner",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-12-24",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:024",
+    "job_title": "OpenAI API Developer needed!",
+    "style": "generic",
+    "cited_project_id": "ai_ml:prompt-eval",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2023-01-25",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:025",
+    "job_title": "Multivariate time series prediction with recurrent neural network",
+    "style": "specific",
+    "cited_project_id": "ai_ml:image-search",
+    "text": "Your multivariate time series prediction with recurrent neural network post mentions Time Series Forecasting, Deep Learning. In a similar e-commerce project (Visual product search) I cLIP embeddings with an approximate nearest-neighbour index. The result: search-to-cart rate up 15%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2024-02-26",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:026",
+    "job_title": "Computer Vision Expert Required",
+    "style": "specific",
+    "cited_project_id": "ai_ml:defect-vision",
+    "text": "Your computer vision expert required post mentions Computer Vision. In a similar manufacturing project (Steel surface defect detection) I labelled 4,300 images, trained a detector, and deployed it on an edge box. The result: recall on cracks rose from 72% to 94%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-03-27",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:027",
+    "job_title": "Azure ML + Python Engineer",
+    "style": "question",
+    "cited_project_id": "ai_ml:resume-ner",
+    "text": "Quick question before I scope this: is the Azure setup already in production? I ask because on Resume parsing with named-entity recognition the biggest win came from that decision - field-level F1 of 0.89; data entry time halved. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-04-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:028",
+    "job_title": "Seeking AI Expert to Create Program for Construction Document Analysis and Generation.",
+    "style": "question",
+    "cited_project_id": "ai_ml:defect-vision",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Steel surface defect detection the biggest win came from that decision - recall on cracks rose from 72% to 94%. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2024-05-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:029",
+    "job_title": "Looking for an AI & Machine Learning developer",
+    "style": "generic",
+    "cited_project_id": "ai_ml:rec-engine",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-06-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:030",
+    "job_title": "NLP Full-Stack for OpenAI project",
+    "style": "specific",
+    "cited_project_id": "ai_ml:whatsapp-bot",
+    "text": "Your nlp full-stack for openai project post mentions NLP. In a similar healthcare project (WhatsApp appointment bot for clinics) I intent and slot extraction bot integrated with the clinic calendar via the official API. The result: 62% of bookings completed without staff. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-07-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:031",
+    "job_title": "Data Scientist/Engineer",
+    "style": "specific",
+    "cited_project_id": "ai_ml:resume-ner",
+    "text": "Your data scientist/engineer post mentions a tight timeline. In a similar HR tech project (Resume parsing with named-entity recognition) I fine-tuned a token classifier on 2,000 annotated resumes and wrapped it as an API. The result: field-level F1 of 0.89; data entry time halved. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-08-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:032",
+    "job_title": "Skilled Developer Needed for Exciting Integration Project Needed TODAY!",
+    "style": "question",
+    "cited_project_id": "ai_ml:support-bot",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Customer-support chatbot with ticket deflection the biggest win came from that decision - deflected 38% of tickets in the first month. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2025-09-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:033",
+    "job_title": "Need a pyqt5 developer to complete my incomplete code",
+    "style": "generic",
+    "cited_project_id": "ai_ml:rec-engine",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "won",
+    "date": "2023-10-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:034",
+    "job_title": "Chat GPT",
+    "style": "generic",
+    "cited_project_id": "ai_ml:llm-finetune",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-11-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:035",
+    "job_title": "Chess Variant CPU",
+    "style": "generic",
+    "cited_project_id": "ai_ml:image-search",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-12-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:036",
+    "job_title": "Web scraping developer to scrape and monitor selected fashion websites",
+    "style": "specific",
+    "cited_project_id": "ai_ml:demand-forecast",
+    "text": "Your web scraping developer to scrape and monitor selected fashion websites post mentions Web Scraping. In a similar retail project (Weekly demand forecasting for 600 SKUs) I built hierarchical forecasts with gradient boosting and calendar features, retrained weekly. The result: MAPE improved from 31% to 18%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-01-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:037",
+    "job_title": "Experianced Odoo developer required",
+    "style": "question",
+    "cited_project_id": "ai_ml:agentic-research",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Multi-agent research assistant the biggest win came from that decision - brief turnaround from 3 days to 4 hours. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2024-02-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:038",
+    "job_title": "Recommendation Engine for Site Selection using GIS",
+    "style": "generic",
+    "cited_project_id": "ai_ml:rec-engine",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "won",
+    "date": "2025-03-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:039",
+    "job_title": "Build program to pull game data from Steam and SteamDB into excel / CSV",
+    "style": "generic",
+    "cited_project_id": "ai_ml:ocr-invoices",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-04-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:040",
+    "job_title": "Recover Whatsapp data (images,chats, text)",
+    "style": "specific",
+    "cited_project_id": "ai_ml:fraud-anomaly",
+    "text": "Your recover whatsapp data (images,chats, text) post mentions a tight timeline. In a similar fintech project (Transaction anomaly detection) I isolation forest plus rules with an analyst feedback loop. The result: flagged 61% of fraud before settlement at a 0.4% false-positive rate. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2024-05-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:041",
+    "job_title": "Build an OCR to extract values from specific images",
+    "style": "specific",
+    "cited_project_id": "ai_ml:ocr-invoices",
+    "text": "Your build an ocr to extract values from specific images post mentions a tight timeline. In a similar accounting project (Invoice OCR and field extraction) I pre-processed scans, ran OCR, extracted totals and vendor fields with a layout model. The result: 98.1% accuracy on totals; 3 FTE-days saved per week. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-06-15",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:042",
+    "job_title": "Looking for a cofounder to develop AI software that replaces animals in research",
+    "style": "generic",
+    "cited_project_id": "ai_ml:support-bot",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-16",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:043",
+    "job_title": "Advanced Unity Game Project Development Manager",
+    "style": "generic",
+    "cited_project_id": "ai_ml:prompt-eval",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-08-17",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:044",
+    "job_title": "Create a code such that it interprets exercise visual data into keyboard command such as up arrow",
+    "style": "generic",
+    "cited_project_id": "ai_ml:sentiment-dash",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-09-18",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:045",
+    "job_title": "Python dev",
+    "style": "specific",
+    "cited_project_id": "ai_ml:fraud-anomaly",
+    "text": "Your python dev post mentions Python. In a similar fintech project (Transaction anomaly detection) I isolation forest plus rules with an analyst feedback loop. The result: flagged 61% of fraud before settlement at a 0.4% false-positive rate. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-10-19",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:046",
+    "job_title": "Create me a bot for Facebook",
+    "style": "specific",
+    "cited_project_id": "ai_ml:speech-notes",
+    "text": "Your create me a bot for facebook post mentions a tight timeline. In a similar consulting project (Meeting transcription and summarisation) I transcribed with Whisper, diarised speakers, summarised into action items with an LLM. The result: summaries ready 3 minutes after a call ends. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-11-20",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:047",
+    "job_title": "ChatGPT data and text ingestion tool",
+    "style": "question",
+    "cited_project_id": "ai_ml:speech-notes",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Meeting transcription and summarisation the biggest win came from that decision - summaries ready 3 minutes after a call ends. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2025-12-21",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:048",
+    "job_title": "Technical partner\uff08Artificial intelligence, computer vision, NLP, blockchain, Metaverse, etc.\uff09",
+    "style": "generic",
+    "cited_project_id": "ai_ml:ocr-invoices",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-01-22",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:049",
+    "job_title": "Need Python Developer",
+    "style": "question",
+    "cited_project_id": "ai_ml:sagemaker-mlops",
+    "text": "Quick question before I scope this: is the Python setup already in production? I ask because on MLOps pipeline on SageMaker the biggest win came from that decision - release time cut from two weeks to one day. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2024-02-23",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:050",
+    "job_title": "Monday.com - workflow/CRM set-up and automation",
+    "style": "specific",
+    "cited_project_id": "ai_ml:legal-rag",
+    "text": "Your monday.com - workflow/crm set-up and automation post mentions a tight timeline. In a similar legal services project (Contract Q&A assistant over 12k legal documents) I chunked contracts by clause, added hybrid retrieval and citation-checked answers. The result: cut clause lookup time from 25 minutes to under 2 minutes; 91% answer accuracy on a 200-question test set. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-03-24",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:051",
+    "job_title": "Software Designer",
+    "style": "specific",
+    "cited_project_id": "ai_ml:resume-ner",
+    "text": "Your software designer post mentions a tight timeline. In a similar HR tech project (Resume parsing with named-entity recognition) I fine-tuned a token classifier on 2,000 annotated resumes and wrapped it as an API. The result: field-level F1 of 0.89; data entry time halved. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-04-25",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:052",
+    "job_title": "Simple Crypto Bot Trading Test with Backtrader",
+    "style": "question",
+    "cited_project_id": "ai_ml:churn-model",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Subscription churn prediction the biggest win came from that decision - the retention team saved 140 at-risk accounts in a quarter. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2024-05-26",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:053",
+    "job_title": "Implementation of EleutherAI/gpt-neox-20b",
+    "style": "generic",
+    "cited_project_id": "ai_ml:resume-ner",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-06-27",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:054",
+    "job_title": "Machine Learning Bootcamp course Instructor for creating digital content",
+    "style": "generic",
+    "cited_project_id": "ai_ml:sentiment-dash",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:055",
+    "job_title": "ChatGPT Chatbot - Sports Data / Stats",
+    "style": "specific",
+    "cited_project_id": "ai_ml:support-bot",
+    "text": "Your chatgpt chatbot - sports data / stats post mentions Chatbot. In a similar e-commerce project (Customer-support chatbot with ticket deflection) I built an intent router plus an LLM answerer grounded on the help centre, with human hand-off. The result: deflected 38% of tickets in the first month. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2024-08-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:056",
+    "job_title": "Train AI model to generate summary of reviews",
+    "style": "generic",
+    "cited_project_id": "ai_ml:support-bot",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-09-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:057",
+    "job_title": "Creating code that can source philanthropy funding trends and running the code to supply data",
+    "style": "question",
+    "cited_project_id": "ai_ml:speech-notes",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Meeting transcription and summarisation the biggest win came from that decision - summaries ready 3 minutes after a call ends. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2023-10-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:058",
+    "job_title": "Python developer: developing an integration with Salesforce",
+    "style": "generic",
+    "cited_project_id": "ai_ml:agentic-research",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-11-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:059",
+    "job_title": "ML based Spectrogram analysis",
+    "style": "generic",
+    "cited_project_id": "ai_ml:prompt-eval",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-12-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:060",
+    "job_title": "GPT3 Fine tuning for biomedical text",
+    "style": "specific",
+    "cited_project_id": "ai_ml:llm-finetune",
+    "text": "Your gpt3 fine tuning for biomedical text post mentions Fine-tuning. In a similar insurance project (Domain fine-tune of an open LLM for insurance emails) I fine-tuned a 7B model with LoRA on 9k approved replies and evaluated with a rubric judge. The result: agents accepted 64% of drafts unchanged. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-01-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:061",
+    "job_title": "Automated essay scoring using DRL abd BIGBIRD as classification",
+    "style": "specific",
+    "cited_project_id": "ai_ml:legal-rag",
+    "text": "Your automated essay scoring using drl abd bigbird as classification post mentions a tight timeline. In a similar legal services project (Contract Q&A assistant over 12k legal documents) I chunked contracts by clause, added hybrid retrieval and citation-checked answers. The result: cut clause lookup time from 25 minutes to under 2 minutes; 91% answer accuracy on a 200-question test set. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-02-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:062",
+    "job_title": "Hand / Arm recognition dataset creation for Yolo V7",
+    "style": "question",
+    "cited_project_id": "ai_ml:defect-vision",
+    "text": "Quick question before I scope this: is the YOLO setup already in production? I ask because on Steel surface defect detection the biggest win came from that decision - recall on cracks rose from 72% to 94%. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2025-03-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:063",
+    "job_title": "Machine learning expert for a project",
+    "style": "specific",
+    "cited_project_id": "ai_ml:churn-model",
+    "text": "Your machine learning expert for a project post mentions Machine Learning. In a similar SaaS project (Subscription churn prediction) I engineered usage features, calibrated a classifier, explained drivers with SHAP. The result: the retention team saved 140 at-risk accounts in a quarter. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-04-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:064",
+    "job_title": "QA and Test Existing Python Script, Code Install SDK Portion",
+    "style": "generic",
+    "cited_project_id": "ai_ml:churn-model",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2024-05-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:065",
+    "job_title": "GPT-3 Model Trainer",
+    "style": "specific",
+    "cited_project_id": "ai_ml:sagemaker-mlops",
+    "text": "Your gpt-3 model trainer post mentions a tight timeline. In a similar fintech project (MLOps pipeline on SageMaker) I built training, registry and blue-green deployment pipelines with automated checks. The result: release time cut from two weeks to one day. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-06-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:066",
+    "job_title": "Python Django API regex expertise with AI/ML Experience",
+    "style": "specific",
+    "cited_project_id": "ai_ml:prompt-eval",
+    "text": "Your python django api regex expertise with ai/ml experience post mentions Python, Django. In a similar AI startup project (Prompt evaluation harness for an AI startup) I regression suite of 300 cases with LLM and rule graders running in CI. The result: caught 11 regressions before release in two months. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2023-07-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:067",
+    "job_title": "Renpy Developer for 1 screen UI update",
+    "style": "question",
+    "cited_project_id": "ai_ml:prompt-eval",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Prompt evaluation harness for an AI startup the biggest win came from that decision - caught 11 regressions before release in two months. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2024-08-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:068",
+    "job_title": "Looking for AI and Chat GPT experts",
+    "style": "generic",
+    "cited_project_id": "ai_ml:churn-model",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-09-15",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:069",
+    "job_title": "Federated Learning Expert to extend a function",
+    "style": "generic",
+    "cited_project_id": "ai_ml:prompt-eval",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-10-16",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:070",
+    "job_title": "HighLevel Expert - White Label Setup - Affiliate Setup",
+    "style": "specific",
+    "cited_project_id": "ai_ml:rec-engine",
+    "text": "Your highlevel expert - white label setup - affiliate setup post mentions a tight timeline. In a similar media project (Content recommendation engine) I two-tower retrieval plus a re-ranker, served behind a cache. The result: pages per session up 22%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-11-17",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:071",
+    "job_title": "Python - Accurate Image Comparisson with python",
+    "style": "specific",
+    "cited_project_id": "ai_ml:support-bot",
+    "text": "Your python - accurate image comparisson with python post mentions Python. In a similar e-commerce project (Customer-support chatbot with ticket deflection) I built an intent router plus an LLM answerer grounded on the help centre, with human hand-off. The result: deflected 38% of tickets in the first month. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2025-12-18",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:072",
+    "job_title": "AI Powered Startup Idea",
+    "style": "question",
+    "cited_project_id": "ai_ml:agentic-research",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Multi-agent research assistant the biggest win came from that decision - brief turnaround from 3 days to 4 hours. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2023-01-19",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:073",
+    "job_title": "Data mining and display on a map",
+    "style": "generic",
+    "cited_project_id": "ai_ml:legal-rag",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-02-20",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:074",
+    "job_title": "ChatGPT Engineer for Skincare and Beauty Q&A",
+    "style": "generic",
+    "cited_project_id": "ai_ml:prompt-eval",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-03-21",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:075",
+    "job_title": "Migrate chatbot from Rasa to DialogFlow",
+    "style": "specific",
+    "cited_project_id": "ai_ml:support-bot",
+    "text": "Your migrate chatbot from rasa to dialogflow post mentions Chatbot. In a similar e-commerce project (Customer-support chatbot with ticket deflection) I built an intent router plus an LLM answerer grounded on the help centre, with human hand-off. The result: deflected 38% of tickets in the first month. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2023-04-22",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:076",
+    "job_title": "Mobile AI app using stable diffusion avatar AI",
+    "style": "specific",
+    "cited_project_id": "ai_ml:fraud-anomaly",
+    "text": "Your mobile ai app using stable diffusion avatar ai post mentions a tight timeline. In a similar fintech project (Transaction anomaly detection) I isolation forest plus rules with an analyst feedback loop. The result: flagged 61% of fraud before settlement at a 0.4% false-positive rate. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2024-05-23",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:077",
+    "job_title": "Require Long term Python Developer",
+    "style": "question",
+    "cited_project_id": "ai_ml:image-search",
+    "text": "Quick question before I scope this: is the Python setup already in production? I ask because on Visual product search the biggest win came from that decision - search-to-cart rate up 15%. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2025-06-24",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:078",
+    "job_title": "Chatting",
+    "style": "generic",
+    "cited_project_id": "ai_ml:sentiment-dash",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-25",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:079",
+    "job_title": "Marketer - Social Media Engineering - Social Automation",
+    "style": "generic",
+    "cited_project_id": "ai_ml:llm-finetune",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-08-26",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:080",
+    "job_title": "Computer-Aided Brain Tumor Diagnosis Deep Learner CNN Using Augmented Brain MRI",
+    "style": "specific",
+    "cited_project_id": "ai_ml:legal-rag",
+    "text": "Your computer-aided brain tumor diagnosis deep learner cnn using augmented brain mri post mentions a tight timeline. In a similar legal services project (Contract Q&A assistant over 12k legal documents) I chunked contracts by clause, added hybrid retrieval and citation-checked answers. The result: cut clause lookup time from 25 minutes to under 2 minutes; 91% answer accuracy on a 200-question test set. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2025-09-27",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:081",
+    "job_title": "NLP Summarization App Development",
+    "style": "specific",
+    "cited_project_id": "ai_ml:sentiment-dash",
+    "text": "Your nlp summarization app development post mentions NLP. In a similar hospitality project (Review sentiment analysis) I aspect-based sentiment model over 120k reviews with a weekly report. The result: identified two recurring service issues that were then fixed. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2023-10-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:082",
+    "job_title": "GPT3 based Python bot that provides answers based on webpage content",
+    "style": "question",
+    "cited_project_id": "ai_ml:sentiment-dash",
+    "text": "Quick question before I scope this: is the Python setup already in production? I ask because on Review sentiment analysis the biggest win came from that decision - identified two recurring service issues that were then fixed. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2024-11-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:083",
+    "job_title": "Back Pack Designer",
+    "style": "generic",
+    "cited_project_id": "ai_ml:image-search",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-12-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:084",
+    "job_title": "Script for mac | ffmpeg | Concatenate video | software",
+    "style": "specific",
+    "cited_project_id": "ai_ml:sagemaker-mlops",
+    "text": "Your script for mac | ffmpeg | concatenate video | software post mentions a tight timeline. In a similar fintech project (MLOps pipeline on SageMaker) I built training, registry and blue-green deployment pipelines with automated checks. The result: release time cut from two weeks to one day. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-01-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:085",
+    "job_title": "Telegram bot with chatGPT and paid subscription",
+    "style": "specific",
+    "cited_project_id": "ai_ml:llm-finetune",
+    "text": "Your telegram bot with chatgpt and paid subscription post mentions a tight timeline. In a similar insurance project (Domain fine-tune of an open LLM for insurance emails) I fine-tuned a 7B model with LoRA on 9k approved replies and evaluated with a rubric judge. The result: agents accepted 64% of drafts unchanged. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-02-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:086",
+    "job_title": "Data scientist needed to help automate financial processing.",
+    "style": "specific",
+    "cited_project_id": "ai_ml:prompt-eval",
+    "text": "Your data scientist needed to help automate financial processing. post mentions a tight timeline. In a similar AI startup project (Prompt evaluation harness for an AI startup) I regression suite of 300 cases with LLM and rule graders running in CI. The result: caught 11 regressions before release in two months. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-03-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:087",
+    "job_title": "Seeking a Skilled Freelancer for a ChatGPT iMessage Chatbot Application",
+    "style": "question",
+    "cited_project_id": "ai_ml:support-bot",
+    "text": "Quick question before I scope this: is the Chatbot setup already in production? I ask because on Customer-support chatbot with ticket deflection the biggest win came from that decision - deflected 38% of tickets in the first month. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-04-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:088",
+    "job_title": "Building a domain specific AI Chat bot like Chat GPT",
+    "style": "generic",
+    "cited_project_id": "ai_ml:support-bot",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-05-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:089",
+    "job_title": "Looking to hire long-term Django Developer",
+    "style": "generic",
+    "cited_project_id": "ai_ml:ocr-invoices",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-06-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:090",
+    "job_title": "Chat GPT Facebook Chatbot Built",
+    "style": "specific",
+    "cited_project_id": "ai_ml:whatsapp-bot",
+    "text": "Your chat gpt facebook chatbot built post mentions Chatbot. In a similar healthcare project (WhatsApp appointment bot for clinics) I intent and slot extraction bot integrated with the clinic calendar via the official API. The result: 62% of bookings completed without staff. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-07-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:091",
+    "job_title": "Computer vision expert",
+    "style": "generic",
+    "cited_project_id": "ai_ml:tf-medical",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2024-08-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:092",
+    "job_title": "Experienced Back-End (Python) Developer to improve our existing trading platform using Binance API",
+    "style": "question",
+    "cited_project_id": "ai_ml:whatsapp-bot",
+    "text": "Quick question before I scope this: is the Python setup already in production? I ask because on WhatsApp appointment bot for clinics the biggest win came from that decision - 62% of bookings completed without staff. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2025-09-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:093",
+    "job_title": "Looking for a low level developer expert",
+    "style": "generic",
+    "cited_project_id": "ai_ml:demand-forecast",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-10-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:094",
+    "job_title": "Automated Home Construction Assistance System",
+    "style": "generic",
+    "cited_project_id": "ai_ml:fraud-anomaly",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-11-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:095",
+    "job_title": "Zoho Projects/Tasks Configuration",
+    "style": "specific",
+    "cited_project_id": "ai_ml:support-bot",
+    "text": "Your zoho projects/tasks configuration post mentions a tight timeline. In a similar e-commerce project (Customer-support chatbot with ticket deflection) I built an intent router plus an LLM answerer grounded on the help centre, with human hand-off. The result: deflected 38% of tickets in the first month. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-12-15",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:096",
+    "job_title": "Time series- forecasting sub-seasonal temperatures by machine learning",
+    "style": "specific",
+    "cited_project_id": "ai_ml:demand-forecast",
+    "text": "Your time series- forecasting sub-seasonal temperatures by machine learning post mentions Time Series Forecasting, Machine Learning. In a similar retail project (Weekly demand forecasting for 600 SKUs) I built hierarchical forecasts with gradient boosting and calendar features, retrained weekly. The result: MAPE improved from 31% to 18%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-01-16",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:097",
+    "job_title": "Loras for Stable Diffusion API",
+    "style": "question",
+    "cited_project_id": "ai_ml:defect-vision",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Steel surface defect detection the biggest win came from that decision - recall on cracks rose from 72% to 94%. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2024-02-17",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:098",
+    "job_title": "Instagram bot developer",
+    "style": "question",
+    "cited_project_id": "ai_ml:sagemaker-mlops",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on MLOps pipeline on SageMaker the biggest win came from that decision - release time cut from two weeks to one day. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2025-03-18",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:099",
+    "job_title": "Open API GPT3 Fine tuning Consultant Needed",
+    "style": "generic",
+    "cited_project_id": "ai_ml:llm-finetune",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2023-04-19",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:100",
+    "job_title": "Auto Moderator Bot Developer",
+    "style": "specific",
+    "cited_project_id": "ai_ml:agentic-research",
+    "text": "Your auto moderator bot developer post mentions a tight timeline. In a similar market research project (Multi-agent research assistant) I planner, researcher and critic agents with tool use and source-cited outputs. The result: brief turnaround from 3 days to 4 hours. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-05-20",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:101",
+    "job_title": "Developer to Build Video Editing Platform with AI",
+    "style": "specific",
+    "cited_project_id": "ai_ml:churn-model",
+    "text": "Your developer to build video editing platform with ai post mentions Video Editing. In a similar SaaS project (Subscription churn prediction) I engineered usage features, calibrated a classifier, explained drivers with SHAP. The result: the retention team saved 140 at-risk accounts in a quarter. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-06-21",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:102",
+    "job_title": "Build a language translator android app using machine learning",
+    "style": "question",
+    "cited_project_id": "ai_ml:sentiment-dash",
+    "text": "Quick question before I scope this: is the Mobile App Development setup already in production? I ask because on Review sentiment analysis the biggest win came from that decision - identified two recurring service issues that were then fixed. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-07-22",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:103",
+    "job_title": "ManyChat PRO + Live Chat Automation Expert",
+    "style": "generic",
+    "cited_project_id": "ai_ml:whatsapp-bot",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-08-23",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:104",
+    "job_title": "Barcode and QR code reading using raspberry pi and raspbpi camera in python",
+    "style": "generic",
+    "cited_project_id": "ai_ml:resume-ner",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-09-24",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:105",
+    "job_title": "Seeking Experienced Machine Learning Engineer to Help Plan, Develop, and Implement Innovative Idea",
+    "style": "generic",
+    "cited_project_id": "ai_ml:sentiment-dash",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-10-25",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:106",
+    "job_title": "OCR and Excel Expert",
+    "style": "specific",
+    "cited_project_id": "ai_ml:sagemaker-mlops",
+    "text": "Your ocr and excel expert post mentions Excel. In a similar fintech project (MLOps pipeline on SageMaker) I built training, registry and blue-green deployment pipelines with automated checks. The result: release time cut from two weeks to one day. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-11-26",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:107",
+    "job_title": "Data analytics - identify various elements of a network based on location(x,y) - pandas, python",
+    "style": "question",
+    "cited_project_id": "ai_ml:churn-model",
+    "text": "Quick question before I scope this: is the Data Analysis setup already in production? I ask because on Subscription churn prediction the biggest win came from that decision - the retention team saved 140 at-risk accounts in a quarter. Happy to share the approach on a call.",
+    "outcome": "won",
+    "date": "2025-12-27",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:108",
+    "job_title": "Expert Computer Vision Developer",
+    "style": "generic",
+    "cited_project_id": "ai_ml:ocr-invoices",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "won",
+    "date": "2023-01-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:109",
+    "job_title": "Data Science/Analytics Mentor (Fraud Detection Financial Forensic Technology Space)",
+    "style": "generic",
+    "cited_project_id": "ai_ml:sagemaker-mlops",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-02-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:110",
+    "job_title": "Machine learning Engineer",
+    "style": "specific",
+    "cited_project_id": "ai_ml:churn-model",
+    "text": "Your machine learning engineer post mentions Machine Learning. In a similar SaaS project (Subscription churn prediction) I engineered usage features, calibrated a classifier, explained drivers with SHAP. The result: the retention team saved 140 at-risk accounts in a quarter. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-03-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:111",
+    "job_title": "Semantic Search & Embeddings in AI application",
+    "style": "specific",
+    "cited_project_id": "ai_ml:fraud-anomaly",
+    "text": "Your semantic search & embeddings in ai application post mentions a tight timeline. In a similar fintech project (Transaction anomaly detection) I isolation forest plus rules with an analyst feedback loop. The result: flagged 61% of fraud before settlement at a 0.4% false-positive rate. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-04-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:112",
+    "job_title": "Poker Solver Project requires Brilliant Developer to reach a critical milestone",
+    "style": "specific",
+    "cited_project_id": "ai_ml:speech-notes",
+    "text": "Your poker solver project requires brilliant developer to reach a critical milestone post mentions a tight timeline. In a similar consulting project (Meeting transcription and summarisation) I transcribed with Whisper, diarised speakers, summarised into action items with an LLM. The result: summaries ready 3 minutes after a call ends. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2024-05-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:113",
+    "job_title": "Consultant/Expert in Microsoft Syntex AI",
+    "style": "generic",
+    "cited_project_id": "ai_ml:image-search",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-06-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:114",
+    "job_title": "Train machine learning model : GAN compatible CoreML",
+    "style": "generic",
+    "cited_project_id": "ai_ml:sentiment-dash",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:115",
+    "job_title": "Rephrasing ai",
+    "style": "specific",
+    "cited_project_id": "ai_ml:churn-model",
+    "text": "Your rephrasing ai post mentions a tight timeline. In a similar SaaS project (Subscription churn prediction) I engineered usage features, calibrated a classifier, explained drivers with SHAP. The result: the retention team saved 140 at-risk accounts in a quarter. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-08-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:116",
+    "job_title": "Odoo Developer/ERP",
+    "style": "specific",
+    "cited_project_id": "ai_ml:tf-medical",
+    "text": "Your odoo developer/erp post mentions a tight timeline. In a similar healthcare project (Chest X-ray triage classifier (research)) I transfer learning with careful patient-level splits and calibration. The result: AUROC 0.87 on the held-out split; published as a reproducible notebook. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2025-09-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:117",
+    "job_title": "Methods of applying machine learning algorithms for software-defined network",
+    "style": "question",
+    "cited_project_id": "ai_ml:rec-engine",
+    "text": "Quick question before I scope this: is the Machine Learning setup already in production? I ask because on Content recommendation engine the biggest win came from that decision - pages per session up 22%. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-10-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:118",
+    "job_title": "Python developer to configure OpenCV with RTSP stream",
+    "style": "generic",
+    "cited_project_id": "ai_ml:defect-vision",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2024-11-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:119",
+    "job_title": "MATLAB data processing",
+    "style": "specific",
+    "cited_project_id": "ai_ml:sentiment-dash",
+    "text": "Your matlab data processing post mentions a tight timeline. In a similar hospitality project (Review sentiment analysis) I aspect-based sentiment model over 120k reviews with a weekly report. The result: identified two recurring service issues that were then fixed. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2025-12-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:120",
+    "job_title": "OpenAI GPT-3 Fine-Tuning API Consultant",
+    "style": "specific",
+    "cited_project_id": "ai_ml:llm-finetune",
+    "text": "Your openai gpt-3 fine-tuning api consultant post mentions Fine-tuning. In a similar insurance project (Domain fine-tune of an open LLM for insurance emails) I fine-tuned a 7B model with LoRA on 9k approved replies and evaluated with a rubric judge. The result: agents accepted 64% of drafts unchanged. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2023-01-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:121",
+    "job_title": "Comparing binary files & extracting diffrences and applying them to a third one by analysing.",
+    "style": "specific",
+    "cited_project_id": "ai_ml:llm-finetune",
+    "text": "Your comparing binary files & extracting diffrences and applying them to a third one by analysing. post mentions a tight timeline. In a similar insurance project (Domain fine-tune of an open LLM for insurance emails) I fine-tuned a 7B model with LoRA on 9k approved replies and evaluated with a rubric judge. The result: agents accepted 64% of drafts unchanged. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2024-02-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:122",
+    "job_title": "Artificial Intelligence - Action Detection via Video or App",
+    "style": "question",
+    "cited_project_id": "ai_ml:agentic-research",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Multi-agent research assistant the biggest win came from that decision - brief turnaround from 3 days to 4 hours. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2025-03-15",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:123",
+    "job_title": "Reinforcement Learning Expert for Character Control",
+    "style": "generic",
+    "cited_project_id": "ai_ml:sagemaker-mlops",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-04-16",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:124",
+    "job_title": "Looking for a CHATGPT language model developer and implementer",
+    "style": "generic",
+    "cited_project_id": "ai_ml:llm-finetune",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-05-17",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:125",
+    "job_title": "AI/NLP Developer",
+    "style": "specific",
+    "cited_project_id": "ai_ml:resume-ner",
+    "text": "Your ai/nlp developer post mentions NLP. In a similar HR tech project (Resume parsing with named-entity recognition) I fine-tuned a token classifier on 2,000 annotated resumes and wrapped it as an API. The result: field-level F1 of 0.89; data entry time halved. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2025-06-18",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:126",
+    "job_title": "Public Safety Crime Prediction Analysis Data Scientist Expert",
+    "style": "generic",
+    "cited_project_id": "ai_ml:defect-vision",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-19",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:127",
+    "job_title": "\"The Cloner\" Build an App [using ChatGPT?]",
+    "style": "question",
+    "cited_project_id": "ai_ml:rec-engine",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Content recommendation engine the biggest win came from that decision - pages per session up 22%. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2024-08-20",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:128",
+    "job_title": "Build trading bot in Python",
+    "style": "generic",
+    "cited_project_id": "ai_ml:tf-medical",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "won",
+    "date": "2025-09-21",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:129",
+    "job_title": "SAR Time series analysis for vegetation cover",
+    "style": "generic",
+    "cited_project_id": "ai_ml:demand-forecast",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-10-22",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:130",
+    "job_title": "STATA(and/or python) tutorials on simulation, experiments and treatment effects",
+    "style": "specific",
+    "cited_project_id": "ai_ml:tf-medical",
+    "text": "Your stata(and/or python) tutorials on simulation, experiments and treatment effects post mentions Python. In a similar healthcare project (Chest X-ray triage classifier (research)) I transfer learning with careful patient-level splits and calibration. The result: AUROC 0.87 on the held-out split; published as a reproducible notebook. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2024-11-23",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:131",
+    "job_title": "Hire a python developer to add some features to a script",
+    "style": "specific",
+    "cited_project_id": "ai_ml:prompt-eval",
+    "text": "Your hire a python developer to add some features to a script post mentions Python. In a similar AI startup project (Prompt evaluation harness for an AI startup) I regression suite of 300 cases with LLM and rule graders running in CI. The result: caught 11 regressions before release in two months. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-12-24",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:132",
+    "job_title": "Thesis Paper for credit card fraud detection using machine learning.",
+    "style": "question",
+    "cited_project_id": "ai_ml:sentiment-dash",
+    "text": "Quick question before I scope this: is the Machine Learning setup already in production? I ask because on Review sentiment analysis the biggest win came from that decision - identified two recurring service issues that were then fixed. Happy to share the approach on a call.",
+    "outcome": "replied",
+    "date": "2023-01-25",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:133",
+    "job_title": "Integrating Testing For Medical Imaging Software",
+    "style": "generic",
+    "cited_project_id": "ai_ml:llm-finetune",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-02-26",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:134",
+    "job_title": "Experienced Developer for OpenAI API",
+    "style": "generic",
+    "cited_project_id": "ai_ml:prompt-eval",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "replied",
+    "date": "2025-03-27",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:135",
+    "job_title": "Optimize python GUI",
+    "style": "specific",
+    "cited_project_id": "ai_ml:speech-notes",
+    "text": "Your optimize python gui post mentions Python. In a similar consulting project (Meeting transcription and summarisation) I transcribed with Whisper, diarised speakers, summarised into action items with an LLM. The result: summaries ready 3 minutes after a call ends. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-04-01",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:136",
+    "job_title": "Pose transfer from one 2d image to another using AI",
+    "style": "specific",
+    "cited_project_id": "ai_ml:image-search",
+    "text": "Your pose transfer from one 2d image to another using ai post mentions a tight timeline. In a similar e-commerce project (Visual product search) I cLIP embeddings with an approximate nearest-neighbour index. The result: search-to-cart rate up 15%. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2024-05-02",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:137",
+    "job_title": "Best AI - Programmer",
+    "style": "question",
+    "cited_project_id": "ai_ml:sentiment-dash",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Review sentiment analysis the biggest win came from that decision - identified two recurring service issues that were then fixed. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2025-06-03",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:138",
+    "job_title": "WebApp developer needed for building an user facing platform that integrates GPT and other AI tools",
+    "style": "generic",
+    "cited_project_id": "ai_ml:churn-model",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-07-04",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:139",
+    "job_title": "Need support in passing video feed from unity to opencv plugin",
+    "style": "generic",
+    "cited_project_id": "ai_ml:ocr-invoices",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-08-05",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:140",
+    "job_title": "Write a MicroPython driver for the ADXL367",
+    "style": "generic",
+    "cited_project_id": "ai_ml:churn-model",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-09-06",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:141",
+    "job_title": "AI Integration Expert",
+    "style": "specific",
+    "cited_project_id": "ai_ml:tf-medical",
+    "text": "Your ai integration expert post mentions a tight timeline. In a similar healthcare project (Chest X-ray triage classifier (research)) I transfer learning with careful patient-level splits and calibration. The result: AUROC 0.87 on the held-out split; published as a reproducible notebook. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "ignored",
+    "date": "2023-10-07",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:142",
+    "job_title": "AI system that corrects and grades subjective handwritten Math Answer sheets",
+    "style": "question",
+    "cited_project_id": "ai_ml:support-bot",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on Customer-support chatbot with ticket deflection the biggest win came from that decision - deflected 38% of tickets in the first month. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2024-11-08",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:143",
+    "job_title": "Chat GPT assistant",
+    "style": "generic",
+    "cited_project_id": "ai_ml:speech-notes",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-12-09",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:144",
+    "job_title": "Build an agent based model to stimulate a CCP driven Market",
+    "style": "generic",
+    "cited_project_id": "ai_ml:churn-model",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2023-01-10",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:145",
+    "job_title": "Build basic computer game risk meets,civilization meets settlers of Catan",
+    "style": "specific",
+    "cited_project_id": "ai_ml:llm-finetune",
+    "text": "Your build basic computer game risk meets,civilization meets settlers of catan post mentions a tight timeline. In a similar insurance project (Domain fine-tune of an open LLM for insurance emails) I fine-tuned a 7B model with LoRA on 9k approved replies and evaluated with a rubric judge. The result: agents accepted 64% of drafts unchanged. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "replied",
+    "date": "2024-02-11",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:146",
+    "job_title": "ChatGPT + Chrome Extension",
+    "style": "specific",
+    "cited_project_id": "ai_ml:whatsapp-bot",
+    "text": "Your chatgpt + chrome extension post mentions a tight timeline. In a similar healthcare project (WhatsApp appointment bot for clinics) I intent and slot extraction bot integrated with the clinic calendar via the official API. The result: 62% of bookings completed without staff. For you I would start with a one-week scoped milestone and a demo.",
+    "outcome": "won",
+    "date": "2025-03-12",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:147",
+    "job_title": "GPT Document Analyser",
+    "style": "question",
+    "cited_project_id": "ai_ml:sagemaker-mlops",
+    "text": "Quick question before I scope this: is the current setup already in production? I ask because on MLOps pipeline on SageMaker the biggest win came from that decision - release time cut from two weeks to one day. Happy to share the approach on a call.",
+    "outcome": "ignored",
+    "date": "2023-04-13",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:148",
+    "job_title": "Developer to create an AI-powered virtual assistant for online coaches and entrepreneurs",
+    "style": "generic",
+    "cited_project_id": "ai_ml:tf-medical",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2024-05-14",
+    "provenance": "synthetic (job title real)"
+  },
+  {
+    "proposal_id": "ai_ml:proposal:149",
+    "job_title": "GPT-3 Data Engineer",
+    "style": "generic",
+    "cited_project_id": "ai_ml:speech-notes",
+    "text": "Hello, I am a passionate and hardworking AI/ML Engineer with 4 years of experience. I have done many projects like this and can deliver high quality work on time. Please check my profile. Looking forward to working with you.",
+    "outcome": "ignored",
+    "date": "2025-06-15",
+    "provenance": "synthetic (job title real)"
+  }
+]

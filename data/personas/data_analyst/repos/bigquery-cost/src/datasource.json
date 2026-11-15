@@ -1,0 +1,1 @@
+{"connector": "looker_studio_bigquery", "table": "ops.kpi_hourly", "refresh": "15m"}

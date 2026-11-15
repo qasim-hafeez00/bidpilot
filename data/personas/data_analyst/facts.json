@@ -1,0 +1,544 @@
+{
+  "persona_id": "data_analyst",
+  "years_experience": 3,
+  "skills": [
+    "A/B Testing",
+    "Airflow",
+    "BigQuery",
+    "CI/CD",
+    "DAX",
+    "Data Analysis",
+    "Data Cleaning",
+    "Data Visualization",
+    "Docker",
+    "ETL",
+    "Excel",
+    "Google Analytics",
+    "Google Sheets",
+    "KPI Reporting",
+    "Looker Studio",
+    "NumPy",
+    "PostgreSQL",
+    "Power BI",
+    "Python",
+    "R",
+    "SQL",
+    "Snowflake",
+    "Statistics",
+    "Tableau",
+    "Time Series Forecasting",
+    "dbt",
+    "pandas",
+    "scikit-learn"
+  ],
+  "industries": [
+    "D2C brand",
+    "SaaS",
+    "accounting",
+    "e-commerce",
+    "grocery",
+    "healthcare",
+    "insurance",
+    "logistics",
+    "manufacturing",
+    "marketing agency",
+    "media",
+    "nonprofit",
+    "retail",
+    "subscription box",
+    "wholesale"
+  ],
+  "project_titles": [
+    "Sales performance dashboard",
+    "Marketing attribution dashboard",
+    "Analytics engineering with dbt on Snowflake",
+    "Finance reporting automation in Excel",
+    "Checkout A/B test analysis",
+    "Customer cohort retention analysis",
+    "Operations KPI board in Looker Studio",
+    "Customer master data cleanup",
+    "ETL pipeline for ad platforms",
+    "Customer survey statistical analysis",
+    "GA4 funnel and web analytics audit",
+    "HR attrition analytics",
+    "Inventory analytics in SQL",
+    "BigQuery cost and query optimisation",
+    "Sales forecasting model in Google Sheets",
+    "Public health indicators dashboard",
+    "Price elasticity study"
+  ],
+  "numbers": [
+    "0",
+    "0.01",
+    "1.5",
+    "10",
+    "14",
+    "140",
+    "2",
+    "2,300",
+    "2.2",
+    "20",
+    "27",
+    "3",
+    "3.1",
+    "38",
+    "4",
+    "41",
+    "45",
+    "46",
+    "6",
+    "9",
+    "99"
+  ],
+  "projects": [
+    {
+      "project_id": "data_analyst:sales-powerbi",
+      "slug": "sales-powerbi",
+      "title": "Sales performance dashboard",
+      "client_industry": "wholesale",
+      "date": "2025-03",
+      "explicit_skills": [
+        "Power BI",
+        "DAX",
+        "SQL",
+        "KPI Reporting"
+      ],
+      "implied_skills": [
+        "Excel"
+      ],
+      "all_skills": [
+        "DAX",
+        "Excel",
+        "KPI Reporting",
+        "Power BI",
+        "SQL"
+      ],
+      "problem": "Regional managers waited a week for sales reports.",
+      "approach": "Star-schema model, DAX measures and row-level security per region.",
+      "result": "report refresh daily instead of weekly; used by 45 managers",
+      "has_repo": true
+    },
+    {
+      "project_id": "data_analyst:tableau-marketing",
+      "slug": "tableau-marketing",
+      "title": "Marketing attribution dashboard",
+      "client_industry": "D2C brand",
+      "date": "2024-09",
+      "explicit_skills": [
+        "Tableau",
+        "SQL",
+        "Data Visualization"
+      ],
+      "implied_skills": [
+        "BigQuery",
+        "Google Analytics"
+      ],
+      "all_skills": [
+        "BigQuery",
+        "Data Visualization",
+        "Google Analytics",
+        "SQL",
+        "Tableau"
+      ],
+      "problem": "The brand could not see which channels drove repeat buyers.",
+      "approach": "Multi-touch attribution views blending ad spend and orders.",
+      "result": "reallocated 20% of budget, CAC down 14%",
+      "has_repo": true
+    },
+    {
+      "project_id": "data_analyst:dbt-snowflake",
+      "slug": "dbt-snowflake",
+      "title": "Analytics engineering with dbt on Snowflake",
+      "client_industry": "SaaS",
+      "date": "2025-06",
+      "explicit_skills": [
+        "dbt",
+        "Snowflake",
+        "SQL",
+        "ETL"
+      ],
+      "implied_skills": [
+        "Airflow",
+        "CI/CD"
+      ],
+      "all_skills": [
+        "Airflow",
+        "CI/CD",
+        "ETL",
+        "SQL",
+        "Snowflake",
+        "dbt"
+      ],
+      "problem": "Metric definitions disagreed across teams.",
+      "approach": "Layered staging/marts models with tests and documentation.",
+      "result": "one source of truth for 38 KPIs; 140 dbt tests",
+      "has_repo": false
+    },
+    {
+      "project_id": "data_analyst:excel-automation",
+      "slug": "excel-automation",
+      "title": "Finance reporting automation in Excel",
+      "client_industry": "accounting",
+      "date": "2023-08",
+      "explicit_skills": [
+        "Excel",
+        "Data Cleaning",
+        "KPI Reporting"
+      ],
+      "implied_skills": [
+        "Python"
+      ],
+      "all_skills": [
+        "Data Cleaning",
+        "Excel",
+        "KPI Reporting",
+        "Python"
+      ],
+      "problem": "Month-end close took 6 days of copy-paste.",
+      "approach": "Power Query transforms, structured tables and VBA exports.",
+      "result": "month-end reporting from 6 days to 1.5 days",
+      "has_repo": true
+    },
+    {
+      "project_id": "data_analyst:ab-test-analysis",
+      "slug": "ab-test-analysis",
+      "title": "Checkout A/B test analysis",
+      "client_industry": "e-commerce",
+      "date": "2024-04",
+      "explicit_skills": [
+        "A/B Testing",
+        "Statistics",
+        "Python",
+        "pandas"
+      ],
+      "implied_skills": [
+        "SQL"
+      ],
+      "all_skills": [
+        "A/B Testing",
+        "Python",
+        "SQL",
+        "Statistics",
+        "pandas"
+      ],
+      "problem": "A team shipped checkout changes on gut feel.",
+      "approach": "Power analysis, sequential testing guardrails and a readout template.",
+      "result": "identified a variant with +3.1% conversion (p=0.01)",
+      "has_repo": true
+    },
+    {
+      "project_id": "data_analyst:cohort-retention",
+      "slug": "cohort-retention",
+      "title": "Customer cohort retention analysis",
+      "client_industry": "subscription box",
+      "date": "2023-11",
+      "explicit_skills": [
+        "SQL",
+        "Data Analysis",
+        "Data Visualization"
+      ],
+      "implied_skills": [
+        "Looker Studio",
+        "BigQuery"
+      ],
+      "all_skills": [
+        "BigQuery",
+        "Data Analysis",
+        "Data Visualization",
+        "Looker Studio",
+        "SQL"
+      ],
+      "problem": "Leadership did not know when customers churned.",
+      "approach": "Cohort tables and survival curves by acquisition channel.",
+      "result": "found month-3 drop-off that led to a new onboarding email series",
+      "has_repo": false
+    },
+    {
+      "project_id": "data_analyst:looker-studio-ops",
+      "slug": "looker-studio-ops",
+      "title": "Operations KPI board in Looker Studio",
+      "client_industry": "logistics",
+      "date": "2024-12",
+      "explicit_skills": [
+        "Looker Studio",
+        "Google Sheets",
+        "KPI Reporting"
+      ],
+      "implied_skills": [
+        "BigQuery"
+      ],
+      "all_skills": [
+        "BigQuery",
+        "Google Sheets",
+        "KPI Reporting",
+        "Looker Studio"
+      ],
+      "problem": "Dispatch managers tracked on-time rates by hand.",
+      "approach": "Automated data feeds and a live KPI board.",
+      "result": "on-time delivery visible hourly; late deliveries down 9%",
+      "has_repo": true
+    },
+    {
+      "project_id": "data_analyst:python-cleaning",
+      "slug": "python-cleaning",
+      "title": "Customer master data cleanup",
+      "client_industry": "insurance",
+      "date": "2023-03",
+      "explicit_skills": [
+        "Python",
+        "pandas",
+        "Data Cleaning"
+      ],
+      "implied_skills": [
+        "NumPy",
+        "SQL"
+      ],
+      "all_skills": [
+        "Data Cleaning",
+        "NumPy",
+        "Python",
+        "SQL",
+        "pandas"
+      ],
+      "problem": "A CRM held 300k customer records with duplicates.",
+      "approach": "Fuzzy matching, address standardisation and merge rules with review queues.",
+      "result": "removed 41k duplicates with 99% precision on an audited sample",
+      "has_repo": true
+    },
+    {
+      "project_id": "data_analyst:airflow-etl",
+      "slug": "airflow-etl",
+      "title": "ETL pipeline for ad platforms",
+      "client_industry": "marketing agency",
+      "date": "2025-01",
+      "explicit_skills": [
+        "ETL",
+        "Python",
+        "SQL"
+      ],
+      "implied_skills": [
+        "Airflow",
+        "BigQuery",
+        "Docker"
+      ],
+      "all_skills": [
+        "Airflow",
+        "BigQuery",
+        "Docker",
+        "ETL",
+        "Python",
+        "SQL"
+      ],
+      "problem": "Analysts downloaded CSVs from 5 ad platforms daily.",
+      "approach": "Scheduled extract-load jobs with schema checks and alerting.",
+      "result": "saved 10 analyst hours per week",
+      "has_repo": false
+    },
+    {
+      "project_id": "data_analyst:survey-stats",
+      "slug": "survey-stats",
+      "title": "Customer survey statistical analysis",
+      "client_industry": "healthcare",
+      "date": "2022-10",
+      "explicit_skills": [
+        "Statistics",
+        "R",
+        "Data Analysis"
+      ],
+      "implied_skills": [
+        "Excel"
+      ],
+      "all_skills": [
+        "Data Analysis",
+        "Excel",
+        "R",
+        "Statistics"
+      ],
+      "problem": "A clinic group had 8,000 survey responses and no analysis.",
+      "approach": "Weighted analysis, significance tests and driver analysis.",
+      "result": "3 service changes prioritised from the findings",
+      "has_repo": true
+    },
+    {
+      "project_id": "data_analyst:ga4-funnel",
+      "slug": "ga4-funnel",
+      "title": "GA4 funnel and web analytics audit",
+      "client_industry": "SaaS",
+      "date": "2024-06",
+      "explicit_skills": [
+        "Google Analytics",
+        "Data Analysis",
+        "Looker Studio"
+      ],
+      "implied_skills": [
+        "BigQuery"
+      ],
+      "all_skills": [
+        "BigQuery",
+        "Data Analysis",
+        "Google Analytics",
+        "Looker Studio"
+      ],
+      "problem": "Sign-up tracking was broken after a site redesign.",
+      "approach": "Event taxonomy, funnel exploration and a QA checklist.",
+      "result": "fixed tracking for 14 events; trial sign-ups attributable again",
+      "has_repo": true
+    },
+    {
+      "project_id": "data_analyst:powerbi-hr",
+      "slug": "powerbi-hr",
+      "title": "HR attrition analytics",
+      "client_industry": "manufacturing",
+      "date": "2024-02",
+      "explicit_skills": [
+        "Power BI",
+        "DAX",
+        "Data Analysis"
+      ],
+      "implied_skills": [
+        "SQL",
+        "Excel"
+      ],
+      "all_skills": [
+        "DAX",
+        "Data Analysis",
+        "Excel",
+        "Power BI",
+        "SQL"
+      ],
+      "problem": "HR could not explain rising attrition.",
+      "approach": "Attrition drivers, tenure curves and headcount forecasts.",
+      "result": "targeted retention plan for 2 departments with highest risk",
+      "has_repo": false
+    },
+    {
+      "project_id": "data_analyst:inventory-sql",
+      "slug": "inventory-sql",
+      "title": "Inventory analytics in SQL",
+      "client_industry": "retail",
+      "date": "2023-06",
+      "explicit_skills": [
+        "SQL",
+        "Data Analysis",
+        "KPI Reporting"
+      ],
+      "implied_skills": [
+        "PostgreSQL",
+        "Tableau"
+      ],
+      "all_skills": [
+        "Data Analysis",
+        "KPI Reporting",
+        "PostgreSQL",
+        "SQL",
+        "Tableau"
+      ],
+      "problem": "Dead stock tied up cash across 30 stores.",
+      "approach": "ABC/XYZ classification and weekly exception reports.",
+      "result": "dead stock reduced by 27% in two quarters",
+      "has_repo": true
+    },
+    {
+      "project_id": "data_analyst:bigquery-cost",
+      "slug": "bigquery-cost",
+      "title": "BigQuery cost and query optimisation",
+      "client_industry": "media",
+      "date": "2025-08",
+      "explicit_skills": [
+        "BigQuery",
+        "SQL"
+      ],
+      "implied_skills": [
+        "dbt",
+        "Looker Studio"
+      ],
+      "all_skills": [
+        "BigQuery",
+        "Looker Studio",
+        "SQL",
+        "dbt"
+      ],
+      "problem": "A media company's warehouse bill tripled in a year.",
+      "approach": "Partitioning, clustering and materialised summary tables.",
+      "result": "monthly warehouse cost down 46%",
+      "has_repo": true
+    },
+    {
+      "project_id": "data_analyst:forecast-sheets",
+      "slug": "forecast-sheets",
+      "title": "Sales forecasting model in Google Sheets",
+      "client_industry": "SaaS",
+      "date": "2023-12",
+      "explicit_skills": [
+        "Google Sheets",
+        "Statistics",
+        "KPI Reporting"
+      ],
+      "implied_skills": [
+        "Time Series Forecasting"
+      ],
+      "all_skills": [
+        "Google Sheets",
+        "KPI Reporting",
+        "Statistics",
+        "Time Series Forecasting"
+      ],
+      "problem": "Founders needed a board-ready revenue forecast.",
+      "approach": "Driver-based model with scenarios and a seasonality baseline.",
+      "result": "forecast within 4% of actual for 3 consecutive quarters",
+      "has_repo": false
+    },
+    {
+      "project_id": "data_analyst:tableau-public-health",
+      "slug": "tableau-public-health",
+      "title": "Public health indicators dashboard",
+      "client_industry": "nonprofit",
+      "date": "2024-07",
+      "explicit_skills": [
+        "Tableau",
+        "Data Visualization",
+        "Data Cleaning"
+      ],
+      "implied_skills": [
+        "R"
+      ],
+      "all_skills": [
+        "Data Cleaning",
+        "Data Visualization",
+        "R",
+        "Tableau"
+      ],
+      "problem": "A nonprofit's reports were 60-page PDFs nobody read.",
+      "approach": "Interactive district-level dashboard with accessible colour palette.",
+      "result": "monthly views up from ~0 to 2,300",
+      "has_repo": true
+    },
+    {
+      "project_id": "data_analyst:price-elasticity",
+      "slug": "price-elasticity",
+      "title": "Price elasticity study",
+      "client_industry": "grocery",
+      "date": "2025-05",
+      "explicit_skills": [
+        "Statistics",
+        "Python",
+        "Data Analysis"
+      ],
+      "implied_skills": [
+        "pandas",
+        "scikit-learn"
+      ],
+      "all_skills": [
+        "Data Analysis",
+        "Python",
+        "Statistics",
+        "pandas",
+        "scikit-learn"
+      ],
+      "problem": "A grocer priced by competitor matching only.",
+      "approach": "Log-log regression by category with promotion controls.",
+      "result": "recommended price changes worth an estimated 2.2% margin",
+      "has_repo": true
+    }
+  ]
+}

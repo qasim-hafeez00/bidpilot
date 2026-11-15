@@ -1,0 +1,101 @@
+[
+  {
+    "review_id": "fullstack:review:saas-dashboard",
+    "project_id": "fullstack:saas-dashboard",
+    "rating": 4.6,
+    "date": "2025-04",
+    "client_industry": "SaaS",
+    "provenance": "synthetic",
+    "text": "Bilal delivered exactly what we needed for the multi-tenant saas analytics dashboard. Communication was clear and the result: dashboard load time under 1.2 s for 50k-row tenants."
+  },
+  {
+    "review_id": "fullstack:review:drf-api",
+    "project_id": "fullstack:drf-api",
+    "rating": 5.0,
+    "date": "2024-05",
+    "client_industry": "logistics",
+    "provenance": "synthetic",
+    "text": "Solid engineer. The logistics rest api shipped on time; p95 latency from 2.4 s to 310 ms. Minor delays on documentation but overall excellent."
+  },
+  {
+    "review_id": "fullstack:review:ecom-headless",
+    "project_id": "fullstack:ecom-headless",
+    "rating": 4.6,
+    "date": "2024-01",
+    "client_industry": "fashion retail",
+    "provenance": "synthetic",
+    "text": "Bilal delivered exactly what we needed for the headless e-commerce storefront. Communication was clear and the result: Lighthouse mobile score from 41 to 93; conversion up 18%."
+  },
+  {
+    "review_id": "fullstack:review:graphql-gateway",
+    "project_id": "fullstack:graphql-gateway",
+    "rating": 5.0,
+    "date": "2023-06",
+    "client_industry": "fintech",
+    "provenance": "synthetic",
+    "text": "Great work on our fintech project. Bilal understood the problem quickly and screen load calls reduced to 1; payload size down 60%. Would hire again."
+  },
+  {
+    "review_id": "fullstack:review:stripe-billing",
+    "project_id": "fullstack:stripe-billing",
+    "rating": 5.0,
+    "date": "2024-08",
+    "client_industry": "edtech",
+    "provenance": "synthetic",
+    "text": "Very professional. Bilal asked the right questions up front and the subscription billing integration involuntary churn down 23%."
+  },
+  {
+    "review_id": "fullstack:review:cicd-k8s",
+    "project_id": "fullstack:cicd-k8s",
+    "rating": 5.0,
+    "date": "2025-07",
+    "client_industry": "SaaS",
+    "provenance": "synthetic",
+    "text": "Great work on our SaaS project. Bilal understood the problem quickly and zero-downtime deploys, 15 per week. Would hire again."
+  },
+  {
+    "review_id": "fullstack:review:booking-app",
+    "project_id": "fullstack:booking-app",
+    "rating": 5.0,
+    "date": "2023-11",
+    "client_industry": "fitness",
+    "provenance": "synthetic",
+    "text": "Solid engineer. The booking web app with calendar sync shipped on time; phone bookings down 80%. Minor delays on documentation but overall excellent."
+  },
+  {
+    "review_id": "fullstack:review:next-blog-cms",
+    "project_id": "fullstack:next-blog-cms",
+    "rating": 4.6,
+    "date": "2024-03",
+    "client_industry": "agency",
+    "provenance": "synthetic",
+    "text": "Bilal delivered exactly what we needed for the marketing site and cms. Communication was clear and the result: publishing time from 2 days to 15 minutes."
+  },
+  {
+    "review_id": "fullstack:review:react-native-app",
+    "project_id": "fullstack:react-native-app",
+    "rating": 5.0,
+    "date": "2024-07",
+    "client_industry": "food delivery",
+    "provenance": "synthetic",
+    "text": "Solid engineer. The delivery tracking mobile app shipped on time; support calls about order status down 45%. Minor delays on documentation but overall excellent."
+  },
+  {
+    "review_id": "fullstack:review:legacy-migration",
+    "project_id": "fullstack:legacy-migration",
+    "rating": 5.0,
+    "date": "2023-04",
+    "client_industry": "nonprofit",
+    "provenance": "synthetic",
+    "text": "Very professional. Bilal asked the right questions up front and the php to django migration migrated 210k donor records with zero data loss."
+  },
+  {
+    "review_id": "fullstack:review:scraper-api-integration",
+    "project_id": "fullstack:scraper-api-integration",
+    "rating": 5.0,
+    "date": "2024-11",
+    "client_industry": "travel",
+    "provenance": "synthetic",
+    "text": "Great work on our travel project. Bilal understood the problem quickly and new supplier onboarding from 3 weeks to 4 days. Would hire again."
+  }
+]
