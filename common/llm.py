@@ -143,6 +143,8 @@ async def chat(node: str, prompt: str | Prompt, *, json_mode: bool = False, max_
                temperature: float | None = None, tier: str | None = None, config: dict | None = None,
                **vars: Any) -> LLMResult:
     """Render a versioned prompt and call the node's model (with cache + fallback)."""
+    if os.environ.get("LLM_DISABLED") == "1":
+        raise LLMUnavailable(f"{node}: LLM disabled (LLM_DISABLED=1)")
     p = load_prompt(prompt) if isinstance(prompt, str) else prompt
     system, user = p.render(**vars)
     provider, model = model_for(node, tier)

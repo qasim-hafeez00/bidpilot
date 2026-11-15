@@ -103,8 +103,12 @@ def load_proposals(persona: str, root: Path = PERSONA_ROOT) -> list[Doc]:
 
 
 def load_persona(persona: str, root: Path = PERSONA_ROOT) -> list[Doc]:
-    return (load_cv(persona, root) + load_case_studies(persona, root) + load_repos(persona, root)
+    docs = (load_cv(persona, root) + load_case_studies(persona, root) + load_repos(persona, root)
             + load_reviews(persona, root) + load_proposals(persona, root))
+    up = root / persona / "uploads"
+    if up.exists():  # work the user added in the UI (incremental: the embedding cache only embeds new chunks)
+        docs += load_uploads(persona, up)
+    return docs
 
 
 def load_uploads(owner: str, upload_dir: Path) -> list[Doc]:
