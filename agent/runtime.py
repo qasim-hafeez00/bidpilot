@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import os
 import time
 import uuid
 from typing import Any
@@ -68,7 +69,12 @@ async def toolbox(user: dict[str, Any]) -> ToolBox:
     async with _tb_lock:
         tb = _toolboxes.get(key)
         if tb is None:
-            tb = await ToolBox(user["id"], user["persona"], user.get("gigsim_token"), user.get("upwork_token")).start()
+            if os.environ.get("MCP_TRANSPORT") == "memory":  # single small container (free hosting): servers in-process
+                from agent.mcp_client import InMemoryToolBox
+
+                tb = await InMemoryToolBox(user["id"], user["persona"], user.get("gigsim_token")).start()
+            else:
+                tb = await ToolBox(user["id"], user["persona"], user.get("gigsim_token"), user.get("upwork_token")).start()
             _toolboxes[key] = tb
         return tb
 

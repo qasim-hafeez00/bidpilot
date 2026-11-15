@@ -122,7 +122,11 @@ def chat_model(provider: str, model: str, *, json_mode: bool = False, max_tokens
         from langchain_groq import ChatGroq
 
         kw = {"response_format": {"type": "json_object"}} if json_mode else {}
-        return ChatGroq(model=model, temperature=temperature, max_tokens=max_tokens, timeout=timeout, max_retries=3, model_kwargs=kw)
+        if "gpt-oss" in model:  # reasoning model: keep reasoning short and leave room for the answer
+            kw["reasoning_effort"] = cfg.get("models.reasoning_effort", "low")
+            max_tokens += 400
+        return ChatGroq(model=model, temperature=temperature, max_tokens=max_tokens, timeout=timeout, max_retries=6,
+                        model_kwargs=kw)
     if provider == "openai":
         from langchain_openai import ChatOpenAI
 

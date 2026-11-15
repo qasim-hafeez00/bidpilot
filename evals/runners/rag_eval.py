@@ -87,12 +87,13 @@ def main() -> None:
         all_rows += [{"variant": v, **r} for r in rows]
         o = s["overall"]
         print(f"{v:5s} R@5={o['recall@5']:.3f} MRR={o['mrr']:.3f} nDCG@10={o['ndcg@10']:.3f} "
-              f"p95={o['p95_latency_s']:.3f}s  ({time.time() - t0:.0f}s)")
-    write(a.out, {"split": a.split, "limit": a.limit, "variants": summaries})
-    with open(RESULTS / a.out.replace(".json", "_rows.csv"), "w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, fieldnames=list(all_rows[0].keys()))
-        w.writeheader()
-        w.writerows(all_rows)
+              f"p95={o['p95_latency_s']:.3f}s  ({time.time() - t0:.0f}s)", flush=True)
+        # write after every variant so a long run is never lost
+        write(a.out, {"split": a.split, "limit_per_persona": a.limit, "variants": summaries})
+        with open(RESULTS / a.out.replace(".json", "_rows.csv"), "w", newline="", encoding="utf-8") as fh:
+            w = csv.DictWriter(fh, fieldnames=list(all_rows[0].keys()))
+            w.writeheader()
+            w.writerows(all_rows)
 
 
 if __name__ == "__main__":

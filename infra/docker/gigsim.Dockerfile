@@ -5,4 +5,4 @@ COPY gigsim gigsim
 COPY data/gigsim_seed data/gigsim_seed
 ENV GIGSIM_SEED_DIR=/app/data/gigsim_seed
 EXPOSE 8081
-CMD ["uvicorn", "gigsim.app:app", "--host", "0.0.0.0", "--port", "8081"]
+CMD ["sh", "-c", "uvicorn gigsim.app:app --host 0.0.0.0 --port ${PORT:-8081}"]

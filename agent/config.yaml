@@ -39,8 +39,8 @@ models:
       provider: groq
       small: openai/gpt-oss-20b
       strong: openai/gpt-oss-120b
-      judge: openai/gpt-oss-120b
-      fallback_small: llama-3.1-8b-instant
+      judge: qwen/qwen3.8-27b       # different family from the writer (less self-preference)
+      fallback_small: openai/gpt-oss-20b
     paid:                      # optional; only if it beats open by enough to justify cost
       provider: openai
       small: gpt-4.1-mini

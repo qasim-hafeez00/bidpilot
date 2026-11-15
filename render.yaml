@@ -1,0 +1,75 @@
+# Render Blueprint - free-tier deployment of BidPilot (Dashboard -> New -> Blueprint -> this repo).
+# One app container (API + inline Arq worker + the three MCP servers in-process) plus GigSim, Postgres and Key Value.
+# Secrets marked `sync: false` are entered in the dashboard and never committed.
+services:
+  - type: web
+    name: bidpilot-gigsim
+    runtime: docker
+    plan: free
+    dockerfilePath: infra/docker/gigsim.Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: GIGSIM_INITIAL_RELEASE
+        value: "60"
+      - key: GIGSIM_DB
+        value: /tmp/gigsim.db
+      - key: GIGSIM_POLICY_VERSION
+        value: "2"
+      - key: GIGSIM_ADMIN_TOKEN
+        generateValue: true
+
+  - type: web
+    name: bidpilot
+    runtime: docker
+    plan: free
+    dockerfilePath: infra/docker/app.Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: APP_ENV
+        value: prod
+      - key: WORKER_MODE
+        value: inline
+      - key: MCP_TRANSPORT
+        value: memory
+      - key: MODEL_PROFILE
+        value: open_hosted
+      - key: SEED_DEMO
+        value: "1"
+      - key: WORKER_MAX_JOBS
+        value: "1"
+      - key: MAX_NEW_PER_SCOUT
+        value: "4"
+      - key: DB_POOL
+        value: "4"
+      - key: GROQ_API_KEY
+        sync: false
+      - key: LANGSMITH_API_KEY
+        sync: false
+      - key: GIGSIM_BASE_URL
+        sync: false            # https://<your bidpilot-gigsim service>.onrender.com
+      - key: APP_SECRET_KEY
+        generateValue: true
+      - key: MCP_JWT_SECRET
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: bidpilot-db
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          type: keyvalue
+          name: bidpilot-redis
+          property: connectionString
+
+  - type: keyvalue
+    name: bidpilot-redis
+    plan: free
+    ipAllowList: []
+
+databases:
+  - name: bidpilot-db
+    plan: free
+    databaseName: bidpilot
+    user: bidpilot

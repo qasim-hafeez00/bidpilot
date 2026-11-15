@@ -24,6 +24,13 @@ WEB_DIST = Path(__file__).resolve().parents[1] / "web" / "dist"
 async def lifespan(app: FastAPI):
     setup_logging()
     await db.init_schema()
+    if os.environ.get("SEED_DEMO") == "1":  # hosted demo: make sure the reviewer account exists
+        try:
+            from scripts.seed_demo import main as seed
+
+            await seed()
+        except Exception as e:  # never block start-up on the demo seed
+            print("demo seed skipped:", type(e).__name__, e)
     worker_task = None
     if os.environ.get("WORKER_MODE") == "inline":  # single-container free hosting: the Arq worker runs as a sibling task
         from arq.worker import Worker
