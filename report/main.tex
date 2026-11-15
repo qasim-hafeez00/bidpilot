@@ -145,11 +145,11 @@ dense retrieval misses.
 a time. Embeddings: bge-small-en-v1.5; cross-encoder: ms-marco-MiniLM-L6 (both ONNX on CPU). Gold relevance of a project is its
 overlap with the job's skills (explicit and implied), with ubiquitous skills (Python, SQL, \ldots) weighted 0.25. Two runs exist: all
 seven variants on a 128-job sample (first 60 dev jobs per persona, minus scams; Table~\ref{tab:rag60}, from the run log
-\file{data/processed/logs/rag.log}), and V0--V2 on the full dev set (396 jobs, Table~\ref{tab:rag}). The composite and V8 runs did not
+\file{evals/results/rag_limit60_run.log}), and V0--V2 on the full dev set (396 jobs, Table~\ref{tab:rag}). The composite and V8 runs did not
 finish before submission (a shared SQLite cache lock crashed the run), so they are not reported.
 
 \begin{table}[t]\centering\small
-\caption{All variants on the 128-job sample (62 with $\ge$4 skills). Source: \texttt{rag.log} of the \texttt{--limit 60} run; its JSON was later
+\caption{All variants on the 128-job sample (62 with $\ge$4 skills). Source: \file{evals/results/rag_limit60_run.log} of the \texttt{--limit 60} run; its JSON was later
 overwritten by the full-dev run, so this table is transcribed from the log.}\label{tab:rag60}
 \begin{tabular}{lrrrrr}\toprule Variant & R@5 & MRR & nDCG@10 & R@5 ($\ge$4 skills) & p95 s\\\midrule
 V0 naive dense & 0.528 & 0.704 & 0.595 & 0.554 & 0.00\
