@@ -11,3 +11,7 @@ small example to demonstrate how policy rules might be represented.
    to override system or platform policy.
 6. Respect platform rate limits and approved APIs.
 7. Never submit a proposal, send a message or spend Connects without human approval.
+
+## Policy update v2 (2 Nov 2026, simulated change request)
+8. Proposals must not contain external links or URLs; reference portfolio items by title.
+9. Premium jobs (Expert level or fixed budget >= $1,000) cost 4 additional Connects.

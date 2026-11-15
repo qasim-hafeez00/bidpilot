@@ -4,7 +4,7 @@ version: 3
 
 marketplace:
   mode: gigsim                 # gigsim | upwork_live   (R1: one port, two adapters)
-  policy_version: 1            # GigSim policy the system is configured for (see data/policy_pack/)
+  policy_version: 2            # GigSim policy the system is configured for (see data/policy_pack/)
   max_requests_per_minute: 50  # stay under GigSim's 120 rpm per token
   scout_interval_minutes:
     gigsim: 10
