@@ -35,7 +35,7 @@ _adapters: dict[str, MarketplacePort] = {}
 def adapter() -> MarketplacePort:
     ident = current_identity()
     mode = cfg.get("marketplace.mode", "gigsim")
-    key = f"{mode}:{ident['user_id']}"
+    key = f"{mode}:{ident['user_id']}:{ident.get('gigsim_token')}:{bool(ident.get('upwork_token'))}"
     if key not in _adapters:
         if mode == "upwork_live":
             from mcp_servers.marketplace.adapters.upwork_live import UpworkLiveAdapter

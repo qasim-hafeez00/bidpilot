@@ -113,7 +113,7 @@ class ToolBox:
             stop.set()
 
     async def close(self) -> None:
-        for task, stop in getattr(self, "_owners", {}).values():
+        for _task, stop in getattr(self, "_owners", {}).values():
             stop.set()
         for task, _ in getattr(self, "_owners", {}).values():
             try:
@@ -169,7 +169,7 @@ class ToolBox:
         from langchain_mcp_adapters.tools import load_mcp_tools
 
         out = []
-        for name, s in self.sessions.items():
+        for s in self.sessions.values():
             for t in await load_mcp_tools(s):
                 if agent is None or t.name in ALLOWLIST.get(agent, set()):
                     out.append(t)

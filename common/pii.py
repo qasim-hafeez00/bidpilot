@@ -31,7 +31,7 @@ def mask_obj(obj: Any, _depth: int = 0) -> Any:
     if isinstance(obj, dict):
         return {k: ("[REDACTED]" if k.lower() in {"authorization", "access_token", "refresh_token", "api_key", "password", "token"}
                     else mask_obj(v, _depth + 1)) for k, v in obj.items()}
-    if isinstance(obj, (list, tuple)):
+    if isinstance(obj, list | tuple):
         return type(obj)(mask_obj(v, _depth + 1) for v in obj)
     return obj
 

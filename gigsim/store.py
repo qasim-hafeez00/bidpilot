@@ -53,7 +53,7 @@ class Store:
         with self.lock:
             self.db.execute("BEGIN")
             hist = json.loads((seed_dir / "historical_jobs.json").read_text(encoding="utf-8"))
-            for i, j in enumerate(hist):
+            for j in hist:
                 self.db.execute("INSERT OR REPLACE INTO jobs VALUES (?,?,?,?,1,?)", (j["job_id"], json.dumps(j), "historical", -1, 0))
             stream = json.loads((seed_dir / "stream_jobs_dev.json").read_text(encoding="utf-8"))
             if include_test and test_dir and (test_dir / "stream_jobs_test.json").exists():

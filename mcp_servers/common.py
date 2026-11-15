@@ -101,7 +101,7 @@ class AuditLog:
     def write(self, tool: str, args: dict[str, Any], result: Any, trace_id: str | None, ok: bool = True) -> None:
         ident = current_identity()
         rec = {"ts": time.time(), "user": ident.get("user_id"), "tool": tool, "trace_id": trace_id, "ok": ok,
-               "args": mask_obj(args), "result": mask_obj(result if isinstance(result, (dict, list, str)) else str(result))}
+               "args": mask_obj(args), "result": mask_obj(result if isinstance(result, dict | list | str) else str(result))}
         line = json.dumps(rec, default=str)
         with open(self.path, "a", encoding="utf-8") as fh:  # append-only
             fh.write(line + "\n")

@@ -102,6 +102,11 @@ thresholds:
   verify_support: 0.30         # cross-encoder sigmoid score for "supported"
   verify_partial: 0.08
 
+experiments:                 # X2 proposal A/B test arms (instructions appended to the Writer prompt)
+  strategies:
+    problem_first: "Start with one sentence restating the client's specific problem in their own terms, then the evidence."
+    question_first: "Start with one short, specific clarifying question about the client's problem, then the evidence."
+
 autonomy:
   default: suggest             # suggest | auto_skip_low_fit   (never auto-send)
 

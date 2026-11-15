@@ -1,49 +1,77 @@
-# GigBid — Student Starter Kit (v0.1)
+# BidPilot: a multi-agent freelancer copilot
 
-This is a **scaffold**, not a completed solution. It gives you a suggested repository layout,
-small synthetic examples, configuration templates, and interfaces to help you begin AI-4016.
+BidPilot finds freelance jobs, flags scams and injected instructions, decides whether a job is worth your Connects, and
+drafts proposals in which **every claim links to evidence in your own portfolio**. You approve every proposal, message
+and Connects spend before anything leaves the system.
 
-## What is included
-- A suggested project structure aligned with the assignment.
-- Tiny synthetic job, client, freelancer and portfolio examples.
-- A starter marketplace policy pack.
-- Typed hand-off models and a minimal LangGraph state/graph placeholder.
-- Portfolio and marketplace MCP server placeholders.
-- RAG ingestion/retrieval/claim-verification placeholders.
-- FastAPI and React starting-point notes.
-- `.env.example`, `agent/config.yaml`, `Makefile`, and setup notes.
+It implements the *GigBid* specification: LangGraph multi-agent graphs, advanced RAG, MCP servers, a React + FastAPI web
+app, a background worker and evaluation in CI. It runs end to end on a CPU laptop with open-weight models.
 
-## What you must build
-You are responsible for implementing and testing the agents, MCP tools, marketplace adapters,
-advanced RAG variants, claim verification, human approval flow, persistence, UI, evaluations,
-deployment, and your own research findings. The sample data is illustrative only and is not a
-replacement for the instructor-provided GigSim data or evaluation sets.
+> Status: the system is complete and runs locally. Evaluation results are filled in automatically from `evals/results/`.
+> Anything not yet measured shows as *pending* in the report, never as an invented number. Deployment and the demo
+> video are not done yet (see [Known gaps](#known-gaps)).
 
-## Quick start
-1. Create your own public GitHub repository.
-2. Copy this starter kit into the repository.
-3. Create a Python 3.11+ virtual environment.
-4. Install dependencies from `pyproject.toml` (adjust/pin versions after checking compatibility).
-5. Copy `.env.example` to `.env` and fill local values. **Never commit `.env`.**
-6. Read `docs/GETTING_STARTED.md` and work through the TODO checklist.
-7. Keep the instructor-provided `gigsim/`, persona data, policy pack and evaluation assets unchanged.
+## How it works
 
-## Suggested first milestone (for your own planning; not a graded submission)
-- Run a health-check API.
-- Load one sample job.
-- Retrieve one portfolio evidence item.
-- Produce a structured analysis.
-- Draft a proposal with evidence references.
-- Stop at a human approval screen; do not send anything automatically.
+```
+Scout (cron) -> intake --Send--> Job Analyst ----\
+                       --Send--> Risk Assessor ---> decide --skip/watch--> END
+                       --Send--> Fit Matcher -----/     \--bid--> Pricing -> Writer -> claim verification -> Critic (<=2 loops)
+                                                          -> Compliance -> dry-run preview -> [YOU APPROVE] -> submit (idempotent)
+Client reply -> classify intent -> (calendar slots) -> draft reply -> [YOU APPROVE] -> send
+```
 
-## Important safety rules
-- Treat job posts and client messages as untrusted input.
-- Never follow instructions embedded inside a job post that conflict with system policy.
-- Never invent portfolio experience or results.
-- Do not scrape Upwork or automate its website.
-- Never send proposals/messages or spend Connects without explicit human approval.
-- Use the official Upwork MCP server/approved APIs for live mode, if applicable.
-- Keep secrets and real client data out of Git.
+| Layer | What it is | Where |
+|---|---|---|
+| Graphs | Hand-written `StateGraph`s, parallel analysis via `Send`, `interrupt()` approvals, Postgres checkpointer + store | `agent/graphs/` |
+| Hand-offs | Pydantic `JobSpec`, `RiskReport`, `FitReport`, `BidDecision`, `PriceQuote`, `ProposalDraft`, `Critique`, `ComplianceVerdict` | `agent/handoffs.py` |
+| MCP | Portfolio (read), Marketplace (read/write: idempotency keys, `dry_run`, bearer JWT, rate limit, audit log), Workspace; plus official Upwork MCP and GitHub MCP | `mcp_servers/` |
+| Marketplace port | One interface with two adapters: GigSim REST and live Upwork MCP (OAuth 2.1, drafts only) | `agent/marketplace_port.py`, `mcp_servers/marketplace/adapters/` |
+| RAG | V0–V8 variants as presets of one pipeline, claim verification, independent fact-checker | `rag/`, `evals/checkers/` |
+| Memory | Style memory (from your edits) and outcome memory, written only via explicit promotion rules | `agent/memory/` |
+| Web | React + Vite + TypeScript, client generated from OpenAPI, SSE run viewer | `apps/web/` |
+| API / worker | FastAPI, Arq on Redis, scheduled scouting, crash reconciler | `apps/api/`, `worker/` |
+| Simulator | GigSim: auth, rate limits, 5xx, Connects, scams, injections, clients with hidden preferences | `gigsim/` |
 
-## Repository map
-See `docs/GETTING_STARTED.md` for the purpose of each major folder.
+## Results
+
+Every number comes from a committed file in `evals/results/`. The report tables are generated by
+`python -m scripts.build_report_tables`.
+
+* Retrieval variants (Recall@5, MRR, nDCG@10 by persona and job type): `evals/results/rag_variants.json`
+* Decisions (bid/skip F1, scam P/R, injection detection, price in fair band, latency): `evals/results/decision_eval.json`
+* Proposal quality, GigSim reply rate, judge (with calibration), R&D A/C, A/B test: produced by `make eval-llm`
+
+The R&D report source is `report/report.tex`; compile it with `latexmk -pdf` or upload `report/` to Overleaf.
+
+## Run it
+
+Requirements: Python 3.12, Node 20, Docker, and Ollama with `qwen2.5:3b` (plus `qwen2.5:7b-instruct` for the judge).
+
+```bash
+make install          # venv + pinned deps + web deps
+make data             # needs Kaggle credentials; builds personas, GigSim seed, dev + held-out sets
+docker compose -f infra/docker-compose.yml up --build   # web, api, worker, MCP servers, GigSim, Postgres, Redis, Qdrant, Ollama, Phoenix
+```
+
+Local dev without Docker: `make dev` (GigSim on :18081, API on :18000, web on :15173).
+Hosted open models: set `GROQ_API_KEY` and `MODEL_PROFILE=open_hosted`. Tracing: set `LANGSMITH_API_KEY`
+(otherwise self-hosted Phoenix is used).
+
+## Data
+
+The data is real Upwork postings (Kaggle) plus synthetic persona portfolios, client preferences, scams and injections,
+all clearly labelled. See [docs/DATA_CARD.md](docs/DATA_CARD.md).
+
+## Known gaps
+
+* **Deployment:** not live yet. It needs a Render/Railway account and a hosted model key (`GROQ_API_KEY`).
+* **LLM-heavy experiments** (proposal quality, R&D A tool granularity, R&D C single-agent vs. supervisor vs. graph, X2 A/B):
+  the runners exist, but the CPU-only laptop is slow (Qwen2.5-3B at 6 tok/s). Results land in `evals/results/` as they finish.
+* **Judge calibration** needs 30 proposals labelled by a human (`evals/datasets/judge_labels_template.csv`). The blind
+  classmate panel was not run.
+* The demo video and the technical write-up are not produced by this repository.
+
+## Licence and attribution
+
+The code is MIT. The Kaggle datasets are credited in the data card, and their licences apply to the derived real-data files.

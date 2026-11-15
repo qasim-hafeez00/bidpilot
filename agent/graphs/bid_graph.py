@@ -17,7 +17,18 @@ from langgraph.types import Send
 
 from agent.graphs._guard import guard, halted
 from agent.memory.store import reply_rate_prior
-from agent.nodes import analyst, approval, compliance, critic, decision, fit_matcher, pricing, risk_assessor, verifier, writer
+from agent.nodes import (
+    analyst,
+    approval,
+    compliance,
+    critic,
+    decision,
+    fit_matcher,
+    pricing,
+    risk_assessor,
+    verifier,
+    writer,
+)
 from agent.nodes._util import rec, toolbox, trace_id, untrusted
 from agent.state import BidState
 from common import config as cfg

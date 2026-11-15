@@ -4,7 +4,7 @@ const NICE: Record<string, string> = {
   intake: "Scout hand-off", analyst: "Job Analyst", risk_assessor: "Risk Assessor", fit_matcher: "Fit Matcher", decide: "Decision",
   pricing: "Pricing Strategist", writer: "Proposal Writer", verifier: "Claim verification", critic: "Critic", compliance: "Compliance Guard",
   prepare_approval: "Dry-run preview", approval: "Your approval", submit: "Submit (idempotent)", __interrupt__: "Waiting for your approval",
-  read_messages: "Read messages", classify: "Classify intent", slots: "Calendar slots", draft_reply: "Draft reply", approve: "Your approval",
+  read_messages: "Read messages", classify: "Classify intent", find_slots: "Calendar slots", draft_reply: "Draft reply", approve: "Your approval",
   send: "Send", __end__: "Finished", error: "Error",
 };
 

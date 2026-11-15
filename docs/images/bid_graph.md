@@ -1,0 +1,58 @@
+# bid_graph
+
+Rendered from code by `make graphs`.
+
+```mermaid
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	intake(intake)
+	analyst(analyst)
+	risk_assessor(risk_assessor)
+	fit_matcher(fit_matcher)
+	decide(decide)
+	pricing(pricing)
+	writer(writer)
+	verifier(verifier)
+	critic(critic)
+	compliance(compliance)
+	prepare_approval(prepare_approval)
+	approval(approval)
+	submit(submit)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> intake;
+	analyst --> decide;
+	approval -.-> __end__;
+	approval -.-> submit;
+	compliance -.-> __end__;
+	compliance -.-> prepare_approval;
+	critic -.-> __end__;
+	critic -.-> compliance;
+	critic -.-> writer;
+	decide -.-> __end__;
+	decide -.-> pricing;
+	fit_matcher --> decide;
+	intake -.-> __end__;
+	intake -.-> analyst;
+	intake -.-> fit_matcher;
+	intake -.-> risk_assessor;
+	prepare_approval -.-> __end__;
+	prepare_approval -.-> approval;
+	pricing -.-> __end__;
+	pricing -.-> writer;
+	risk_assessor --> decide;
+	verifier -.-> __end__;
+	verifier -.-> critic;
+	writer -.-> __end__;
+	writer -.-> verifier;
+	submit --> __end__;
+	approval -.-> approval;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
+
+```

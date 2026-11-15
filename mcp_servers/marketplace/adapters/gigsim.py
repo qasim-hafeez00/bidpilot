@@ -105,4 +105,6 @@ class GigSimAdapter:
 
 def _fid_from_token(token: str) -> str:
     # dev tokens are "dev-token-<persona>" -> "fl-<persona>"; production tokens map via GIGSIM_FREELANCER_ID
+    if token.startswith("tok-"):
+        return token[4:]
     return "fl-" + token.removeprefix("dev-token-")

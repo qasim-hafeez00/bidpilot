@@ -34,9 +34,11 @@ def decide(job: dict[str, Any], fit: dict[str, Any], risk: dict[str, Any], setti
     reasons += fit.get("reasons", [])
     if risk.get("injection_detected"):
         reasons.append("post contains injected instructions - they are ignored")
-    if f >= min_fit and price_ok and connects_ok:
+    if not price_ok:  # below the user's floor: never worth Connects, whatever the fit
+        return BidDecision(action="skip", reasons=reasons, auto=settings.get("autonomy") == "auto_skip_low_fit")
+    if f >= min_fit and connects_ok:
         return BidDecision(action="bid", reasons=[f"fit {f:.2f} >= {min_fit}"] + reasons)
-    if f >= watch_fit and (price_ok or f >= min_fit):
+    if f >= watch_fit:
         return BidDecision(action="watch", reasons=[f"fit {f:.2f} borderline (watch >= {watch_fit})"] + reasons)
     auto = settings.get("autonomy") == "auto_skip_low_fit" and f < watch_fit
     return BidDecision(action="skip", reasons=[f"fit {f:.2f} < {watch_fit}"] + reasons, auto=auto)

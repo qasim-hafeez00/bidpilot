@@ -115,7 +115,7 @@ def create_interview_hold(start: Annotated[str, Field(description="ISO-8601 star
     with _lock:
         db = _db()
         if r := db.execute("SELECT v FROM idem WHERE k=?", (f"{user}:{idempotency_key}",)).fetchone():
-            return HoldResult(**json.loads(r[0]), idempotent_replay=True)
+            return HoldResult(**{**json.loads(r[0]), "idempotent_replay": True})
         s = dt.datetime.fromisoformat(start)
         e = s + dt.timedelta(minutes=duration_min)
         hid = "hold-" + uuid.uuid4().hex[:8]
@@ -138,7 +138,7 @@ def create_email_draft(to_label: Annotated[str, Field(min_length=2, max_length=1
     with _lock:
         db = _db()
         if r := db.execute("SELECT v FROM idem WHERE k=?", (f"{user}:{idempotency_key}",)).fetchone():
-            return EmailDraftResult(**json.loads(r[0]), idempotent_replay=True)
+            return EmailDraftResult(**{**json.loads(r[0]), "idempotent_replay": True})
         did = "draft-" + uuid.uuid4().hex[:8]
         db.execute("INSERT INTO drafts VALUES (?,?,?,?)", (did, user, json.dumps({"to": to_label, "subject": subject, "body": body}),
                                                            dt.datetime.now(dt.UTC).isoformat()))  # BACKEND

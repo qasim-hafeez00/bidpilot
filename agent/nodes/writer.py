@@ -70,6 +70,9 @@ async def run(state: dict[str, Any], config: dict[str, Any], *, store=None) -> d
     if state.get("critiques"):
         last = state["critiques"][-1]
         notes = f"REVISION {revision}: the reviewer rejected the previous draft. Fix exactly this: {last.get('instructions')}"
+    strategy = (state.get("settings") or {}).get("proposal_strategy")
+    if strategy:  # X2 A/B experiment arm; instruction text lives in config, not code
+        notes += "\nOPENING STYLE FOR THIS PROPOSAL: " + cfg.get(f"experiments.strategies.{strategy}", "")
     lo, hi = cfg.get("thresholds.proposal_words", [110, 260])
     usage: list[dict] = []
     mode = "llm"
